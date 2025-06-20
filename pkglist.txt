@@ -5,6 +5,7 @@ bash-completion
 bat
 bibata-cursor-theme
 bluetui
+bluetuith
 bluez-utils
 brightnessctl
 btrfs-progs
@@ -37,6 +38,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 nwg-look
 oreo-cursors-git
+pamixer
 papirus-icon-theme
 pipewire
 pipewire-alsa
@@ -65,5 +67,6 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 yay
 yay-debug
+yt-dlp
 zram-generator
 zsh

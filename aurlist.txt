@@ -1,4 +1,5 @@
 bibata-cursor-theme 2.0.7-1
+bluetuith 0.2.3-1
 catppuccin-cursors-mocha 2.0.0-1
 kanagawa-gtk-theme-git r34.825ac8d9-1
 oreo-cursors-git 20250419.r68.7483f2d-1
