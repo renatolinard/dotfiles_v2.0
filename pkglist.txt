@@ -28,6 +28,8 @@ kanagawa-gtk-theme-git
 libpulse
 linux
 linux-firmware
+mpc
+mpd
 mpv
 neovim
 noto-fonts
@@ -43,6 +45,7 @@ pipewire-pulse
 polkit-kde-agent
 qt5-wayland
 qt6-wayland
+rmpc
 slurp
 sof-firmware
 starship
