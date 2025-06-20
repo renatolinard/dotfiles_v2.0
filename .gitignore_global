@@ -34,3 +34,7 @@
 !/.config/nvim/**
 !/.config/fastfetch/
 !/.config/fastfetch/**
+!/.config/mpd/
+!/.config/mpd/**
+!/.config/rmpc/
+!/.config/rmpc/**
