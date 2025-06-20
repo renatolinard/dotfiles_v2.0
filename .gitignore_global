@@ -3,6 +3,9 @@
 
 # 2. NÃO ignore (re-inclua) os arquivos e pastas na raiz da home (~/)
 !/.bashrc
+!/COLA.md
+!/guia.md
+!/my-fonts-main.zip
 !/.Xresources
 !/.gitignore_global
 !/install.sh
