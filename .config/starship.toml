@@ -1,0 +1,52 @@
+# ~/.config/starship.toml
+# Recriando o prompt Bash customizado com a performance do Starship
+
+# Define o formato geral em duas linhas
+# \n é o caractere de nova linha
+format = """
+$git_branch\
+$git_status
+$directory$character
+"""
+
+# Remove o padding padrão para um visual mais compacto
+add_newline = false
+
+# --- Configuração dos Módulos para Imitar o Estilo Antigo ---
+
+# Módulo do Diretório
+[directory]
+# Corresponde ao seu " \w"
+format = "[ ](fg:#DCA561)[$path]($style) "
+style = "fg:#DCD7BA" # Cor do texto principal (oldWhite)
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " " # Mostra um cadeado se o diretório não tiver permissão de escrita
+
+# Módulo do Branch Git
+[git_branch]
+# Corresponde ao seu "$(parse_git_branch)" em vermelho
+symbol = " "
+format = "[$symbol$branch]($style)"
+style = "bold red"
+
+# Módulo de Status do Git
+[git_status]
+# Recria a sua função "parse_git_dirty"
+format = '([\[$all_status$ahead_behind\]]($style))'
+style = "bold blue" # Cor azul para o status
+stashed = ' *'      # 'stash'
+ahead = ' !'        # 'ahead'
+behind = ' '       # 'behind'
+diverged = ' '     # 'diverged'
+untracked = ' ?'    # 'untracked'
+staged = ' +'       # 'staged'
+modified = ' *'     # 'modified'
+renamed = ' >'      # 'renamed'
+deleted = ' -'      # 'deleted'
+
+# Caractere final do Prompt
+[character]
+# Corresponde ao seu ""
+success_symbol = "[](bold cyan)"
+error_symbol = "[](bold red)"

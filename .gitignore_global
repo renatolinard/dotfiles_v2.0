@@ -1,0 +1,36 @@
+# 1. Ignore tudo por padrão
+*
+
+# 2. NÃO ignore (re-inclua) os arquivos e pastas na raiz da home (~/)
+!/.bashrc
+!/.Xresources
+!/.gitignore_global
+!/install.sh
+!/pkglist.txt
+!/aurlist.txt
+!/README.md
+!/.scripts/
+!/.scripts/**
+
+# 3. Re-inclua a pasta .config E as subpastas específicas que queremos
+# A sintaxe "/**" garante que o conteúdo dentro delas também seja incluído.
+!/.config/
+!/.config/hypr/
+!/.config/hypr/**
+!/.config/waybar/
+!/.config/waybar/**
+!/.config/ghostty/
+!/.config/ghostty/**
+!/.config/wofi/
+!/.config/wofi/**
+!/.config/swaylock/
+!/.config/swaylock/**
+!/.config/dunst/
+!/.config/dunst/**
+!/.config/nwg-look/
+!/.config/nwg-look/**
+!/.config/starship.toml
+!/.config/nvim/
+!/.config/nvim/**
+!/.config/fastfetch/
+!/.config/fastfetch/**

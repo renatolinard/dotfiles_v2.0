@@ -1,0 +1,38 @@
+daemonize
+show-failed-attempts
+clock
+screenshot
+effect-blur=13x13
+effect-vignette=0.5:0.5
+color=6272A4
+font="DankMono Nerd Font Mono"
+indicator
+indicator-radius=200
+indicator-thickness=20
+line-color=282A36
+ring-color=7E9CD8
+inside-color=16161D
+key-hl-color=DCA561
+separator-color=00000000
+text-color=DCD7BA
+text-caps-lock-color=C34043
+line-ver-color=BD93F9
+ring-ver-color=957FB8
+inside-ver-color=957FB8
+text-ver-color=8BE9FD
+ring-wrong-color=C34043
+text-wrong-color=FF5555
+inside-wrong-color=C34043
+inside-clear-color=76946A
+text-clear-color=8BE9FD
+ring-clear-color=76946A
+line-clear-color=8BE9FD
+line-wrong-color=282A36
+bs-hl-color=8BE9FD
+grace=2
+grace-no-mouse
+grace-no-touch
+datestr=%a, %B %e
+timestr=%I:%M %p
+fade-in=0.4
+ignore-empty-password

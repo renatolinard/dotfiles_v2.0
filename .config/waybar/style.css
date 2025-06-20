@@ -1,0 +1,157 @@
+/* vim:fileencoding=utf-8:foldmethod=marker
+*/
+
+/* Define colors */ /* {{{ */
+/* Paleta Kanagawa Paper Ink */
+@define-color background  rgba(24, 22, 22, 0.75);
+@define-color warning     #C34043; /* autumnRed */
+@define-color caution     #545464; /* Cinza neutro */
+@define-color performance #7E9CD8; /* waveBlue2 */
+@define-color audio       #957FB8; /* waveAqua2 */
+@define-color misc        #76946A; /* autumnGreen */
+@define-color date        #DCA561; /* autumnYellow */
+@define-color work        #7E9CD8; /* waveBlue2 */
+@define-color window      #DCD7BA; /* oldWhite (cor de texto principal) */
+@define-color process     #6A9589; /* carpGreen */
+/* }}} */
+
+/* Reset all styles */ /* {{{ */
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  text-shadow: none;
+} /* }}} */
+
+/* Main bar keyframes */ /* {{{ */
+@keyframes blink-critical-text {
+  to {
+    color: @warning;
+  }
+}
+
+@keyframes blink-modifier-text {
+  to {
+    color: @caution;
+  }
+} /* }}} */
+
+/* Main bar defaults */ /* {{{ */
+#waybar {
+  background-color: rgba(22, 22, 29, 0.8); /* FUNDO SEMI-TRANSPARENTE E ESCURO */
+  font-family: "DankMono Nerd Font Mono"; /* SUA FONTE PREFERIDA */
+  font-size: 13pt;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+#waybar button {
+  font-family: "DankMono Nerd Font Mono"; /* SUA FONTE PREFERIDA */
+  font-size: 13pt;
+  font-weight: 500;
+  transition: all 0.15s ease-in-out;
+} /* }}} */
+
+/* Main bar modules */ /* {{{ */
+#workspaces,
+#window,
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio,
+#clock,
+#tray,
+#custom-power,
+#custom-weather,
+#custom-battery,
+#keyboard-state,
+#language,
+#submap,
+#temperature,
+#disk {
+  padding-left: 8pt;
+  padding-right: 8pt;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  background: transparent; /* FUNDO TRANSPARENTE PARA CADA MÓDULO */
+} /* }}} */
+
+/* Module colors */ /* {{{ */
+#cpu,
+#temperature,
+#memory {
+  color: @performance;
+}
+
+#pulseaudio {
+  color: @audio;
+}
+
+#battery,
+#language,
+#backlight {
+  color: @misc;
+}
+
+#clock {
+  color: @date;
+}
+
+#window {
+  color: @window;
+}
+
+#network,
+#network.wifi,
+#network.ethernet,
+#network.disconnected {
+    color: @window; /* COR DE ALTA CONTRASTE PARA O MÓDULO DE REDE */
+}
+/* }}} */
+
+/* Workspace */ /* {{{ */
+#workspaces button {
+  color: @caution;
+  background: transparent;
+  border: 1.5px solid transparent;
+  padding-left: 2pt;
+  padding-right: 2pt;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  transition: all 0.25s ease;
+}
+
+#workspaces button.visible {
+  color: @window;
+}
+
+#workspaces button.active {
+  color: @window;
+  border: 1.5px solid @caution;
+}
+
+#workspaces button:hover {
+  color: @window;
+} /* }}} */
+
+/* Tooltip */ /* {{{ */
+tooltip {
+  background: @background;
+  border: 3px solid @caution;
+  border-radius: 8px;
+  font-weight: 500;
+  font-family: "DankMono Nerd Font Mono"; /* SUA FONTE PREFERIDA */
+}
+
+#tray menu {
+  background: @background;
+  border: 3px solid @caution;
+  border-radius: 8px;
+} /* }}} */
