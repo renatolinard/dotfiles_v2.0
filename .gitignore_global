@@ -9,8 +9,8 @@
 !/pkglist.txt
 !/aurlist.txt
 !/README.md
-!/.scripts/
-!/.scripts/**
+!/wallpaper/
+!/wallpaper/**
 
 # 3. Re-inclua a pasta .config E as subpastas específicas que queremos
 # A sintaxe "/**" garante que o conteúdo dentro delas também seja incluído.
