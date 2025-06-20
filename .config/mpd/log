@@ -276,3 +276,100 @@
 2025-06-20T15:07:21 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
 2025-06-20T15:09:01 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
 2025-06-20T15:09:05 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:24:34 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:24:35 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:27:46 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:27:48 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:31:25 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:31:26 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:31:47 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:31:47 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:31:54 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:31:54 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:37:00 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:37:01 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:41:49 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:41:52 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:42:13 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/03 - The Legend of the Demon's Cry.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/03 - The Legend of the Demon's Cry.mp3": No such file or directory
+2025-06-20T15:42:13 player: played "Album - Battle of Ice/03 - The Legend of the Demon's Cry.mp3"
+2025-06-20T15:42:20 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:42:20 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:42:36 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:42:36 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:42:36 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:42:42 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:42:42 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:42:43 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:42:43 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:42:46 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:42:46 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:42:46 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:42:52 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:42:52 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:42:54 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:42:54 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:42:54 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:43:08 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:43:08 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:43:08 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:43:50 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:43:50 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:43:56 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:44:00 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:44:13 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T15:44:13 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T15:44:13 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T15:44:13 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T15:44:13 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:44:13 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:44:13 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:44:13 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:44:13 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/06 - White Dragon.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/06 - White Dragon.mp3": No such file or directory
+2025-06-20T15:44:13 player: played "Album - Battle of Ice/06 - White Dragon.mp3"
+2025-06-20T15:44:18 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/07 - The Shadow Man.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/07 - The Shadow Man.mp3": No such file or directory
+2025-06-20T15:44:18 player: played "Album - Battle of Ice/07 - The Shadow Man.mp3"
+2025-06-20T15:44:18 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/08 - The Book of Evil.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/08 - The Book of Evil.mp3": No such file or directory
+2025-06-20T15:44:18 player: played "Album - Battle of Ice/08 - The Book of Evil.mp3"
+2025-06-20T15:44:19 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/06 - White Dragon.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/06 - White Dragon.mp3": No such file or directory
+2025-06-20T15:44:19 player: played "Album - Battle of Ice/06 - White Dragon.mp3"
+2025-06-20T15:44:20 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:44:20 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:48:59 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:49:01 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:49:08 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:49:08 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:49:14 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T15:49:14 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T15:50:25 update: added Battle of Ice/01 - The Black Sorcery.mp3
+2025-06-20T15:50:25 update: added Battle of Ice/02 - The Cursed Crown.mp3
+2025-06-20T15:50:25 update: added Battle of Ice/03 - The Legend of the Demon's Cry.mp3
+2025-06-20T15:50:25 update: added Battle of Ice/04 - Assault on the Castle.mp3
+2025-06-20T15:50:25 update: added Battle of Ice/05 - Ride into the Sun.mp3
+2025-06-20T15:50:25 update: added Battle of Ice/06 - White Dragon.mp3
+2025-06-20T15:50:25 update: added Battle of Ice/07 - The Shadow Man.mp3
+2025-06-20T15:50:25 update: added Battle of Ice/08 - The Book of Evil.mp3
+2025-06-20T15:50:25 update: added Battle of Ice/09 - Under Siege.mp3
+2025-06-20T15:50:25 update: added Battle of Ice/10 - Battle of Ice.mp3
+2025-06-20T15:50:25 update: added The Golden Pentacle/01 - The Golden Pentacle.mp3
+2025-06-20T15:50:25 update: added The Golden Pentacle/02 - Elixir Of Life.mp3
+2025-06-20T15:50:25 update: added The Golden Pentacle/03 - Keepers Of The Night.mp3
+2025-06-20T15:50:25 update: added The Golden Pentacle/04 - Never-Ending Pain.mp3
+2025-06-20T15:50:25 update: added The Golden Pentacle/05 - Fight For The Victory.mp3
+2025-06-20T15:50:25 update: added The Golden Pentacle/06 - The Secret Of The Sea.mp3
+2025-06-20T15:50:25 update: added The Golden Pentacle/07 - The Sacred Legacy.mp3
+2025-06-20T15:50:25 update: added The Golden Pentacle/08 - Free Again.mp3
+2025-06-20T15:50:25 update: added The Golden Pentacle/09 - The Other Side.mp3
+2025-06-20T15:50:25 update: added The Golden Pentacle/10 - Thief Of Souls.mp3
+2025-06-20T15:50:25 update: added The Golden Pentacle/11 - Until The End Of Time.mp3
+2025-06-20T15:50:25 update: removing Album - Battle of Ice/10 - Battle of Ice.mp3
+2025-06-20T15:50:25 update: removing Album - Battle of Ice/09 - Under Siege.mp3
+2025-06-20T15:50:25 update: removing Album - Battle of Ice/08 - The Book of Evil.mp3
+2025-06-20T15:50:25 update: removing Album - Battle of Ice/07 - The Shadow Man.mp3
+2025-06-20T15:50:25 update: removing Album - Battle of Ice/06 - White Dragon.mp3
+2025-06-20T15:50:25 update: removing Album - Battle of Ice/05 - Ride into the Sun.mp3
+2025-06-20T15:50:25 update: removing Album - Battle of Ice/04 - Assault on the Castle.mp3
+2025-06-20T15:50:25 update: removing Album - Battle of Ice/03 - The Legend of the Demon's Cry.mp3
+2025-06-20T15:50:25 update: removing Album - Battle of Ice/02 - The Cursed Crown.mp3
+2025-06-20T15:50:25 update: removing Album - Battle of Ice/01 - The Black Sorcery.mp3
+2025-06-20T15:52:31 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:52:36 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory

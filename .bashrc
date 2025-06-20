@@ -89,6 +89,7 @@ if [[ $iatest -gt 0 ]]; then bind "set bell-style visible"; fi
 #------------------------------GENERAL ALIAS´S---------------------------------
 alias kfont="kitten choose_fonts"
 alias cat="bat"
+alias blue="bluetuith"
 alias dots='git --git-dir=$HOME/.dotfiles_v2.0/ --work-tree=$HOME'
 alias hypr='dbus-launch --exit-with-session Hyprland'
 alias chat="firefox --new-window https://chat.openai.com && exit"
