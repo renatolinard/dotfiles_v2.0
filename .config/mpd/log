@@ -258,3 +258,21 @@
 2025-06-20T12:58:22 player: played "Album - Battle of Ice/02 - The Cursed Crown.mp3"
 2025-06-20T12:58:28 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
 2025-06-20T12:58:28 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T14:55:16 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T14:55:17 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T14:56:56 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T14:56:57 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T14:57:05 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T14:57:05 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T14:58:13 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T14:58:13 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T14:58:45 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T14:58:45 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:04:17 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:04:18 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:06:32 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:06:36 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:07:21 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T15:07:21 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T15:09:01 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T15:09:05 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
