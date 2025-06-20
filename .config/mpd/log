@@ -191,3 +191,70 @@
 2025-06-14T18:15:48 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
 2025-06-20T12:27:35 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
 2025-06-20T12:27:35 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T12:37:08 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T12:37:08 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T12:49:45 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T12:49:45 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T12:50:36 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T12:50:36 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T12:50:48 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/04 - Assault on the Castle.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/04 - Assault on the Castle.mp3": No such file or directory
+2025-06-20T12:50:48 player: played "Album - Battle of Ice/04 - Assault on the Castle.mp3"
+2025-06-20T12:50:48 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/04 - Assault on the Castle.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/04 - Assault on the Castle.mp3": No such file or directory
+2025-06-20T12:50:48 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/05 - Ride into the Sun.mp3": No such file or directory
+2025-06-20T12:50:48 player: played "Album - Battle of Ice/05 - Ride into the Sun.mp3"
+2025-06-20T12:50:48 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/06 - White Dragon.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/06 - White Dragon.mp3": No such file or directory
+2025-06-20T12:50:48 player: played "Album - Battle of Ice/06 - White Dragon.mp3"
+2025-06-20T12:50:48 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/07 - The Shadow Man.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/07 - The Shadow Man.mp3": No such file or directory
+2025-06-20T12:50:48 player: played "Album - Battle of Ice/07 - The Shadow Man.mp3"
+2025-06-20T12:50:48 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/08 - The Book of Evil.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/08 - The Book of Evil.mp3": No such file or directory
+2025-06-20T12:50:48 player: played "Album - Battle of Ice/08 - The Book of Evil.mp3"
+2025-06-20T12:50:48 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/09 - Under Siege.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/09 - Under Siege.mp3": No such file or directory
+2025-06-20T12:50:48 player: played "Album - Battle of Ice/09 - Under Siege.mp3"
+2025-06-20T12:50:51 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T12:50:51 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T12:50:51 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/02 - The Cursed Crown.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/02 - The Cursed Crown.mp3": No such file or directory
+2025-06-20T12:50:51 player: played "Album - Battle of Ice/02 - The Cursed Crown.mp3"
+2025-06-20T12:50:51 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/03 - The Legend of the Demon's Cry.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/03 - The Legend of the Demon's Cry.mp3": No such file or directory
+2025-06-20T12:50:51 player: played "Album - Battle of Ice/03 - The Legend of the Demon's Cry.mp3"
+2025-06-20T12:50:51 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/09 - Under Siege.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/09 - Under Siege.mp3": No such file or directory
+2025-06-20T12:50:51 player: played "Album - Battle of Ice/09 - Under Siege.mp3"
+2025-06-20T12:50:52 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T12:50:52 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T12:50:52 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/09 - Under Siege.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/09 - Under Siege.mp3": No such file or directory
+2025-06-20T12:50:52 player: played "Album - Battle of Ice/09 - Under Siege.mp3"
+2025-06-20T12:50:52 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/09 - Under Siege.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/09 - Under Siege.mp3": No such file or directory
+2025-06-20T12:50:52 player: played "Album - Battle of Ice/09 - Under Siege.mp3"
+2025-06-20T12:50:52 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/10 - Battle of Ice.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/10 - Battle of Ice.mp3": No such file or directory
+2025-06-20T12:50:52 player: played "Album - Battle of Ice/10 - Battle of Ice.mp3"
+2025-06-20T12:50:52 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/10 - Battle of Ice.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/10 - Battle of Ice.mp3": No such file or directory
+2025-06-20T12:50:52 player: played "Album - Battle of Ice/10 - Battle of Ice.mp3"
+2025-06-20T12:50:52 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/10 - Battle of Ice.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/10 - Battle of Ice.mp3": No such file or directory
+2025-06-20T12:50:53 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/10 - Battle of Ice.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/10 - Battle of Ice.mp3": No such file or directory
+2025-06-20T12:50:53 player: played "Album - Battle of Ice/10 - Battle of Ice.mp3"
+2025-06-20T12:50:53 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/10 - Battle of Ice.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/10 - Battle of Ice.mp3": No such file or directory
+2025-06-20T12:50:53 player: played "Album - Battle of Ice/10 - Battle of Ice.mp3"
+2025-06-20T12:50:53 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/10 - Battle of Ice.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/10 - Battle of Ice.mp3": No such file or directory
+2025-06-20T12:50:53 player: played "Album - Battle of Ice/10 - Battle of Ice.mp3"
+2025-06-20T12:57:37 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T12:57:37 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T12:57:47 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T12:57:47 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T12:57:56 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T12:57:56 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T12:58:11 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T12:58:11 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T12:58:12 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T12:58:12 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T12:58:12 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T12:58:12 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T12:58:12 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T12:58:12 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T12:58:12 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T12:58:12 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T12:58:12 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T12:58:12 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
+2025-06-20T12:58:12 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T12:58:22 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/02 - The Cursed Crown.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/02 - The Cursed Crown.mp3": No such file or directory
+2025-06-20T12:58:22 player: played "Album - Battle of Ice/02 - The Cursed Crown.mp3"
+2025-06-20T12:58:28 exception: Failed to decode "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3"; Failed to open "/home/renatolinard/Music/Album - Battle of Ice/01 - The Black Sorcery.mp3": No such file or directory
+2025-06-20T12:58:28 player: played "Album - Battle of Ice/01 - The Black Sorcery.mp3"
