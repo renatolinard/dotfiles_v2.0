@@ -1,8 +1,6 @@
 sw_volume: 50
 audio_device_state:1:Saída de Áudio MPD
-state: pause
-current: 0
-time: 9.913
+state: stop
 random: 0
 repeat: 0
 single: 0
@@ -12,15 +10,4 @@ mixrampdb: 0
 mixrampdelay: -1
 lastloadedplaylist: 
 playlist_begin
-0:The Golden Pentacle/01 - The Golden Pentacle.mp3
-1:The Golden Pentacle/02 - Elixir Of Life.mp3
-2:The Golden Pentacle/03 - Keepers Of The Night.mp3
-3:The Golden Pentacle/04 - Never-Ending Pain.mp3
-4:The Golden Pentacle/05 - Fight For The Victory.mp3
-5:The Golden Pentacle/06 - The Secret Of The Sea.mp3
-6:The Golden Pentacle/07 - The Sacred Legacy.mp3
-7:The Golden Pentacle/08 - Free Again.mp3
-8:The Golden Pentacle/09 - The Other Side.mp3
-9:The Golden Pentacle/10 - Thief Of Souls.mp3
-10:The Golden Pentacle/11 - Until The End Of Time.mp3
 playlist_end

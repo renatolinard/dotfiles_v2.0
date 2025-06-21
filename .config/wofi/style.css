@@ -1,71 +1,77 @@
-/* 
- * Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
-*/
+/* * Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
+ * Adaptado com a paleta de cores Kanagawa Paper Ink.
+ */
 
-/** ********** Colors ********** **/
-@define-color background      #20262C;
-@define-color background-alt1 #2a323b;
-@define-color background-alt2 #353f4a;
-@define-color foreground      #f1fcf9;
-@define-color selected        #b4a1db;
-@define-color black           #20262c;
-@define-color red             #db86ba;
-@define-color green           #74dd91;
-@define-color yellow          #e49186;
-@define-color blue            #75dbe1;
-@define-color magenta         #b4a1db;
-@define-color cyan            #9ee9ea;
-@define-color white           #f1fcf9;
+/** ********** Colors (Paleta Kanagawa Paper Ink) ********** **/
+@define-color background      #181616; /* bg-primary */
+@define-color background-alt1 #16161D; /* bg-secondary */
+@define-color background-alt2 #545464; /* caution */
+@define-color foreground      #DCD7BA; /* fg-primary */
+@define-color selected        #7E9CD8; /* blue */
+@define-color black           #181616; /* bg-primary */
+@define-color red             #C34043; /* autumnRed */
+@define-color green           #76946A; /* autumnGreen */
+@define-color yellow          #DCA561; /* autumnYellow */
+@define-color blue            #7E9CD8; /* waveBlue2 */
+@define-color magenta         #957FB8; /* waveAqua2 */
+@define-color cyan            #6A9589; /* carpGreen */
+@define-color white           #DCD7BA; /* fg-primary */
 
 /** ********** Fonts ********** **/
 * {
-    font-family: "DankMono Nerd Font Mono", "DankMono Nerd Font Mono", archcraft, sans-serif;
+    font-family: "DankMono Nerd Font Mono", "JetBrainsMono Nerd Font", sans-serif;
     font-size: 18px;
 }
 
 #window {
-	background-color: @background;
-	color: @foreground;
-	border: 0px solid @background-alt1;
-	border-radius: 0px;
+    background: rgba(22, 22, 29, 0.95); /* Mantido para o efeito de blur/transparência */
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(22, 22, 29, 0.5),
+    inset 0 -1px 0 rgba(22, 22, 29, 0.1),
+    inset 0 0 20px 10px rgba(22, 22, 29, 1);
+    font-family: "DankMono Nerd Font Mono";
+    font-size: 16px;
+    font-weight: 500;
 }
 
 #outer-box {
-	padding: 10px;
+    padding: 10px;
 }
 
 #input {
-	background-color: @background-alt1;
-	border: 0px solid @background-alt2;
-	padding: 4px 12px;
+    background-color: @background-alt1;
+    border: 0px solid @background-alt2;
+    padding: 4px 12px;
 }
 
 #scroll {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 #inner-box {
 }
 
 #img {
-	padding-right: 8px;
+    padding-right: 8px;
 }
 
 #text {
-	color: @foreground;
+    color: @foreground;
 }
 
 #text:selected {
-	color: @background;
+    color: @background;
 }
 
 #entry {
-	padding: 6px;
+    padding: 6px;
 }
 
 #entry:selected {
-	background-color: @selected;
-	color: @background;
+    background-color: @selected;
+    color: @background;
 }
 
 #unselected {
@@ -75,6 +81,5 @@
 }
 
 #input, #entry:selected {
-	border-radius: 0px;
+    border-radius: 0px;
 }
-

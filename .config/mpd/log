@@ -381,3 +381,44 @@
 2025-06-20T16:02:40 player: played "The Golden Pentacle/09 - The Other Side.mp3"
 2025-06-20T16:03:09 player: played "The Golden Pentacle/09 - The Other Side.mp3"
 2025-06-20T16:03:34 player: played "The Golden Pentacle/01 - The Golden Pentacle.mp3"
+2025-06-20T16:32:30 player: played "The Golden Pentacle/01 - The Golden Pentacle.mp3"
+2025-06-20T16:41:17 player: played "The Golden Pentacle/01 - The Golden Pentacle.mp3"
+2025-06-20T16:41:17 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T16:41:27 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-20T16:41:56 update: added Album - At the Heart of Wintervale/1 - Twilight Force.mp3
+2025-06-20T16:41:56 update: added Album - At the Heart of Wintervale/2 - At the Heart of Wintervale.mp3
+2025-06-20T16:41:56 update: added Album - At the Heart of Wintervale/3 - Dragonborn.mp3
+2025-06-20T16:41:56 update: added Album - At the Heart of Wintervale/4 - Highlands of the Elder Dragon.mp3
+2025-06-20T16:41:56 update: added Album - At the Heart of Wintervale/5 - Skyknights of Aldaria.mp3
+2025-06-20T16:41:56 update: added Album - At the Heart of Wintervale/6 - A Familiar Memory.mp3
+2025-06-20T16:41:56 update: added Album - At the Heart of Wintervale/7 - Sunlight Knight.mp3
+2025-06-20T16:41:56 update: added Album - At the Heart of Wintervale/8 - The Last Crystal Bearer.mp3
+2025-06-20T16:41:56 update: added Album - The Tower/01 - Dreams.mp3
+2025-06-20T16:41:56 update: added Album - The Tower/02 - Scream.mp3
+2025-06-20T16:41:56 update: added Album - The Tower/03 - Far Away.mp3
+2025-06-20T16:41:56 update: added Album - The Tower/04 - Deep Winter.mp3
+2025-06-20T16:41:56 update: added Album - The Tower/05 - Fire and Ice.mp3
+2025-06-20T16:41:56 update: added Album - The Tower/06 - Madrigal.mp3
+2025-06-20T16:41:56 update: added Album - The Tower/07 - Steel.mp3
+2025-06-20T16:41:56 update: added Album - The Tower/08 - The Tower.mp3
+2025-06-20T16:41:56 update: added Album - The Tower/09 - Fear of the Dark.mp3
+2025-06-20T16:41:56 update: added Album - The Tower/10 - Epilogue (Instrumental).mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/02 - Powerwind.mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/03 - Guardian of the Seas.mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/04 - Flight of the Sapphire Dragon.mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/06 - Riders of the Dawn.mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/07 - Keepers of Fate.mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/08 - Rise of a Hero.mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/09 - To the Stars.mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/10 - Heroes of Mighty Magic.mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/11 - Epilogue.mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/12 - Knights of Twilight's Might.mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/13 - Rise of a Hero (Orchestral Version).mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/14 - Flight of the Sapphire Dragon (Orchestral Version).mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/15 - Heroes of Mighty Magic (Orchestral Version).mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/17 - There and Back Again (Short Version).mp3
+2025-06-20T16:41:56 update: added Album - Heroes Of Mighty Magic/18 - Powerwind (Chip Version).mp3
+2025-06-20T16:42:03 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory

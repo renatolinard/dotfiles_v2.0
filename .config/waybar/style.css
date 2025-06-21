@@ -1,9 +1,6 @@
-/* vim:fileencoding=utf-8:foldmethod=marker
-*/
-
 /* Define colors */ /* {{{ */
 /* Paleta Kanagawa Paper Ink */
-@define-color background  rgba(24, 22, 22, 0.75);
+@define-color background  rgba(24, 22, 22, 0.5);
 @define-color warning     #C34043; /* autumnRed */
 @define-color caution     #545464; /* Cinza neutro */
 @define-color performance #7E9CD8; /* waveBlue2 */
@@ -15,44 +12,53 @@
 @define-color process     #6A9589; /* carpGreen */
 /* }}} */
 
-/* Reset all styles */ /* {{{ */
-* {
-  border: none;
-  border-radius: 0;
-  min-height: 0;
-  margin: 0;
-  padding: 0;
-  box-shadow: none;
-  text-shadow: none;
-} /* }}} */
-
 /* Main bar keyframes */ /* {{{ */
 @keyframes blink-critical-text {
-  to {
-    color: @warning;
-  }
+    to {
+        color: @warning;
+    }
 }
 
 @keyframes blink-modifier-text {
-  to {
-    color: @caution;
-  }
+    to {
+        color: @caution;
+    }
 } /* }}} */
 
 /* Main bar defaults */ /* {{{ */
 #waybar {
-  background-color: rgba(22, 22, 29, 0.8); /* FUNDO SEMI-TRANSPARENTE E ESCURO */
-  font-family: "DankMono Nerd Font Mono"; /* SUA FONTE PREFERIDA */
-  font-size: 13pt;
-  font-weight: 500;
-  border-radius: 10px;
+    background: rgba(22, 22, 29, 0.4);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(22, 22, 29, 0.5),
+    inset 0 -1px 0 rgba(22, 22, 29, 0.1),
+    inset 0 0 20px 10px rgba(22, 22, 29, 1);
+    font-family: "DankMono Nerd Font Mono";
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 13px;
+    border: 1px solid @caution;
+
 }
 
 #waybar button {
-  font-family: "DankMono Nerd Font Mono"; /* SUA FONTE PREFERIDA */
-  font-size: 13pt;
-  font-weight: 500;
-  transition: all 0.15s ease-in-out;
+    background: rgba(24, 22, 22, 0.15);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(24, 22, 22, 0.5),
+    inset 0 -1px 0 rgba(24, 22, 22, 0.1),
+    inset 0 0 60px 30px rgba(24, 22, 22, 1);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "DankMono Nerd Font Mono";
+    font-size: 13pt;
+    transition: all 0.15s ease-in-out;
 } /* }}} */
 
 /* Main bar modules */ /* {{{ */
@@ -73,36 +79,42 @@
 #submap,
 #temperature,
 #disk {
-  padding-left: 8pt;
-  padding-right: 8pt;
-  padding-bottom: 4px;
-  padding-top: 4px;
-  background: transparent; /* FUNDO TRANSPARENTE PARA CADA MÓDULO */
+    background: rgba(24, 22, 22, 0.4);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(24, 22, 22, 0.5),
+    inset 0 -1px 0 rgba(24, 22, 22, 0.1),
+    inset 0 0 0px 0px rgba(24, 22, 22, 0);
+    margin: 2px 10px; /* Margem: 5px (vertical) e 10px (horizontal) para afastar as pílulas */
+    padding: 0px 5px;
 } /* }}} */
 
 /* Module colors */ /* {{{ */
 #cpu,
 #temperature,
 #memory {
-  color: @performance;
+    color: @performance;
 }
 
 #pulseaudio {
-  color: @audio;
+    color: @audio;
 }
 
 #battery,
 #language,
 #backlight {
-  color: @misc;
+    color: @misc;
 }
 
 #clock {
-  color: @date;
+    color: @date;
 }
 
 #window {
-  color: @window;
+    color: @window;
 }
 
 #network,
@@ -115,43 +127,41 @@
 
 /* Workspace */ /* {{{ */
 #workspaces button {
-  color: @caution;
-  background: transparent;
-  border: 1.5px solid transparent;
-  padding-left: 2pt;
-  padding-right: 2pt;
-  border-radius: 16px;
-  margin-bottom: 8px;
-  margin-top: 8px;
-  margin-left: 4px;
-  margin-right: 4px;
-  transition: all 0.25s ease;
+    font-family: "DankMono Nerd Font Mono";
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 16px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 6px;
+    margin-right: 6px;
+    transition: all 0.25s ease;
 }
 
 #workspaces button.visible {
-  color: @window;
+    color: @window;
 }
 
 #workspaces button.active {
-  color: @window;
-  border: 1.5px solid @caution;
+    color: @work;
+    border: 1.5px solid @caution;
 }
 
 #workspaces button:hover {
-  color: @window;
+    color: @window;
 } /* }}} */
 
 /* Tooltip */ /* {{{ */
 tooltip {
-  background: @background;
-  border: 3px solid @caution;
-  border-radius: 8px;
-  font-weight: 500;
-  font-family: "DankMono Nerd Font Mono"; /* SUA FONTE PREFERIDA */
+    background: @background;
+    border: 3px solid @caution;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family: "DankMono Nerd Font Mono"; /* SUA FONTE PREFERIDA */
 }
 
 #tray menu {
-  background: @background;
-  border: 3px solid @caution;
-  border-radius: 8px;
+    background: @background;
+    border: 3px solid @caution;
+    border-radius: 8px;
 } /* }}} */
