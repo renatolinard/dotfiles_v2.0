@@ -70,4 +70,3 @@ yay
 yay-debug
 yt-dlp
 zram-generator
-zsh
