@@ -1,68 +1,35 @@
-/* Define colors */ /* {{{ */
-/* Paleta Kanagawa Paper Ink */
-@define-color background  rgba(24, 22, 22, 0.5);
-@define-color warning     #C34043; /* autumnRed */
-@define-color caution     #545464; /* Cinza neutro */
-@define-color performance #7E9CD8; /* waveBlue2 */
-@define-color audio       #957FB8; /* waveAqua2 */
-@define-color misc        #76946A; /* autumnGreen */
-@define-color date        #DCA561; /* autumnYellow */
-@define-color work        #7E9CD8; /* waveBlue2 */
-@define-color window      #DCD7BA; /* oldWhite (cor de texto principal) */
-@define-color process     #6A9589; /* carpGreen */
-/* }}} */
+/* ~/.config/waybar/style.css (Estrutura do usuário + Cores Kanagawa Restauradas) */
 
-/* Main bar keyframes */ /* {{{ */
-@keyframes blink-critical-text {
-    to {
-        color: @warning;
-    }
+/** ********** Colors (Paleta Kanagawa Paper Ink Restaurada) ********** **/
+@define-color bg_color              #1F1F28; /* Fundo principal */
+@define-color bg_secondary          rgba(22, 22, 29, 0.85); /* Fundo das pílulas */
+@define-color fg_color              #DCD7BA; /* Texto principal */
+@define-color caution_color         #545464; /* Cinza para bordas e texto inativo */
+@define-color accent_color          #7E9CD8; /* Azul para highlights */
+@define-color warning_color         #C34043; /* Vermelho para avisos */
+@define-color performance_color     #7E9CD8; /* Azul para CPU, etc. */
+@define-color audio_color           #957FB8; /* Magenta para áudio */
+@define-color misc_color            #76946A; /* Verde para bateria, etc. */
+@define-color date_color            #DCA561; /* Amarelo para data/hora */
+
+/** ********** Fonts ********** **/
+* {
+    font-family: "DankMono Nerd Font Mono";
+    font-size: 16px;
 }
 
-@keyframes blink-modifier-text {
-    to {
-        color: @caution;
-    }
-} /* }}} */
-
-/* Main bar defaults */ /* {{{ */
+/* --- Barra Principal (Seu estilo, com cores consistentes) --- */
 #waybar {
-    background: rgba(22, 22, 29, 0.4);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(22, 22, 29, 0.5),
-    inset 0 -1px 0 rgba(22, 22, 29, 0.1),
-    inset 0 0 20px 10px rgba(22, 22, 29, 1);
-    font-family: "DankMono Nerd Font Mono";
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 13px;
-    border: 1px solid @caution;
-
+    /* From https://css.glass */
+background: rgba(22, 22, 29, 0.69);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.21);
 }
 
-#waybar button {
-    background: rgba(24, 22, 22, 0.15);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(24, 22, 22, 0.5),
-    inset 0 -1px 0 rgba(24, 22, 22, 0.1),
-    inset 0 0 60px 30px rgba(24, 22, 22, 1);
-    font-size: 16px;
-    font-weight: 500;
-    font-family: "DankMono Nerd Font Mono";
-    font-size: 13pt;
-    transition: all 0.15s ease-in-out;
-} /* }}} */
-
-/* Main bar modules */ /* {{{ */
+/* --- Módulos (Seu estilo, com cores consistentes) --- */
 #workspaces,
+#custom-wofi,
 #window,
 #cpu,
 #memory,
@@ -72,6 +39,7 @@
 #clock,
 #tray,
 #custom-power,
+#custom-lock,
 #custom-weather,
 #custom-battery,
 #keyboard-state,
@@ -79,89 +47,63 @@
 #submap,
 #temperature,
 #disk {
-    background: rgba(24, 22, 22, 0.4);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 13px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(24, 22, 22, 0.5),
-    inset 0 -1px 0 rgba(24, 22, 22, 0.1),
-    inset 0 0 0px 0px rgba(24, 22, 22, 0);
-    margin: 2px 10px; /* Margem: 5px (vertical) e 10px (horizontal) para afastar as pílulas */
-    padding: 0px 5px;
-} /* }}} */
-
-/* Module colors */ /* {{{ */
-#cpu,
-#temperature,
-#memory {
-    color: @performance;
+    background: @bg_secondary;
+    margin: 6px 6px;
+    padding: 0px 13px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    font-weight: bold;
+    opacity: 0.85;
 }
 
+/* --- Cores dos Módulos (Usando as variáveis Kanagawa) --- */
+#cpu, #temperature, #memory {
+    color: @performance_color;
+}
 #pulseaudio {
-    color: @audio;
+    color: @audio_color;
+}
+#battery, #language, #backlight {
+    color: @misc_color;
+}
+#clock, #custom-wofi {
+    color: @date_color;
+}
+#window, #network {
+    color: @fg_color;
 }
 
-#battery,
-#language,
-#backlight {
-    color: @misc;
-}
-
-#clock {
-    color: @date;
-}
-
-#window {
-    color: @window;
-}
-
-#network,
-#network.wifi,
-#network.ethernet,
-#network.disconnected {
-    color: @window; /* COR DE ALTA CONTRASTE PARA O MÓDULO DE REDE */
-}
-/* }}} */
-
-/* Workspace */ /* {{{ */
+/* --- Workspaces (Seu layout, com cores para legibilidade) --- */
 #workspaces button {
-    font-family: "DankMono Nerd Font Mono";
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 16px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    margin-left: 6px;
-    margin-right: 6px;
-    transition: all 0.25s ease;
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 0px;
+    color: @caution_color; /* Cor sutil para workspaces inativos */
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
-
-#workspaces button.visible {
-    color: @window;
-}
-
 #workspaces button.active {
-    color: @work;
-    border: 1.5px solid @caution;
+    color: @accent_color; /* Cor de destaque para o workspace ativo */
+    background: @bg_color;
+    border-radius: 15px;
+    min-width: 40px;
+}
+#workspaces button:hover {
+    color: @fg_color;
+    background: @caution_color;
 }
 
-#workspaces button:hover {
-    color: @window;
-} /* }}} */
-
-/* Tooltip */ /* {{{ */
+/* --- Tooltip --- */
 tooltip {
-    background: @background;
-    border: 3px solid @caution;
+    background: @bg_color;
+    border: 2px solid @caution_color;
     border-radius: 8px;
     font-weight: 500;
-    font-family: "DankMono Nerd Font Mono"; /* SUA FONTE PREFERIDA */
+    font-family: "DankMono Nerd Font Mono";
 }
-
 #tray menu {
-    background: @background;
-    border: 3px solid @caution;
+    background: @bg_color;
+    border: 2px solid @caution_color;
     border-radius: 8px;
-} /* }}} */
+}
