@@ -1,6 +1,7 @@
 # Folha de Comandos (Cola) - Setup Hyprland Completo
 
-Este é um guia de referência rápida com os principais comandos e conceitos que usamos para construir e gerenciar o ambiente Hyprland.
+Este é um guia de referência rápida com os principais comandos e conceitos que 
+usamos para construir e gerenciar o ambiente Hyprland.
 
 ## 1\. Instalação de Pacotes
 
@@ -8,7 +9,10 @@ Este é um guia de referência rápida com os principais comandos e conceitos qu
 
 ```bash
 # Comando consolidado para instalar todos os pacotes essenciais do Arch
-sudo pacman -S --needed hyprland ghostty thunar waybar wofi hyprpaper dunst polkit-kde-agent playerctl swaylock grim slurp wl-clipboard jq pamixer fastfetch bash-completion exa tmux unrar unzip p7zip mpv bluez bluez-utils papirus-icon-theme xdg-desktop-portal-gtk git base-devel
+sudo pacman -S --needed hyprland ghostty thunar waybar wofi hyprpaper dunst 
+polkit-kde-agent playerctl swaylock grim slurp wl-clipboard jq pamixer fastfetch
+bash-completion exa tmux unrar unzip p7zip mpv bluez bluez-utils papirus-icon-theme 
+xdg-desktop-portal-gtk git base-devel
 ```
 
 #### Pacotes do AUR (`yay`)
@@ -18,7 +22,8 @@ sudo pacman -S --needed hyprland ghostty thunar waybar wofi hyprpaper dunst polk
 # git clone https://aur.archlinux.org/yay.git /tmp/yay && (cd /tmp/yay && makepkg -si)
 
 # Comando consolidado para instalar os pacotes do AUR
-yay -S --needed nvm wlogout bluetuith kanagawa-gtk-theme-git bibata-cursor-theme catppuccin-cursors-mocha swaylock-effects starship
+yay -S --needed nvm wlogout bluetuith kanagawa-gtk-theme-git bibata-cursor-theme
+catppuccin-cursors-mocha swaylock-effects starship
 ```
 
 #### Pacotes Flatpak
