@@ -1,4 +1,5 @@
 bluetuith 0.2.3-1
+unzip
 swaylock-effects 1.7.0.0-4
 wlogout 1.2.2-0
 yay 12.5.0-1

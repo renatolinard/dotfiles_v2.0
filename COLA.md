@@ -37,7 +37,7 @@ catppuccin-cursors-mocha swaylock-effects starship
 
 ```bash
 # Instalação do Zen Browser via Flatpak
-flatpak install flathub io.github.zen_browser.zen
+flatpak install flathub app.zen_browser.zen
 ```
 
 ## 2\. Gerenciamento de Sistema e Serviços

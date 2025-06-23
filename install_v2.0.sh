@@ -1,0 +1,103 @@
+#!/usr/bin/env bash
+#------------------------------------------------------------------------------
+# Script   : install_v2.0.sh
+# Descrição: script atualizado com novas funções 
+# Versão   : 2.0
+# Autor    : Renato Linard <renatolinardjr@gmail.com>
+# Data     : 23/06/2025
+# Licença  : GNU/GPL v3.0
+# -----------------------------------------------------------------------------
+# Uso: install_v2.0.sh
+# -----------------------------------------------------------------------------
+
+#!/bin/bash
+
+# --- Configuração de Segurança ---
+set -e
+
+# --- Definição de Cores para a Saída ---
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# --- Variáveis do Repositório ---
+GIT_USER="renatolinard"
+GIT_REPO="dotfiles_v2.0"
+
+# --- Início do Script ---
+echo -e "${BLUE}------------------------------------------------${NC}"
+echo -e "${BLUE}Iniciando a instalação do ambiente Hyprland...${NC}"
+echo -e "${BLUE}------------------------------------------------${NC}"
+
+# --- Instalação de Dependências ---
+echo -e "${YELLOW}--> Atualizando o sistema e instalando dependências básicas...${NC}"
+sudo pacman -Syu --noconfirm
+sudo pacman -S --needed --noconfirm git base-devel go
+
+# --- Instalação do Yay ---
+if ! command -v yay &> /dev/null; then
+    echo -e "${YELLOW}--> Instalando o yay (AUR Helper)...${NC}"
+    git clone https://aur.archlinux.org/yay.git /tmp/yay
+    (cd /tmp/yay && makepkg -si --noconfirm)
+    rm -rf /tmp/yay
+else
+    echo -e "${GREEN}--> yay já está instalado.${NC}"
+fi
+
+# --- Instalação de Fontes Essenciais ---
+echo -e "${YELLOW}--> Instalando conjunto de fontes essenciais...${NC}"
+yay -S --needed --noconfirm ttf-dank-mono-nerd noto-fonts-emoji ttf-font-awesome
+
+# --- Instalação dos Pacotes ---
+echo -e "${YELLOW}--> Instalando pacotes das listas (pkglist e aurlist)...${NC}"
+if [ ! -f "pkglist.txt" ] || [ ! -f "aurlist.txt" ]; then
+    echo "ERRO CRÍTICO: pkglist.txt ou aurlist.txt não encontrados."
+    exit 1
+fi
+yay -S --needed --noconfirm - < pkglist.txt
+yay -S --needed --noconfirm - < aurlist.txt
+
+# --- Configuração dos Dotfiles (Método Bare) ---
+echo -e "${YELLOW}--> Configurando os dotfiles na pasta home...${NC}"
+git clone --bare https://codeberg.org/$GIT_USER/$GIT_REPO.git $HOME/.$GIT_REPO -f
+DOTS_CMD="git --git-dir=$HOME/.$GIT_REPO/ --work-tree=$HOME"
+$DOTS_CMD checkout -f
+$DOTS_CMD config --local status.showUntrackedFiles no
+
+# --- Configurações Pós-Instalação ---
+echo -e "${YELLOW}--> Executando tarefas de pós-instalação...${NC}"
+
+# Habilitando serviços essenciais
+echo "Habilitando NetworkManager e Bluetooth..."
+sudo systemctl enable --now NetworkManager.service
+sudo systemctl enable --now bluetooth.service
+# Desabilita o iwd para evitar conflitos
+sudo systemctl disable iwd.service || true
+
+# Definir Bash como shell padrão
+echo "Definindo Bash como shell padrão..."
+chsh -s /bin/bash
+
+# Configurar o Git
+echo "Configurando o Git. Por favor, insira seus dados:"
+read -p "Seu nome completo para o Git: " git_name
+read -p "Seu e-mail para o Git: " git_email
+git config --global user.name "$git_name"
+git config --global user.email "$git_email"
+
+# Aplicar tema Kanagawa aos aplicativos Flatpak
+echo "Aplicando tema aos aplicativos Flatpak..."
+sudo flatpak override --filesystem=$HOME/.themes
+sudo flatpak override --filesystem=/usr/share/themes
+sudo flatpak override --env=GTK_THEME=Kanagawa
+
+# Atualizar o cache de fontes do sistema
+echo "Atualizando o cache de fontes..."
+fc-cache -fv
+
+# --- Finalização ---
+echo -e "${GREEN}------------------------------------------------${NC}"
+echo -e "${GREEN}Instalação concluída com sucesso!${NC}"
+echo -e "${YELLOW}Por favor, reinicie a máquina com 'sudo reboot'.${NC}"
+echo -e "${GREEN}------------------------------------------------${NC}"

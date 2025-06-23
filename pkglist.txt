@@ -32,9 +32,6 @@ mpd
 mpv
 neovim
 networkmanager
-noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
 nwg-look
 pamixer
 pipewire
