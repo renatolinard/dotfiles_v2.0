@@ -60,7 +60,7 @@ yay -S --needed --noconfirm - < aurlist.txt
 
 # --- Configuração dos Dotfiles (Método Bare) ---
 echo -e "${YELLOW}--> Configurando os dotfiles na pasta home...${NC}"
-git clone --bare https://codeberg.org/$GIT_USER/$GIT_REPO.git $HOME/.$GIT_REPO -f
+git clone --bare https://codeberg.org/$GIT_USER/$GIT_REPO.git $HOME/.$GIT_REPO
 DOTS_CMD="git --git-dir=$HOME/.$GIT_REPO/ --work-tree=$HOME"
 $DOTS_CMD checkout -f
 $DOTS_CMD config --local status.showUntrackedFiles no
