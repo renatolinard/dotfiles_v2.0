@@ -23,6 +23,11 @@ GIT_REPO="dotfiles_v2.0"
 # --- Encontra o diretório de onde o script está sendo executado ---
 SCRIPT_DIR=<span class="math-inline">\( cd \-\- "</span>( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
+# --- Instalação de Dependências ---
+echo "Atualizando o sistema e instalando dependências básicas..."
+sudo pacman -Syu --noconfirm
+sudo pacman -S --needed --noconfirm git base-devel
+
 # --- Instalação do Yay ---
 if ! command -v yay &> /dev/null; then
     echo "Instalando o yay..."

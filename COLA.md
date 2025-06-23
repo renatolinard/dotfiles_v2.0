@@ -15,6 +15,13 @@ bash-completion exa tmux unrar unzip p7zip mpv bluez bluez-utils papirus-icon-th
 xdg-desktop-portal-gtk git base-devel
 ```
 
+#### Listar pacotes essenciais 
+
+```bash
+pacman -Qeq > pkglist.txt
+pacman -Qem > aurlist.txt
+```
+
 #### Pacotes do AUR (`yay`)
 
 ```bash

@@ -91,7 +91,7 @@ alias kfont="kitten choose_fonts"
 alias cat="bat"
 alias blue="bluetuith"
 alias dots='git --git-dir=$HOME/.dotfiles_v2.0/ --work-tree=$HOME'
-alias hypr='dbus-launch --exit-with-session Hyprland'
+alias hypr='Hyprland'
 alias chat="firefox --new-window https://chat.openai.com && exit"
 alias .fls="cd ~/Downloads/dotfiles/"
 alias kty="nvim ~/.config/kitty/kitty.conf"

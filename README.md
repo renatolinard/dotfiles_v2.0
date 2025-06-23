@@ -15,8 +15,10 @@ Este guia assume que você está em uma instalação nova do Arch Linux
 
 ### Passo 1: Sincronizar o Sistema e Instalar o Git
 
+O `git` é a única dependência que precisamos instalar manualmente para começar.
+
 ```bash
-sudo pacman -Syu --noconfirm && sudo pacman -S --needed --noconfirm git base-devel
+sudo pacman -Syu git
 ```
 
 Passo 2: Clonar o Repositório de Instalação
