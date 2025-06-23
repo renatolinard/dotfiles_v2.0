@@ -21,7 +21,7 @@ echo -e "${BLUE}------------------------------------------------${NC}"
 # --- Instalação de Dependências ---
 echo -e "${YELLOW}--> Atualizando o sistema e instalando dependências básicas...${NC}"
 sudo pacman -Syu --noconfirm
-sudo pacman -S --needed --noconfirm git base-devel go
+sudo pacman -S --needed --noconfirm git base-devel
 
 # --- Instalação do Yay ---
 if ! command -v yay &> /dev/null; then
