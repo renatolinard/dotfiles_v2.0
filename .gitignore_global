@@ -5,7 +5,8 @@
 !/.bashrc
 !/COLA.md
 !/guia.md
-!/my-fonts-main.zip
+!/my-fonts-main/
+!/my-fonts-main/**
 !/.Xresources
 !/.gitignore_global
 !/install.sh
