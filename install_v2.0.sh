@@ -1,15 +1,3 @@
-#!/usr/bin/env bash
-#------------------------------------------------------------------------------
-# Script   : install_v2.0.sh
-# Descrição: script atualizado com novas funções 
-# Versão   : 2.0
-# Autor    : Renato Linard <renatolinardjr@gmail.com>
-# Data     : 23/06/2025
-# Licença  : GNU/GPL v3.0
-# -----------------------------------------------------------------------------
-# Uso: install_v2.0.sh
-# -----------------------------------------------------------------------------
-
 #!/bin/bash
 
 # --- Configuração de Segurança ---
@@ -33,7 +21,7 @@ echo -e "${BLUE}------------------------------------------------${NC}"
 # --- Instalação de Dependências ---
 echo -e "${YELLOW}--> Atualizando o sistema e instalando dependências básicas...${NC}"
 sudo pacman -Syu --noconfirm
-sudo pacman -S --needed --noconfirm git base-devel
+sudo pacman -S --needed --noconfirm git base-devel go
 
 # --- Instalação do Yay ---
 if ! command -v yay &> /dev/null; then
@@ -45,8 +33,16 @@ else
     echo -e "${GREEN}--> yay já está instalado.${NC}"
 fi
 
-# --- Instalação de Fontes Essenciais ---
-echo -e "${YELLOW}--> Instalando conjunto de fontes essenciais...${NC}"
+# --- Instalação de Fontes ---
+echo -e "${YELLOW}--> Instalando fontes...${NC}"
+if [ -d "my-fonts-main" ]; then
+    echo "Copiando diretório de fontes 'my-fonts-main' para o sistema..."
+    sudo cp -r my-fonts-main/* /usr/share/fonts/
+    echo -e "${GREEN}Fontes locais copiadas com sucesso.${NC}"
+else
+    echo -e "${YELLOW}AVISO: Diretório 'my-fonts-main' não encontrado. Pulando cópia de fontes locais.${NC}"
+fi
+echo "Instalando fontes de ícones e emojis..."
 yay -S --needed --noconfirm noto-fonts-emoji ttf-font-awesome
 
 # --- Instalação dos Pacotes ---
@@ -60,19 +56,20 @@ yay -S --needed --noconfirm - < aurlist.txt
 
 # --- Configuração dos Dotfiles (Método Bare) ---
 echo -e "${YELLOW}--> Configurando os dotfiles na pasta home...${NC}"
+# Clona o repositório como 'bare'
 git clone --bare https://codeberg.org/$GIT_USER/$GIT_REPO.git $HOME/.$GIT_REPO
+
+# Define o comando base como uma variável
 DOTS_CMD="git --git-dir=$HOME/.$GIT_REPO/ --work-tree=$HOME"
 $DOTS_CMD checkout -f
 $DOTS_CMD config --local status.showUntrackedFiles no
 
 # --- Configurações Pós-Instalação ---
 echo -e "${YELLOW}--> Executando tarefas de pós-instalação...${NC}"
-
 # Habilitando serviços essenciais
 echo "Habilitando NetworkManager e Bluetooth..."
 sudo systemctl enable --now NetworkManager.service
 sudo systemctl enable --now bluetooth.service
-# Desabilita o iwd para evitar conflitos
 sudo systemctl disable iwd.service || true
 
 # Definir Bash como shell padrão
