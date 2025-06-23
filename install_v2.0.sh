@@ -33,7 +33,7 @@ echo -e "${BLUE}------------------------------------------------${NC}"
 # --- Instalação de Dependências ---
 echo -e "${YELLOW}--> Atualizando o sistema e instalando dependências básicas...${NC}"
 sudo pacman -Syu --noconfirm
-sudo pacman -S --needed --noconfirm git base-devel go
+sudo pacman -S --needed --noconfirm git base-devel
 
 # --- Instalação do Yay ---
 if ! command -v yay &> /dev/null; then
@@ -47,7 +47,7 @@ fi
 
 # --- Instalação de Fontes Essenciais ---
 echo -e "${YELLOW}--> Instalando conjunto de fontes essenciais...${NC}"
-yay -S --needed --noconfirm ttf-dank-mono-nerd noto-fonts-emoji ttf-font-awesome
+yay -S --needed --noconfirm noto-fonts-emoji ttf-font-awesome
 
 # --- Instalação dos Pacotes ---
 echo -e "${YELLOW}--> Instalando pacotes das listas (pkglist e aurlist)...${NC}"
