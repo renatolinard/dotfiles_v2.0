@@ -37,7 +37,7 @@ fi
 echo -e "${YELLOW}--> Instalando fontes...${NC}"
 if [ -d "my-fonts-main" ]; then
     echo "Copiando diretório de fontes 'my-fonts-main' para o sistema..."
-    sudo cp -r my-fonts-main/* /usr/share/fonts/
+    sudo cp -r my-fonts-main /usr/share/fonts/
     echo -e "${GREEN}Fontes locais copiadas com sucesso.${NC}"
 else
     echo -e "${YELLOW}AVISO: Diretório 'my-fonts-main' não encontrado. Pulando cópia de fontes locais.${NC}"
