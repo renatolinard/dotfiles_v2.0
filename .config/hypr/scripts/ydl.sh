@@ -1,16 +1,7 @@
-#!/usr/bin/env bash
-#------------------------------------------------------------------------------
-# Script   : ydl.sh
-# Descrição: cria um menu interativo para escolher a melhor opção de baixar
-# um video usando o yt-dlp e organiza em seus diretórios especificos.
-# Versão   : 2.0
-# Autor    : Renato Linard <renatolinardjr@gmail.com>
-# Data     : 14/06/2025
-# Licença  : GNU/GPL v3.0
-# -----------------------------------------------------------------------------
-# Uso: ydl.sh 
-# -----------------------------------------------------------------------------
 #!/bin/bash
+
+# Script interativo v2.1 para download e organização de mídias com yt-dlp.
+# CORRIGIDO: Lógica do menu alterada para usar $REPLY (o número digitado).
 
 # Cores para a saída
 GREEN='\033[0;32m'
@@ -42,12 +33,12 @@ options=(
 # Cria o menu de seleção interativo
 PS3=$'\n'"Escolha uma opção: "
 select opt in "${options[@]}"; do
-    case $opt in
-        "Baixar um VÍDEO (para ~/Videos)")
+    # NOVO: A verificação agora é feita com base no número ($REPLY) e não no texto ($opt)
+    case $REPLY in
+        1) # Baixar um VÍDEO
             read -p "Cole o URL do vídeo: " url
             if [[ -n "$url" ]]; then
                 echo -e "\n${YELLOW}Iniciando download para ~/Videos...${NC}"
-                # NOVO: Adicionado -P para especificar o diretório de saída.
                 yt-dlp -P ~/Videos "$url"
             else
                 echo "Nenhum URL fornecido."
@@ -55,11 +46,10 @@ select opt in "${options[@]}"; do
             break
             ;;
 
-        "Baixar apenas o ÁUDIO (MP3) de um vídeo")
+        2) # Baixar apenas o ÁUDIO/MP3
             read -p "Cole o URL do vídeo: " url
             if [[ -n "$url" ]]; then
                 echo -e "\n${YELLOW}Iniciando extração de áudio para ~/Music/Melhores...${NC}"
-                # NOVO: Adicionado -P para especificar o diretório de saída.
                 yt-dlp -P ~/Music/Melhores -x --audio-format mp3 "$url"
             else
                 echo "Nenhum URL fornecido."
@@ -67,11 +57,10 @@ select opt in "${options[@]}"; do
             break
             ;;
 
-        "Baixar PLAYLIST de Vídeos (em pasta própria em ~/Videos)")
+        3) # Baixar PLAYLIST de Vídeos
             read -p "Cole o URL da playlist: " url
             if [[ -n "$url" ]]; then
                 echo -e "\n${YELLOW}Iniciando download da playlist para uma nova pasta em ~/Videos...${NC}"
-                # NOVO: O template de saída agora cria uma subpasta com o nome da playlist.
                 yt-dlp -o "~/Videos/%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s" "$url"
             else
                 echo "Nenhum URL fornecido."
@@ -79,11 +68,10 @@ select opt in "${options[@]}"; do
             break
             ;;
 
-        "Baixar PLAYLIST de Áudio/MP3 (em pasta própria em ~/Music)")
+        4) # Baixar PLAYLIST de Áudio/MP3
             read -p "Cole o URL da playlist: " url
             if [[ -n "$url" ]]; then
                 echo -e "\n${YELLOW}Iniciando download da playlist para uma nova pasta em ~/Music...${NC}"
-                # NOVO: O template de saída agora cria uma subpasta com o nome da playlist.
                 yt-dlp -x --audio-format mp3 -o "~/Music/%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s" "$url"
             else
                 echo "Nenhum URL fornecido."
@@ -91,7 +79,7 @@ select opt in "${options[@]}"; do
             break
             ;;
 
-        "Baixar uma PARTE de uma playlist")
+        5) # Baixar uma PARTE de uma playlist
             read -p "Cole o URL da playlist: " url
             read -p "Qual o intervalo que deseja baixar? (ex: 1-5 ou 2,8,12): " range
 
@@ -101,13 +89,11 @@ select opt in "${options[@]}"; do
                     case $type in
                         "Vídeo (para ~/Videos)")
                             echo -e "\n${YELLOW}Iniciando download do intervalo [${range}] como vídeo...${NC}"
-                            # NOVO: Adicionada lógica de organização para o intervalo.
                             yt-dlp -o "~/Videos/%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s" --playlist-items "$range" "$url"
                             break
                             ;;
                         "Áudio (para ~/Music)")
                             echo -e "\n${YELLOW}Iniciando download do intervalo [${range}] como áudio/MP3...${NC}"
-                            # NOVO: Adicionada lógica de organização para o intervalo.
                             yt-dlp -x --audio-format mp3 -o "~/Music/%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s" --playlist-items "$range" "$url"
                             break
                             ;;
@@ -120,10 +106,10 @@ select opt in "${options[@]}"; do
             break
             ;;
 
-        "Sair")
+        6) # Sair
             echo "Até logo!"
             break
             ;;
-        *) echo "Opção inválida: $REPLY";;
+        *) echo "Opção inválida. Por favor, escolha um número de 1 a 6.";;
     esac
 done

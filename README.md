@@ -68,15 +68,17 @@ dots push
 
 # Alterar cursor
 ```bash
+- Principal forma
+~/.icons/defalt/index.theme
+[Icon Theme]
+Name=Default
+Comment=Default Cursor Theme
+Inherits=material_dark_cursors
+
 GTK and Qt configuration files
 ~/.gtkrc-2.0
-
-gtk-cursor-theme-name="cursor_theme_name"
-
 ~/.config/gtk-3.0/settings.ini
 
-[Settings]
-gtk-cursor-theme-name=cursor_theme_name
 ```
 
 # Alterar tema sddm
