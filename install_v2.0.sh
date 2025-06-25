@@ -67,7 +67,8 @@ $DOTS_CMD config --local status.showUntrackedFiles no
 # --- Configurações Pós-Instalação ---
 echo -e "${YELLOW}--> Executando tarefas de pós-instalação...${NC}"
 # Habilitando serviços essenciais
-echo "Habilitando NetworkManager e Bluetooth..."
+echo "Habilitando SDDM, NetworkManager e Bluetooth..."
+sudo systemctl enable sddm.service
 sudo systemctl enable --now NetworkManager.service
 sudo systemctl enable --now bluetooth.service
 sudo systemctl disable iwd.service || true

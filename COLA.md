@@ -162,3 +162,14 @@ which swaylock
 # Ver a saída de log da Waybar em tempo real (para depuração)
 waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css
 ```
+
+## Cursor oreo
+
+Install sugar dark as a base
+```bash
+yay -S sddm-sugar-dark
+```
+
+In the [Theme] section simply add the themes name: Current=sugar-dark
+Copy from /usr/lib/sddm/sddm.conf.d/default.conf
+/etc/sddm.conf.d/sddm.conf

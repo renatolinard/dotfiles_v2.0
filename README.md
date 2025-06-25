@@ -65,3 +65,25 @@ dots commit -m "Exemplo: ajusta atalho do terminal"
 
 # Para enviar a mudança para o Codeberg
 dots push
+
+# Alterar cursor
+```bash
+GTK and Qt configuration files
+~/.gtkrc-2.0
+
+gtk-cursor-theme-name="cursor_theme_name"
+
+~/.config/gtk-3.0/settings.ini
+
+[Settings]
+gtk-cursor-theme-name=cursor_theme_name
+```
+
+# Alterar tema sddm
+```bash
+In the [Theme] section simply add the themes name: Current=sugar-dark
+# Copy from /usr/lib/sddm/sddm.conf.d/default.conf
+/etc/sddm.conf.d/sddm.conf
+
+cp -r ~/sugar-dark /usr/share/sddm/themes/
+```
