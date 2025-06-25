@@ -1,7 +1,6 @@
 bluetuith 
 sddm-sugar-dark 
 unzip
-oreo-cursors
 swaylock-effects 
 wlogout 
 yay 
