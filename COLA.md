@@ -165,11 +165,5 @@ waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css
 
 ## Cursor oreo
 
-Install sugar dark as a base
-```bash
-yay -S sddm-sugar-dark
-```
-
-In the [Theme] section simply add the themes name: Current=sugar-dark
-Copy from /usr/lib/sddm/sddm.conf.d/default.conf
-/etc/sddm.conf.d/sddm.conf
+## Create a bootloader usb
+sudo dd bs=4M if=path/to/archcraft.iso of=/dev/sdX status=progress oflag=sync
