@@ -1,7 +1,7 @@
-bluetuith 
-sddm-sugar-dark 
-unzip
-swaylock-effects 
-wlogout 
-yay 
-yay-debug 
+bluetuith 0.2.3-1
+oreo-cursors-git 20250419.r68.7483f2d-1
+sddm-sugar-dark 1.2-1
+swaylock-effects 1.7.0.0-4
+wlogout 1.2.2-0
+yay 12.5.0-1
+yay-debug 12.5.0-1
