@@ -163,7 +163,13 @@ which swaylock
 waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css
 ```
 
-## Cursor oreo
-
 ## Create a bootloader usb
 sudo dd bs=4M if=path/to/archcraft.iso of=/dev/sdX status=progress oflag=sync
+
+## mpc
+
+```bash
+
+mpc update
+mpc clear
+```

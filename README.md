@@ -68,7 +68,6 @@ dots push
 
 # Alterar cursor
 ```bash
-- Principal forma
 ~/.icons/defalt/index.theme
 [Icon Theme]
 Name=Default
