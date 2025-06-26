@@ -530,3 +530,29 @@
 2025-06-25T14:54:13 update: updating Album - Heroes Of Mighty Magic/18 - Powerwind (Chip Version).mp3
 2025-06-25T14:54:13 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
 2025-06-25T14:54:13 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-06-25T18:13:04 exception: Failed to decode "/home/renatolinard/Music/Melhores/As The Twilight met the Sea [MPhBf_d4IIc].mp3"; Failed to open "/home/renatolinard/Music/Melhores/As The Twilight met the Sea [MPhBf_d4IIc].mp3": No such file or directory
+2025-06-25T18:13:04 player: played "Melhores/As The Twilight met the Sea [MPhBf_d4IIc].mp3"
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3
+2025-06-25T18:13:04 update: removing Melhores/The Sapphire Dragon of Arcane Might is Back Again [hXhN_GVe1ys].mp3
+2025-06-25T18:13:04 update: removing Melhores/The Other Side [TEjr9h6Z6G0].mp3
+2025-06-25T18:13:04 update: removing Melhores/Tender Is the Night [-KHmwvG6FUc].mp3
+2025-06-25T18:13:04 update: removing Melhores/Eye of the Storm [jMxyDOYpEvw].mp3
+2025-06-25T18:13:04 update: removing Melhores/As The Twilight met the Sea [MPhBf_d4IIc].mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/18 - Powerwind (Chip Version).mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/17 - There and Back Again (Short Version).mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/15 - Heroes of Mighty Magic (Orchestral Version).mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/14 - Flight of the Sapphire Dragon (Orchestral Version).mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/13 - Rise of a Hero (Orchestral Version).mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/12 - Knights of Twilight's Might.mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/11 - Epilogue.mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/10 - Heroes of Mighty Magic.mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/09 - To the Stars.mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/08 - Rise of a Hero.mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/07 - Keepers of Fate.mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/06 - Riders of the Dawn.mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/04 - Flight of the Sapphire Dragon.mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/03 - Guardian of the Seas.mp3
+2025-06-25T18:13:04 update: removing Album - Heroes Of Mighty Magic/02 - Powerwind.mp3
+2025-06-25T18:13:21 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
