@@ -18,7 +18,7 @@ vim.keymap.set("i", "<C-a>", "<Esc>")
 vim.keymap.set("n", "|", "i")
 
 -- desativar highlight
-vim.keymap.set("n", "<return>", "<cmd>:nohlsearch<cr>")
+vim.keymap.set("n", "<Esc>", "<cmd>:nohlsearch<cr>")
 
 -- ir coluna 80
 vim.keymap.set ("n", "<C-l>", "80l")

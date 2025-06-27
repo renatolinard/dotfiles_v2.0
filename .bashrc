@@ -59,7 +59,7 @@ eval "$(starship init bash)"
 
 #--- Define Editor--
 export EDITOR=vim
-export VISUAL=code
+export VISUAL=nvim
 #-------------------
 
 # ---renderizar paginas do man com bat--
@@ -92,7 +92,6 @@ alias cat="bat"
 alias blue="bluetuith"
 alias dots='git --git-dir=$HOME/.dotfiles_v2.0/ --work-tree=$HOME'
 alias hypr='Hyprland'
-alias chat="firefox --new-window https://chat.openai.com && exit"
 alias .fls="cd ~/Downloads/dotfiles/"
 alias kty="nvim ~/.config/kitty/kitty.conf"
 alias .tmux="nvim ~/.tmux.conf"
@@ -101,7 +100,7 @@ alias mkdir="mkdir -p"
 alias cls="clear" 
 alias vim='nvim'
 alias v='nvim'
-alias music="ncmpcpp"
+alias play="mpv"
 alias vrc="vim ~/.vim/vimrc"
 alias nvrc="cd ~/.config/nvim/lua/ && vim ."
 alias ~='cd ~'
@@ -168,7 +167,7 @@ ex ()
 #-----------------------------------------------------------------------------
 
 #--- Encontrar um arquivo com fzf+bat e abri-lo com nvim
-fv() {
+ff() {
   local file
   file=$(fzf --preview 'bat --color=always --style=numbers {}' --query="$1" --height=80%)
   if [ -n "$file" ]; then
