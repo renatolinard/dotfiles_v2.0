@@ -87,14 +87,11 @@ if [[ $iatest -gt 0 ]]; then bind "set bell-style visible"; fi
 #-------------------------------------------------------------
 
 #------------------------------GENERAL ALIAS´S---------------------------------
-alias kfont="kitten choose_fonts"
 alias lock="swaylock"
 alias cat="bat"
 alias blue="bluetuith"
 alias dots='git --git-dir=$HOME/.dotfiles_v2.0/ --work-tree=$HOME'
 alias hypr='Hyprland'
-alias .fls="cd ~/Downloads/dotfiles/"
-alias kty="nvim ~/.config/kitty/kitty.conf"
 alias .tmux="nvim ~/.tmux.conf"
 alias work="tmux new -s WORKSTATION"
 alias mkdir="mkdir -p"
@@ -159,13 +156,6 @@ ex ()
   fi
 }
 #------------------------------------------------------------------------------
-
-#------------------pesquisar youtube-------------------------------------------
- # Função para pesquisar e tocar vídeos do YouTube com mpv
-    yt() {
-      mpv "ytdl://ytsearch100:$*"
-    }
-#-----------------------------------------------------------------------------
 
 #--- Encontrar um arquivo com fzf+bat e abri-lo com nvim
 ff() {

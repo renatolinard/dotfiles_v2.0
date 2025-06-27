@@ -9,7 +9,7 @@
 // --- ORGANIZAÇÃO DE MÓDULOS ATUALIZADA ---
 "modules-left": ["custom/wofi", "hyprland/workspaces", "custom/lock"],
 "modules-center": ["hyprland/window"],
-"modules-right": ["pulseaudio", "network", "cpu", "memory#ram", "battery", "clock", "tray", "custom/power"],
+"modules-right": ["pulseaudio", "network", "battery", "clock", "tray", "custom/power"],
 
 // --- DEFINIÇÃO DOS MÓDULOS ---
 
@@ -32,7 +32,11 @@
 
 "hyprland/window": {
     "format": "{}",
-    "max-length": 20
+    "rewrite": {
+        "(.*) - ghostty ": "$1",
+        "(.*) - flatpak run app.zen_browser.zen": "$1"
+    },
+    "max-length": 60
 },
 "cpu": {
     "interval": 4,
