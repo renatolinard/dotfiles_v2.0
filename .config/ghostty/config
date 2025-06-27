@@ -1,7 +1,4 @@
-# ~/.config/ghostty/config (v5 - SINTAXE DA PALETA CORRIGIDA)
-
-# --- Tema e Fonte ---
-# theme = "Kanagawa Dragon"
+# --- Fonte ---
 font-family = "DankMono Nerd Font Mono"
 font-size = 17
 
@@ -21,7 +18,7 @@ window-decoration = "none"
 scrollback-limit = 10000
 copy-on-select=clipboard
 
-# --- PALETA DE CORES KANAGAWA PAPER (SINTAXE CORRETA) ---
+# --- PALETA DE CORES KANAGAWA PAPER
 background = "#1F1F28"
 foreground = "#DCD7BA"
 cursor-color = "#c4b28a"
