@@ -30,6 +30,7 @@ border: 1px solid rgba(255, 255, 255, 0.21);
 /* --- Módulos (Seu estilo, com cores consistentes) --- */
 #workspaces,
 #custom-wofi,
+#custom-lock,
 #window,
 #cpu,
 #memory,
@@ -63,11 +64,17 @@ border: 1px solid rgba(255, 255, 255, 0.21);
 #pulseaudio {
     color: @audio_color;
 }
+#custom-power {
+    color: @warning_color
+}
 #battery, #language, #backlight {
     color: @misc_color;
 }
 #clock, #custom-wofi {
     color: @date_color;
+}
+#custom-lock {
+    color: @misc_color;
 }
 #window, #network {
     color: @fg_color;

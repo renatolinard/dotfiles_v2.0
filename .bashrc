@@ -88,6 +88,7 @@ if [[ $iatest -gt 0 ]]; then bind "set bell-style visible"; fi
 
 #------------------------------GENERAL ALIAS´S---------------------------------
 alias kfont="kitten choose_fonts"
+alias lock="swaylock"
 alias cat="bat"
 alias blue="bluetuith"
 alias dots='git --git-dir=$HOME/.dotfiles_v2.0/ --work-tree=$HOME'
