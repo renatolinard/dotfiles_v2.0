@@ -108,6 +108,12 @@ alias lh="ls -lh"
 alias la="ls -la"
 alias bashrc="vim ~/.bashrc"
 alias upd="sudo pacman -Syyu && yay -Syu"
+
+###alias dots###
+alias ds="dots status"
+alias da="dots add"
+alias dc="dots commit -m "atualização""
+alias dp="dots push"
 export PATH=$PATH:~/.config/hypr/scripts
 export PATH=$PATH:/home/renatolinard/.cargo/bin
 #------------------------------------------------------------------------------

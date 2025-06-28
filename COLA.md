@@ -133,7 +133,7 @@ bluetuith
 notify-send "Título" "Esta é uma notificação de teste." --icon=dialog-information
 
 # Funções customizadas do .bashrc
-fv # Encontra um arquivo com fzf/bat e o abre no nvim
+ff # Encontra um arquivo com fzf/bat e o abre no nvim
 fk # Mata um processo de forma interativa com fzf
 ```
 
