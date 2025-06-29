@@ -28,6 +28,10 @@ fi
 eval "$(starship init bash)"
 #--------------------------------------------------------
 
+#-----------------Permitir copiar no tmux/vim com C+S+v-----------------------
+# Desabilita o "Bracketed Paste Mode" para evitar erros de colagem dentro do tmux/nvim
+bind 'set enable-bracketed-paste off'
+
 #----------------------------CUSTOM PROMPT ------------------------------------
 # function parse_git_dirty {
 #   STATUS="$(git status 2> /dev/null)"
