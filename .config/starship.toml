@@ -1,52 +1,115 @@
-# ~/.config/starship.toml
-# Recriando o prompt Bash customizado com a performance do Starship
+# ~/.config/starship.toml (Versão com sintaxe de paleta corrigida)
 
-# Define o formato geral em duas linhas
-# \n é o caractere de nova linha
+# 1. SELECIONA a paleta de cores que vamos definir abaixo.
+palette = "kanagawa"
+
+# 2. DEFINE a nossa paleta de cores customizada.
+[palettes.kanagawa]
+foreground = "#DCD7BA"
+background = "#1F1F28"
+blue       = "#7E9CD8"
+green      = "#76946A"
+red        = "#C34043"
+yellow     = "#DCA561"
+comment    = "#545464"
+magenta    = "#957FB8"
+
+
+# --- Configuração do Formato e Módulos ---
+
+# Desativa a quebra de linha para um prompt de linha única
+[line_break]
+disabled = true
+
+# Define o formato geral do prompt
 format = """
+$os\
+$directory\
 $git_branch\
-$git_status
-$directory$character
-"""
+$git_status\
+$python\
+$golang\
+$rust\
+$c\
+$nodejs\
+$php\
+$java\
+$character"""
 
-# Remove o padding padrão para um visual mais compacto
-add_newline = false
+# Símbolo do Sistema Operacional
+[os]
+disabled = false
+style = "bold blue" # Agora usa os nomes simples da paleta
+format = "[$symbol ]($style)"
 
-# --- Configuração dos Módulos para Imitar o Estilo Antigo ---
+[os.symbols]
+Arch = "󰣇"
 
-# Módulo do Diretório
+# Diretório
 [directory]
-# Corresponde ao seu " \w"
-format = "[ ](fg:#DCA561)[$path]($style) "
-style = "fg:#DCD7BA" # Cor do texto principal (oldWhite)
+style = "bold foreground" # Cor do texto principal
+format = "[ ](yellow)[$path]($style) " # Ícone amarelo, texto na cor principal
 truncation_length = 3
 truncation_symbol = "…/"
-read_only = " " # Mostra um cadeado se o diretório não tiver permissão de escrita
+read_only = " "
 
-# Módulo do Branch Git
+# Branch do Git
 [git_branch]
-# Corresponde ao seu "$(parse_git_branch)" em vermelho
-symbol = " "
-format = "[$symbol$branch]($style)"
-style = "bold red"
+symbol = ""
+style = "bold magenta"
+format = '[$symbol $branch]($style)'
 
-# Módulo de Status do Git
+# Status do Git (arquivos modificados, etc.)
 [git_status]
-# Recria a sua função "parse_git_dirty"
-format = '([\[$all_status$ahead_behind\]]($style))'
-style = "bold blue" # Cor azul para o status
-stashed = ' *'      # 'stash'
-ahead = ' !'        # 'ahead'
-behind = ' '       # 'behind'
-diverged = ' '     # 'diverged'
-untracked = ' ?'    # 'untracked'
-staged = ' +'       # 'staged'
-modified = ' *'     # 'modified'
-renamed = ' >'      # 'renamed'
-deleted = ' -'      # 'deleted'
+style = "bold yellow"
+format = '([$all_status$ahead_behind]($style)) '
+stashed = ' *'
+ahead = ' !'
+behind = ' '
+diverged = ' '
+untracked = ' ?'
+staged = ' +'
+modified = ' *'
+renamed = ' >'
+deleted = ' -'
 
-# Caractere final do Prompt
+# Módulos de Linguagens de Programação
+[python]
+symbol = " "
+style = "bold green"
+format = '[${symbol}(${version} )]($style)'
+
+[c]
+symbol = " "
+style = "bold green"
+format = '[${symbol}(${version} )]($style)'
+
+[rust]
+symbol = " "
+style = "bold green"
+format = '[${symbol}(${version} )]($style)'
+
+[golang]
+symbol = " "
+style = "bold green"
+format = '[${symbol}(${version} )]($style)'
+
+[nodejs]
+symbol = " "
+style = "bold green"
+format = '[${symbol}(${version} )]($style)'
+
+[php]
+symbol = " "
+style = "bold green"
+format = '[${symbol}(${version} )]($style)'
+
+[java]
+symbol = " "
+style = "bold green"
+format = '[${symbol}(${version} )]($style)'
+
+# Caractere final do prompt
 [character]
-# Corresponde ao seu ""
-success_symbol = "[](bold cyan)"
+success_symbol = "[](bold blue)"
 error_symbol = "[](bold red)"
