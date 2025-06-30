@@ -5,9 +5,10 @@ iatest=$(expr index "$-" i)
 #---------------------------------------------------
 
 #-----------Fastfetch--------------
-if [ -f /usr/bin/fastfetch ]; then
-    fastfetch
-fi
+# if [ -f /usr/bin/fastfetch ]; then
+#     fastfetch
+# fi
+nerdfetch 
 #----------------------------------
 
 #----configurações globais ---------
