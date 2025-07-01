@@ -19,7 +19,8 @@
 !/.tmux/
 !/.tmux/my-theme.conf
 !/install_v2.0.sh
-!/my_cursors
+!/my_cursors/
+!/my_cursors/**
 
 # 3. Re-inclua a pasta .config E as subpastas específicas que queremos
 # A sintaxe "/**" garante que o conteúdo dentro delas também seja incluído.
