@@ -34,7 +34,9 @@ linux-firmware
 mpc
 mpd
 mpv
+mpvpaper
 neovim
+nerdfetch
 networkmanager
 nftables
 nodejs

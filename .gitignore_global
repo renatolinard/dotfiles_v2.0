@@ -21,6 +21,8 @@
 !/install_v2.0.sh
 !/my_cursors/
 !/my_cursors/**
+!/kanagawa_gtk3/
+!/kanagawa_gtk3/**
 
 # 3. Re-inclua a pasta .config E as subpastas específicas que queremos
 # A sintaxe "/**" garante que o conteúdo dentro delas também seja incluído.

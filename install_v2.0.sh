@@ -33,7 +33,7 @@ else
     echo -e "${GREEN}--> yay já está instalado.${NC}"
 fi
 
-# --- Instalação de Fontes ---
+# --- Instalação de Fontes---
 echo -e "${YELLOW}--> Instalando fontes...${NC}"
 if [ -d "my-fonts-main" ]; then
     echo "Copiando diretório de fontes 'my-fonts-main' para o sistema..."
@@ -44,6 +44,26 @@ else
 fi
 echo "Instalando fontes de ícones e emojis..."
 yay -S --needed --noconfirm noto-fonts-emoji ttf-font-awesome
+
+# --- Instalação de Cursors---
+echo -e "${YELLOW}--> Instalando cursores...${NC}"
+if [ -d "my_cursors" ]; then
+    echo "Copiando diretório de fontes 'my_cursors' para o sistema..."
+    sudo cp -r my_cursors /usr/share/icons/
+    echo -e "${GREEN}Cursors locais copiadas com sucesso.${NC}"
+else
+    echo -e "${YELLOW}AVISO: Diretório 'my_cursors' não encontrado. Pulando cópia de fontes locais.${NC}"
+fi
+
+# --- Instalação do Tema---
+echo -e "${YELLOW}--> Instalando tema...${NC}"
+if [ -d "kanagawa_gtk3" ]; then
+    echo "Copiando diretório de temas 'kanagawa_gtk3' para o sistema..."
+    sudo cp -r kanagawa_gtk3 /usr/share/themes/
+    echo -e "${GREEN}Temas locais copiadas com sucesso.${NC}"
+else
+    echo -e "${YELLOW}AVISO: Diretório 'kanagawa_gtk3' não encontrado. Pulando cópia de fontes locais.${NC}"
+fi
 
 # --- Instalação dos Pacotes ---
 echo -e "${YELLOW}--> Instalando pacotes das listas (pkglist e aurlist)...${NC}"
