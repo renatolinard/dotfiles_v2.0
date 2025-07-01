@@ -48,7 +48,7 @@ Arch = "󰣇"
 # Diretório
 [directory]
 style = "bold foreground" # Cor do texto principal
-format = "[ ](yellow)[$path]($style) " # Ícone amarelo, texto na cor principal
+format = "[renatolinard ](comment)[$path]($style) " # Ícone amarelo, texto na cor principal
 truncation_length = 3
 truncation_symbol = "…/"
 read_only = " "

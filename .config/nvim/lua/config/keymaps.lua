@@ -12,7 +12,7 @@ vim.keymap.set("n", "n", "nzzzv")       -- center screen when looping search res
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- sometimes in insert mode, control-c doesn't exactly work like escape
-vim.keymap.set("i", "jk", "<Esc>")
+vim.keymap.set("i", "<C-a>", "<Esc>")
 
 -- enter insert mode
 vim.keymap.set("n", "|", "i")
