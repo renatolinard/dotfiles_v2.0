@@ -124,7 +124,61 @@ export PATH=$PATH:/home/renatolinard/.cargo/bin
 
 #------------------------------FUNÇÕES-----------------------------------------
 
-#------"exa" after "cd"-----------
+# ===================================================================
+# FUNÇÕES E ALIASES PARA A GEMINI CLI
+# ===================================================================
+
+# 1. O Tradutor de Erros
+# Use: explain <comando que deu erro>
+# Exemplo: explain ls /pasta/inexistente
+explain() {
+    # Executa o comando passado como argumento e redireciona qualquer saída (normal ou de erro)
+    # para a Gemini CLI, pedindo uma explicação.
+    # O "$@" garante que todos os argumentos do seu comando sejam passados corretamente.
+    "$@" 2>&1 | gemini -p "Explique a saída ou o erro do seguinte comando e sugira uma solução:"
+}
+
+# 2. O Resumidor Universal (para arquivos e URLs)
+# Use: summarize <arquivo> ou summarize <url>
+# Exemplo 1: summarize ~/.config/hypr/hyprland.conf
+# Exemplo 2: summarize https://www.archlinux.org
+summarize() {
+    # Verifica se o argumento começa com 'http'
+    if [[ "$1" == http* ]]; then
+        # Se for uma URL, usa o 'curl' para baixar o conteúdo e envia para a Gemini
+        curl -sL "$1" | gemini -p "Resuma o conteúdo desta página da web em pontos principais:"
+    else
+        # Se for um arquivo local, usa o 'cat' para ler o conteúdo e envia para a Gemini
+        cat "$1" | gemini -p "Resuma este arquivo de configuração ou script em pontos principais:"
+    fi
+}
+
+# 3. O Criador de Scripts
+# Use: create_script "descrição do que o script faz" nome_do_arquivo.sh
+# Exemplo: create_script "um script que apaga arquivos .tmp da minha pasta Downloads" clean_tmp.sh
+create_script() {
+    # Verifica se os dois argumentos foram fornecidos
+    if [ -z "$1" ] || [ -z "$2" ]; then
+        echo "Uso: create_script \"<descrição>\" <nome_do_arquivo.sh>"
+        return 1
+    fi
+    
+    # Pede à Gemini para gerar APENAS o código
+    gemini -p "Crie um script bash que faça exatamente o seguinte: '$1'. Por favor, forneça apenas o código do script, sem nenhuma explicação ou formatação extra (como \`\`\`bash)." > "$2"
+    
+    # Torna o novo script executável
+    chmod +x "$2"
+    
+    echo "Script '$2' criado e tornado executável."
+}
+
+# 4. O Chat Rápido
+# Use: ask (para iniciar um chat interativo)
+alias ask='gemini'
+
+#------------------------------------------------------------------
+
+#------"exa" after "cd"----------------------
 cd ()
 {
 	if [ -n "$1" ]; then
@@ -133,12 +187,7 @@ cd ()
 		builtin cd ~ && exa -lh
 	fi
 }
-
-#-------Limpeza de cache------------
-clstemp () {
-    sudo pacman -Rns $(pacman -Qtdq)
-    yay -Scc
-}
+#--------------------------------------------
 
 #------------------Extrair arquivos-----------------------------
 ex ()
