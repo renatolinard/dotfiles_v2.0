@@ -128,27 +128,27 @@ export PATH=$PATH:/home/renatolinard/.cargo/bin
 # 1. O Tradutor de Erros
 # Use: explain <comando que deu erro>
 # Exemplo: explain ls /pasta/inexistente
-explain() {
+what() {
     # Executa o comando passado como argumento e redireciona qualquer saída (normal ou de erro)
     # para a Gemini CLI, pedindo uma explicação.
     # O "$@" garante que todos os argumentos do seu comando sejam passados corretamente.
-    "$@" 2>&1 | gemini -p "Explique a saída ou o erro do seguinte comando e sugira uma solução:"
+    "$@" 2>&1 | gemini -p "Explique de maneira simples a saída ou o erro do seguinte comando e sugira uma solução:"
 }
 
 # 2. O Resumidor Universal (para arquivos e URLs)
 # Use: summarize <arquivo> ou summarize <url>
 # Exemplo 1: summarize ~/.config/hypr/hyprland.conf
 # Exemplo 2: summarize https://www.archlinux.org
-summarize() {
+explain() {
     # Verifica se o argumento começa com 'http'
     if [[ "$1" == http* ]]; then
         # Se for uma URL, usa o 'curl' para baixar o conteúdo e envia para a Gemini
-        curl -sL "$1" | gemini -p "Resuma e explique como se fosse para uma criança 
-        o conteúdo desta página da web em pontos principais:"
+        curl -sL "$1" | gemini -p "Explique com uma linguagem simples o conteúdo 
+        desta página da web e crie um resumo com os pontos principais:"
     else
         # Se for um arquivo local, usa o 'cat' para ler o conteúdo e envia para a Gemini
-        cat "$1" | gemini -p "Resuma e explique como se fosse para uma criança
-        este arquivo de configuração ou script em pontos principais:"
+        cat "$1" | gemini -p "Explique como uma linguagem simples este arquivo 
+        de configuração/script e crie um resumo com os pontos principais:"
     fi
 }
 
