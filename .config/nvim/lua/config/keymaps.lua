@@ -1,37 +1,33 @@
 -- KEYBINDS
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Oil)
 
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- Alt Up/Down in vscode
+-- Move lines in visual mode
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
-vim.keymap.set("n", "J", "mzJ`z")       -- Remap joining lines
-vim.keymap.set("n", "<C-d>", "<C-d>zz") -- Keep cursor in place while moving up/down page
+-- Remap joining lines
+vim.keymap.set("n", "J", "mzJ`z")
+
+-- Keep cursor in place while moving up/down page
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
-vim.keymap.set("n", "n", "nzzzv")       -- center screen when looping search results
+
+-- Center screen when looping search results
+vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- sometimes in insert mode, control-c doesn't exactly work like escape
 vim.keymap.set("i", "<C-a>", "<Esc>")
 
--- enter insert mode
-vim.keymap.set("n", "|", "i")
-
--- desativar highlight
-vim.keymap.set("n", "<Esc>", "<cmd>:nohlsearch<cr>")
-
--- ir coluna 80
-vim.keymap.set ("n", "<C-l>", "80l")
-
--- disable column 
-vim.keymap.set("n", "<leader>cc", function()
+-- Custom Mappings (using <Leader>)
+vim.keymap.set("n", "<leader>o", vim.cmd.Oil, { desc = "Open Oil File Explorer" }) -- Open Oil
+vim.keymap.set("n", "<leader>tc", function()
   if vim.o.colorcolumn == "" then
     vim.o.colorcolumn = "80"
   else
     vim.o.colorcolumn = ""
   end
-end)
+end, { desc = "Toggle Colorcolumn at 80" })
 
-
-
-
+vim.keymap.set("n", "<leader>e", "<cmd>:nohlsearch<cr>", { desc = "Clear Search Highlight" })
+vim.keymap.set("n", "<leader>80", "80l", { desc = "Go to Column 80" })

@@ -1,175 +1,68 @@
-# Folha de Comandos (Cola) - Setup Hyprland Completo
+# Neovim Keymaps (COLA)
 
-Este é um guia de referência rápida com os principais comandos e conceitos que 
-usamos para construir e gerenciar o ambiente Hyprland.
+Este documento lista os mapeamentos de teclas configurados no seu Neovim, organizados para facilitar a memorização e evitar conflitos. O `<Leader>` está configurado para a tecla `[espaço]`.
 
-## 1\. Instalação de Pacotes
+## Mapeamentos Globais
 
-#### Pacotes dos Repositórios Oficiais (`pacman`)
+| Tecla             | Descrição                               |
+| :---------------- | :-------------------------------------- |
+| `<C-d>`           | Rola a página para baixo, centralizando o cursor |
+| `<C-u>`           | Rola a página para cima, centralizando o cursor |
+| `J` (Normal)      | Junta a linha atual com a próxima, mantendo o cursor |
+| `J` (Visual)      | Move a linha selecionada para baixo     |
+| `K` (Visual)      | Move a linha selecionada para cima       |
+| `n`               | Próximo resultado da busca, centralizando a tela |
+| `N`               | Resultado anterior da busca, centralizando a tela |
+| `<C-a>` (Insert)  | Equivalente a `<Esc>` (sair do modo de inserção) |
+| `<Leader>o`       | Abre o explorador de arquivos Oil       |
+| `<Leader>tc`      | Alterna a coluna de 80 caracteres       |
+| `<Leader>e`       | Limpa o destaque da busca               |
+| `<Leader>i`       | Entra no modo de inserção               |
+| `<Leader>80`      | Vai para a coluna 80                    |
 
-```bash
-# Comando consolidado para instalar todos os pacotes essenciais do Arch
-sudo pacman -S --needed hyprland ghostty thunar waybar wofi hyprpaper dunst 
-polkit-kde-agent playerctl swaylock grim slurp wl-clipboard jq pamixer fastfetch
-bash-completion exa tmux unrar unzip p7zip mpv bluez bluez-utils papirus-icon-theme 
-xdg-desktop-portal-gtk git base-devel
-```
+## Mapeamentos FZF-Lua (`<Leader>f`)
 
-#### Listar pacotes essenciais 
+| Tecla             | Descrição                               |
+| :---------------- | :-------------------------------------- |
+| `<Leader>ff`      | Encontrar arquivos no diretório do projeto |
+| `<Leader>fg`      | Encontrar por grep no diretório do projeto |
+| `<Leader>fc`      | Encontrar na configuração do Neovim     |
+| `<Leader>fh`      | Encontrar ajuda (helptags)              |
+| `<Leader>fk`      | Encontrar keymaps                        |
+| `<Leader>fb`      | Encontrar buffers existentes             |
+| `<Leader>fw`      | Encontrar a palavra sob o cursor         |
+| `<Leader>fW`      | Encontrar a PALAVRA sob o cursor         |
+| `<Leader>fd`      | Encontrar diagnósticos do documento      |
+| `<Leader>fr`      | Retomar a última busca do fzf-lua        |
+| `<Leader>fo`      | Encontrar arquivos antigos               |
+| `<Leader>f/`      | Grep ao vivo no buffer atual             |
 
-```bash
-pacman -Qeq > pkglist.txt
-pacman -Qem > aurlist.txt
-```
+## Mapeamentos LSP (Language Server Protocol)
 
-#### Pacotes do AUR (`yay`)
+Estes mapeamentos são específicos do buffer e só funcionam quando um Language Server está ativo.
 
-```bash
-# Instalação do yay (se necessário)
-# git clone https://aur.archlinux.org/yay.git /tmp/yay && (cd /tmp/yay && makepkg -si)
+| Tecla             | Descrição                               |
+| :---------------- | :-------------------------------------- |
+| `gd`              | Ir para a definição                      |
+| `gD`              | Ir para a declaração                     |
+| `gi`              | Ir para a implementação                  |
+| `gr`              | Ir para as referências                   |
+| `<Leader>lh`      | Mostrar informações de hover             |
+| `<Leader>lr`      | Renomear símbolo                         |
+| `<Leader>la`      | Mostrar ações de código                  |
+| `[d`              | Ir para o diagnóstico anterior           |
+| `]d`              | Ir para o diagnóstico seguinte           |
+| `<Leader>ds`      | Mostrar lista de diagnósticos            |
+| `<Leader>lf`      | Formatar documento                       |
+| `<Leader>fs`      | Buscar símbolo no workspace              |
+| `gt`              | Ir para a definição de tipo              |
+| `gR`              | Mostrar referências LSP (via Trouble.nvim) |
 
-# Comando consolidado para instalar os pacotes do AUR
-yay -S --needed nvm wlogout bluetuith kanagawa-gtk-theme-git bibata-cursor-theme
-catppuccin-cursors-mocha swaylock-effects starship
-```
+## Mapeamentos Trouble.nvim (`<Leader>d`)
 
-#### Pacotes Flatpak
-
-```bash
-# Instalação do Zen Browser via Flatpak
-flatpak install flathub app.zen_browser.zen
-```
-
-## 2\. Gerenciamento de Sistema e Serviços
-
-#### Serviços (`systemctl`)
-
-```bash
-# Habilita e inicia o serviço de Bluetooth no boot
-sudo systemctl enable --now bluetooth.service
-```
-
-#### Shell Padrão (`chsh`)
-
-```bash
-# Define o Bash como o shell padrão do usuário
-chsh -s /bin/bash
-```
-
-## 3\. Gerenciamento de Dotfiles (Git Bare)
-
-#### O Alias (Coração do Método)
-
-```bash
-# Adicionar ao ~/.bashrc
-alias dots='git --git-dir=$HOME/.dotfiles_v2.0/ --work-tree=$HOME'
-```
-
-#### Configuração Inicial
-
-```bash
-# Criar o repositório local "bare"
-git init --bare $HOME/.dotfiles_v2.0
-
-# Configurar o Git para usar o arquivo de ignore global
-dots config --global core.excludesfile ~/.gitignore_global
-
-# Conectar ao repositório remoto (exemplo)
-dots remote add origin https://codeberg.org/renatolinard/dotfiles_v2.0.git
-```
-
-#### Fluxo de Trabalho do Dia a Dia
-
-```bash
-# Ver o status dos arquivos de configuração
-dots status
-
-# Adicionar um arquivo específico para ser rastreado
-dots add ~/.config/hypr/hyprland.conf
-
-# Salvar as mudanças com uma mensagem
-dots commit -m "Minha mensagem de commit"
-
-# Enviar as mudanças para o Codeberg
-dots push
-```
-
-#### Comandos de Reparo
-
-```bash
-# Limpar a "staging area" de arquivos adicionados por engano
-dots reset
-
-# Remover um arquivo do rastreamento do Git (sem apagar o arquivo local)
-dots rm --cached <caminho/do/arquivo>
-```
-
-## 4\. Comandos Úteis do Dia a Dia
-
-#### Iniciar o Ambiente Gráfico
-
-```bash
-# Alias para iniciar o Hyprland dentro de uma sessão D-Bus
-hypr
-```
-
-#### Teste e Recarga
-
-```bash
-# Reiniciar a Waybar com a configuração e estilo corretos
-killall waybar; waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css &
-
-# Testar a tela de bloqueio
-swaylock
-```
-
-#### Ferramentas de Linha de Comando
-
-```bash
-# Abrir o gerenciador de Bluetooth de terminal
-bluetuith
-
-# Testar as notificações
-notify-send "Título" "Esta é uma notificação de teste." --icon=dialog-information
-
-# Funções customizadas do .bashrc
-ff # Encontra um arquivo com fzf/bat e o abre no nvim
-fk # Mata um processo de forma interativa com fzf
-```
-
-#### Atalhos de Teclado (Lembretes)
-
-  * **Print:** Screenshot da tela inteira.
-  * **Shift + Print:** Screenshot de uma área selecionada.
-  * **Alt + Print:** Screenshot da janela ativa.
-  * **Teclas de Volume:** Controlam o volume com `pamixer`.
-
-## 5\. Comandos de Diagnóstico
-
-```bash
-# Listar temas de ícones/cursores instalados para encontrar o nome exato
-ls /usr/share/icons/
-
-# Ver detalhes de um arquivo, incluindo se é um link simbólico
-ls -la <caminho/do/arquivo>
-
-# Descobrir o caminho real para o qual um link simbólico aponta
-readlink -f <caminho/do/link/simbolico>
-
-# Descobrir o caminho de um executável
-which swaylock
-
-# Ver a saída de log da Waybar em tempo real (para depuração)
-waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css
-```
-
-## Create a bootloader usb
-sudo dd bs=4M if=path/to/archcraft.iso of=/dev/sdX status=progress oflag=sync
-
-## mpc
-
-```bash
-
-mpc update
-mpc clear
-```
+| Tecla             | Descrição                               |
+| :---------------- | :-------------------------------------- |
+| `<Leader>dd`      | Alternar diagnósticos do documento       |
+| `<Leader>dw`      | Alternar diagnósticos do workspace       |
+| `<Leader>dl`      | Alternar lista de localização            |
+| `<Leader>dq`      | Alternar lista de quickfix               |
