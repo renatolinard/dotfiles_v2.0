@@ -13,15 +13,15 @@ nerdfetch
 
 #----configurações globais ---------
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 #-----------------------------------
 
 #---funcionalidade de auto-completar comandos-------------
 if [ -f /usr/share/bash-completion/bash_completion ]; then
-	. /usr/share/bash-completion/bash_completion
+    . /usr/share/bash-completion/bash_completion
 elif [ -f /etc/bash_completion ]; then
-	. /etc/bash_completion
+    . /etc/bash_completion
 fi
 #---------------------------------------------------------
 
@@ -111,6 +111,7 @@ alias lh="ls -lh"
 alias la="ls -la"
 alias bashrc="vim ~/.bashrc"
 alias upd="sudo pacman -Syyu && yay -Syu"
+alias ask='gemini'
 
 ###alias dots###
 alias ds="dots status"
@@ -122,69 +123,51 @@ export PATH=$PATH:~/.config/hypr/scripts
 export PATH=$PATH:/home/renatolinard/.cargo/bin
 
 # ===================================================================
-# FUNÇÕES E ALIASES PARA A GEMINI CLI
+# FUNÇÕES E ALIASES PARA A GEMINI CLI 
 # ===================================================================
 
-# 1. O Tradutor de Erros
-# Use: explain <comando que deu erro>
-# Exemplo: explain ls /pasta/inexistente
+# 1. O Tradutor de Erros (agora salva as respostas)
+# Use: what... <comando que deu erro>
+#-------------------------------------------------------------------
 what() {
-    # Executa o comando passado como argumento e redireciona qualquer saída (normal ou de erro)
-    # para a Gemini CLI, pedindo uma explicação.
-    # O "$@" garante que todos os argumentos do seu comando sejam passados corretamente.
-    "$@" 2>&1 | gemini -p "Explique de maneira simples a saída ou o erro do seguinte comando e sugira uma solução:"
+    # Define o diretório de notas e o nome do arquivo com data e hora
+    local notes_dir="$HOME/gemini_notes"
+    local output_file="$notes_dir/what_$(date +'%Y-%m-%d_%H-%M-%S').md"
+
+    # Garante que o diretório de notas exista
+    mkdir -p "$notes_dir"
+
+    # Executa o comando e canaliza a saída para a Gemini, que por sua vez
+    # é exibida no terminal E salva no arquivo de nota pelo comando 'tee'.
+    "$@" 2>&1 | gemini -p "Explique de maneira simples a saída ou o erro do 
+    seguinte comando e sugira uma solução. Esse resposta será uma nota em 
+    markdown" | tee "$output_file"
 }
 
-# 2. O Resumidor Universal (para arquivos e URLs)
-# Use: summarize <arquivo> ou summarize <url>
-# Exemplo 1: summarize ~/.config/hypr/hyprland.conf
-# Exemplo 2: summarize https://www.archlinux.org
 explain() {
-    # Verifica se o argumento começa com 'http'
+    local notes_dir="$HOME/gemini_notes"
+    local output_file="$notes_dir/explain_$(date +'%Y-%m-%d_%H-%M-%S').md"
+    mkdir -p "$notes_dir"
+
+    # Verifica se o argumento é uma URL ou um arquivo local
     if [[ "$1" == http* ]]; then
-        # Se for uma URL, usa o 'curl' para baixar o conteúdo e envia para a Gemini
         curl -sL "$1" | gemini -p "Explique com uma linguagem simples o conteúdo 
-        desta página da web e crie um resumo com os pontos principais:"
+        desta página da web e crie um resumo com os pontos principais: Esse 
+        resposta será usada como nota em markdown" | tee "$output_file"
     else
-        # Se for um arquivo local, usa o 'cat' para ler o conteúdo e envia para a Gemini
-        cat "$1" | gemini -p "Explique como uma linguagem simples este arquivo 
-        de configuração/script e crie um resumo com os pontos principais:"
+        cat "$1" | gemini -p "Explique com uma linguagem simples este arquivo 
+        de configuração/script e crie um resumo com os pontos principais: Essa 
+        resposta será usada como nota em markdown" | tee "$output_file"
     fi
 }
-
-# 3. O Criador de Scripts
-# Use: create_script "descrição do que o script faz" nome_do_arquivo.sh
-# Exemplo: create_script "um script que apaga arquivos .tmp da minha pasta Downloads" clean_tmp.sh
-create_script() {
-    # Verifica se os dois argumentos foram fornecidos
-    if [ -z "$1" ] || [ -z "$2" ]; then
-        echo "Uso: create_script \"<descrição>\" <nome_do_arquivo.sh>"
-        return 1
-    fi
-    
-    # Pede à Gemini para gerar APENAS o código
-    gemini -p "Crie um script bash que faça exatamente o seguinte: '$1'. Por favor, forneça apenas o código do script, sem nenhuma explicação ou formatação extra (como \`\`\`bash)." > "$2"
-    
-    # Torna o novo script executável
-    chmod +x "$2"
-    
-    echo "Script '$2' criado e tornado executável."
-}
-
-# 4. O Chat Rápido
-# Use: ask (para iniciar um chat interativo)
-alias ask='gemini'
-
-#------------------------------------------------------------------
-
 #------"exa" after "cd"----------------------
 cd ()
 {
-	if [ -n "$1" ]; then
-		builtin cd "$@" && exa -lh
-	else
-		builtin cd ~ && exa -lh
-	fi
+    if [ -n "$1" ]; then
+        builtin cd "$@" && exa -lh
+    else
+        builtin cd ~ && exa -lh
+    fi
 }
 #--------------------------------------------
 
@@ -192,36 +175,36 @@ cd ()
 ex ()
 {
     if [ -f $1 ] ; then
-      case $1 in
-        *.tar.bz2)   tar xjf $1   ;;
-        *.tar.gz)    tar xzf $1   ;;
-        *.bz2)       bunzip2 $1   ;;
-        *.rar)       unrar x $1   ;;
-        *.gz)        gunzip $1    ;;
-        *.tar)       tar xf $1    ;;
-        *.tbz2)      tar xjf $1   ;;
-        *.tgz)       tar xzf $1   ;;
-        *.zip)       unzip $1     ;;
-        *.Z)         uncompress $1;;
-        *.7z)        7za e x $1   ;;
-        *.deb)       ar x $1      ;;
-        *.tar.xz)    tar xf $1    ;;
-        *.tar.zst)   unzstd $1    ;;
-        *)           echo "'$1' cannot be extracted via ex()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
+        case $1 in
+            *.tar.bz2)   tar xjf $1   ;;
+            *.tar.gz)    tar xzf $1   ;;
+            *.bz2)       bunzip2 $1   ;;
+            *.rar)       unrar x $1   ;;
+            *.gz)        gunzip $1    ;;
+            *.tar)       tar xf $1    ;;
+            *.tbz2)      tar xjf $1   ;;
+            *.tgz)       tar xzf $1   ;;
+            *.zip)       unzip $1     ;;
+            *.Z)         uncompress $1;;
+            *.7z)        7za e x $1   ;;
+            *.deb)       ar x $1      ;;
+            *.tar.xz)    tar xf $1    ;;
+            *.tar.zst)   unzstd $1    ;;
+            *)           echo "'$1' cannot be extracted via ex()" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
 }
 #------------------------------------------------------------------------------
 
 #--- Encontrar um arquivo com fzf+bat e abri-lo com nvim
 ff() {
-  local file
-  file=$(fzf --preview 'bat --color=always --style=numbers {}' --query="$1" --height=80%)
-  if [ -n "$file" ]; then
-    nvim "$file"
-  fi
+    local file
+    file=$(fzf --preview 'bat --color=always --style=numbers {}' --query="$1" --height=80%)
+    if [ -n "$file" ]; then
+        nvim "$file"
+    fi
 }
 
 #---Matar um processo usando fzf
