@@ -96,7 +96,6 @@ alias lock="swaylock"
 alias cat="bat"
 alias blue="bluetuith"
 alias dots='git --git-dir=$HOME/.dotfiles_v2.0/ --work-tree=$HOME'
-alias hypr='Hyprland'
 alias .tmux="nvim ~/.tmux.conf"
 alias work="tmux new -s WORKSTATION"
 alias mkdir="mkdir -p"
@@ -104,7 +103,6 @@ alias cls="clear"
 alias vim='nvim'
 alias v='nvim'
 alias play="mpv"
-alias vrc="vim ~/.vim/vimrc"
 alias nvrc="cd ~/.config/nvim/lua/ && vim ."
 alias ~='cd ~'
 alias ..='cd ..'
@@ -118,11 +116,10 @@ alias upd="sudo pacman -Syyu && yay -Syu"
 alias ds="dots status"
 alias da="dots add"
 alias dp="dots push"
+
+#--- PATH ---
 export PATH=$PATH:~/.config/hypr/scripts
 export PATH=$PATH:/home/renatolinard/.cargo/bin
-#------------------------------------------------------------------------------
-
-#------------------------------FUNÇÕES-----------------------------------------
 
 # ===================================================================
 # FUNÇÕES E ALIASES PARA A GEMINI CLI
@@ -146,10 +143,12 @@ summarize() {
     # Verifica se o argumento começa com 'http'
     if [[ "$1" == http* ]]; then
         # Se for uma URL, usa o 'curl' para baixar o conteúdo e envia para a Gemini
-        curl -sL "$1" | gemini -p "Resuma o conteúdo desta página da web em pontos principais:"
+        curl -sL "$1" | gemini -p "Resuma e explique como se fosse para uma criança 
+        o conteúdo desta página da web em pontos principais:"
     else
         # Se for um arquivo local, usa o 'cat' para ler o conteúdo e envia para a Gemini
-        cat "$1" | gemini -p "Resuma este arquivo de configuração ou script em pontos principais:"
+        cat "$1" | gemini -p "Resuma e explique como se fosse para uma criança
+        este arquivo de configuração ou script em pontos principais:"
     fi
 }
 
@@ -255,3 +254,4 @@ dc() {
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
