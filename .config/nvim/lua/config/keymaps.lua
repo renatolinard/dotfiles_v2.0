@@ -23,5 +23,15 @@ vim.keymap.set("n", "<Esc>", "<cmd>:nohlsearch<cr>")
 -- ir coluna 80
 vim.keymap.set ("n", "<C-l>", "80l")
 
+-- disable column 
+vim.keymap.set("n", "<leader>cc", function()
+  if vim.o.colorcolumn == "" then
+    vim.o.colorcolumn = "80"
+  else
+    vim.o.colorcolumn = ""
+  end
+end)
+
+
 
 

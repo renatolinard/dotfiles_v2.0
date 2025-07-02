@@ -132,7 +132,7 @@ export PATH=$PATH:/home/renatolinard/.cargo/bin
 what() {
     # Define o diretório de notas e o nome do arquivo com data e hora
     local notes_dir="$HOME/gemini_notes"
-    local output_file="$notes_dir/what_$(date +'%Y-%m-%d_%H-%M-%S').md"
+    local output_file="$notes_dir/what_$(date +'%Y-%m-%d').md"
 
     # Garante que o diretório de notas exista
     mkdir -p "$notes_dir"
@@ -146,18 +146,18 @@ what() {
 
 explain() {
     local notes_dir="$HOME/gemini_notes"
-    local output_file="$notes_dir/explain_$(date +'%Y-%m-%d_%H-%M-%S').md"
+    local output_file="$notes_dir/explain_$(date +'%Y-%m-%d').md"
     mkdir -p "$notes_dir"
 
     # Verifica se o argumento é uma URL ou um arquivo local
     if [[ "$1" == http* ]]; then
         curl -sL "$1" | gemini -p "Explique com uma linguagem simples o conteúdo 
-        desta página da web e crie um resumo com os pontos principais: Esse 
-        resposta será usada como nota em markdown" | tee "$output_file"
+        desta página da web e crie um resumo com os pontos principais, organize
+        toda a reposta em markdown" | tee "$output_file"
     else
         cat "$1" | gemini -p "Explique com uma linguagem simples este arquivo 
-        de configuração/script e crie um resumo com os pontos principais: Essa 
-        resposta será usada como nota em markdown" | tee "$output_file"
+        de configuração/script e crie um resumo com os pontos principais, organize 
+        toda resposta em markdown" | tee "$output_file"
     fi
 }
 #------"exa" after "cd"----------------------
