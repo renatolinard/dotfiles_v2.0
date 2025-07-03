@@ -46,7 +46,8 @@ set.list = true
 set.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- 80th column
-set.colorcolumn = "80"
+--set.colorcolumn = "80"
 --
 -- block cursor
 set.guicursor = ""
+

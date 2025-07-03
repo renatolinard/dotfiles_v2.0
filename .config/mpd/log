@@ -559,3 +559,25 @@
 2025-06-26T03:57:12 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
 2025-06-26T03:57:18 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
 2025-06-26T04:01:46 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-03T10:34:57 exception: Failed to access /home/renatolinard/Music: No such file or directory
+2025-07-03T10:34:58 exception: Failed to access /home/renatolinard/Music: No such file or directory
+2025-07-03T10:38:00 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-03T10:38:02 update: added Album - Burning Heart/1 - Burning Heart.mp3
+2025-07-03T10:38:02 update: added Album - Burning Heart/2 - Wildest Dreams (DragonForce's Version).mp3
+2025-07-03T10:38:02 update: added Album - Burning Heart/3 - Astro Warrior Anthem.mp3
+2025-07-03T10:38:02 update: added Album - Burning Heart/4 - Doomsday Party (feat. Elize Ryd).mp3
+2025-07-03T10:38:02 update: added Album - Burning Heart/5 - Power of the Triforce.mp3
+2025-07-03T10:38:02 update: added Album - Burning Heart/6 - Doomsday Party.mp3
+2025-07-03T10:38:03 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-03T10:38:03 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-03T10:40:51 pipewire_output: Decoder is too slow; playing silence to avoid xrun
+2025-07-03T10:47:40 player: played "Album - Burning Heart/1 - Burning Heart.mp3"
+2025-07-03T10:50:30 player: played "Album - Burning Heart/2 - Wildest Dreams (DragonForce's Version).mp3"
+2025-07-03T10:57:20 player: played "Album - Burning Heart/3 - Astro Warrior Anthem.mp3"
+2025-07-03T11:02:36 player: played "Album - Burning Heart/4 - Doomsday Party (feat. Elize Ryd).mp3"
+2025-07-03T11:06:29 player: played "Album - Burning Heart/5 - Power of the Triforce.mp3"
+2025-07-03T11:11:49 player: played "Album - Burning Heart/6 - Doomsday Party.mp3"
+2025-07-03T12:51:10 player: played "Album - Burning Heart/6 - Doomsday Party.mp3"
+2025-07-03T13:23:29 player: played "Album - Burning Heart/6 - Doomsday Party.mp3"
+2025-07-03T17:53:39 player: played "Album - Burning Heart/6 - Doomsday Party.mp3"
+2025-07-03T19:28:55 player: played "Album - Burning Heart/6 - Doomsday Party.mp3"
