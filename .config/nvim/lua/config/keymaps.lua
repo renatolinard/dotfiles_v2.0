@@ -20,24 +20,26 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("i", "<C-a>", "<Esc>")
 
 -- Custom Mappings (using <Leader>)
-vim.keymap.set("n", "<leader>pv", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 vim.keymap.set("n", "<leader>tc", function()
-    if vim.o.colorcolumn == "" then
-        vim.o.colorcolumn = "80"
-    else
-        vim.o.colorcolumn = ""
-    end
+	if vim.o.colorcolumn == "" then
+		vim.o.colorcolumn = "80"
+	else
+		vim.o.colorcolumn = ""
+	end
 end, { desc = "Toggle Colorcolumn at 80" })
 
 vim.keymap.set("n", "<Esc>", "<cmd>:nohlsearch<cr>", { desc = "Clear Search Highlight" })
 vim.keymap.set("n", "<C-l>", "80l", { desc = "Go to Column 80" })
 
 -- Highlight when yanking (copying) text
-vim.api.nvim_create_autocmd('TextYankPost', {
-    desc = 'Highlight when yanking (copying) text',
-    group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-    callback = function()
-        vim.hl.on_yank()
-    end,
+vim.api.nvim_create_autocmd("TextYankPost", {
+	desc = "Highlight when yanking (copying) text",
+	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+	callback = function()
+		vim.hl.on_yank()
+	end,
 })
 
+-- zenmode
+vim.keymap.set("n", "<leader>z", "<CMD>ZenMode<CR>", { desc = "zenmode" })

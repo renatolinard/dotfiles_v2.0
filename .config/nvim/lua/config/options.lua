@@ -50,4 +50,4 @@ set.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 --
 -- block cursor
 set.guicursor = ""
-
+set.guicursor = "a:blinkon0"
