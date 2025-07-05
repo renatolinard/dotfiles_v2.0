@@ -39,7 +39,7 @@ $character"""
 # Símbolo do Sistema Operacional
 [os]
 disabled = false
-style = "bold blue" # Agora usa os nomes simples da paleta
+style = "#515797" # Agora usa os nomes simples da paleta
 format = "[$symbol ]($style)"
 
 [os.symbols]
@@ -47,8 +47,8 @@ Arch = "󰣇"
 
 # Diretório
 [directory]
-style = "bold foreground" # Cor do texto principal
-format = "[renatolinard ](comment)[$path]($style) " # Ícone amarelo, texto na cor principal
+style = "#a67337" # Cor do texto principal
+format = "[renatolinard ](#737c73)[$path]($style) " # Ícone amarelo, texto na cor principal
 truncation_length = 3
 truncation_symbol = "…/"
 read_only = " "
@@ -111,5 +111,5 @@ format = '[${symbol}(${version} )]($style)'
 
 # Caractere final do prompt
 [character]
-success_symbol = "[](bold blue)"
-error_symbol = "[](bold red)"
+success_symbol = "[](#526994)"
+error_symbol = "[](#c75758)"

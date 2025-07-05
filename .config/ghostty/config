@@ -21,7 +21,7 @@ copy-on-select=clipboard
 # --- PALETA DE CORES KANAGAWA PAPER
 background = "#1F1F28"
 foreground = "#DCD7BA"
-cursor-color = "#c4b28a"
+cursor-color = "#54546D"
 selection-background = "#363646"
 selection-foreground = "#9e9b93"
 

@@ -584,3 +584,11 @@
 2025-07-03T19:55:08 player: played "Album - Burning Heart/6 - Doomsday Party.mp3"
 2025-07-04T05:41:55 player: played "Album - Burning Heart/6 - Doomsday Party.mp3"
 2025-07-04T19:43:19 player: played "Album - Burning Heart/6 - Doomsday Party.mp3"
+2025-07-04T22:18:49 player: played "Album - Burning Heart/6 - Doomsday Party.mp3"
+2025-07-04T22:18:50 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-04T22:24:53 player: played "Album - Burning Heart/1 - Burning Heart.mp3"
+2025-07-04T22:27:44 player: played "Album - Burning Heart/2 - Wildest Dreams (DragonForce's Version).mp3"
+2025-07-04T22:37:46 player: played "Album - Burning Heart/3 - Astro Warrior Anthem.mp3"
+2025-07-04T22:43:02 player: played "Album - Burning Heart/4 - Doomsday Party (feat. Elize Ryd).mp3"
+2025-07-04T22:46:55 player: played "Album - Burning Heart/5 - Power of the Triforce.mp3"
+2025-07-04T22:52:10 player: played "Album - Burning Heart/6 - Doomsday Party.mp3"
