@@ -21,7 +21,8 @@ echo -e "${BLUE}------------------------------------------------${NC}"
 # --- Instalação de Dependências ---
 echo -e "${YELLOW}--> Atualizando o sistema e instalando dependências básicas...${NC}"
 sudo pacman -Syu --noconfirm
-sudo pacman -S --needed --noconfirm git base-devel
+# 'go' é necessário para compilar o yay
+sudo pacman -S --needed --noconfirm git base-devel go
 
 # --- Instalação do Yay ---
 if ! command -v yay &> /dev/null; then
@@ -33,39 +34,7 @@ else
     echo -e "${GREEN}--> yay já está instalado.${NC}"
 fi
 
-# --- Instalação de Fontes---
-echo -e "${YELLOW}--> Instalando fontes...${NC}"
-if [ -d "my-fonts-main" ]; then
-    echo "Copiando diretório de fontes 'my-fonts-main' para o sistema..."
-    sudo cp -r my-fonts-main /usr/share/fonts/
-    echo -e "${GREEN}Fontes locais copiadas com sucesso.${NC}"
-else
-    echo -e "${YELLOW}AVISO: Diretório 'my-fonts-main' não encontrado. Pulando cópia de fontes locais.${NC}"
-fi
-echo "Instalando fontes de ícones e emojis..."
-yay -S --needed --noconfirm noto-fonts-emoji ttf-font-awesome
-
-# --- Instalação de Cursors---
-echo -e "${YELLOW}--> Instalando cursores...${NC}"
-if [ -d "my_cursors" ]; then
-    echo "Copiando diretório de fontes 'my_cursors' para o sistema..."
-    sudo cp -r my_cursors /usr/share/icons/
-    echo -e "${GREEN}Cursors locais copiadas com sucesso.${NC}"
-else
-    echo -e "${YELLOW}AVISO: Diretório 'my_cursors' não encontrado. Pulando cópia de fontes locais.${NC}"
-fi
-
-# --- Instalação do Tema---
-echo -e "${YELLOW}--> Instalando tema...${NC}"
-if [ -d "kanagawa_gtk3" ]; then
-    echo "Copiando diretório de temas 'kanagawa_gtk3' para o sistema..."
-    sudo cp -r kanagawa_gtk3 /usr/share/themes/
-    echo -e "${GREEN}Temas locais copiadas com sucesso.${NC}"
-else
-    echo -e "${YELLOW}AVISO: Diretório 'kanagawa_gtk3' não encontrado. Pulando cópia de fontes locais.${NC}"
-fi
-
-# --- Instalação dos Pacotes ---
+# --- Instalação dos Pacotes
 echo -e "${YELLOW}--> Instalando pacotes das listas (pkglist e aurlist)...${NC}"
 if [ ! -f "pkglist.txt" ] || [ ! -f "aurlist.txt" ]; then
     echo "ERRO CRÍTICO: pkglist.txt ou aurlist.txt não encontrados."
@@ -74,44 +43,60 @@ fi
 yay -S --needed --noconfirm - < pkglist.txt
 yay -S --needed --noconfirm - < aurlist.txt
 
+# --- Instalação de Ativos Locais (Fontes, Temas, Cursores) ---
+echo -e "${YELLOW}--> Instalando ativos locais do repositório...${NC}"
+
+# Instalação de Fontes
+if [ -d "my-fonts-main" ]; then
+    echo "Copiando fontes locais..."
+    sudo cp -r my-fonts-main /usr/share/fonts/
+fi
+
+# Instalação de Cursores
+if [ -d "my_cursors" ]; then
+    echo "Copiando cursores locais..."
+    sudo cp -r my_cursors /usr/share/icons/
+fi
+
+# Instalação do Tema GTK
+if [ -d "kanagawa_gtk3" ]; then
+    echo "Copiando tema GTK local..."
+    sudo cp -r kanagawa_gtk3 /usr/share/themes/
+fi
+
 # --- Configuração dos Dotfiles (Método Bare) ---
 echo -e "${YELLOW}--> Configurando os dotfiles na pasta home...${NC}"
-# Clona o repositório como 'bare'
+git clone --bare https://codeberg.org/$GIT_USER/$GIT_REPO.git $HOME/.$GIT_REPO -f # A flag -f aqui pode ser um erro, removendo.
+# CORREÇÃO DA LINHA ACIMA:
 git clone --bare https://codeberg.org/$GIT_USER/$GIT_REPO.git $HOME/.$GIT_REPO
 
-# Define o comando base como uma variável
 DOTS_CMD="git --git-dir=$HOME/.$GIT_REPO/ --work-tree=$HOME"
 $DOTS_CMD checkout -f
 $DOTS_CMD config --local status.showUntrackedFiles no
 
 # --- Configurações Pós-Instalação ---
 echo -e "${YELLOW}--> Executando tarefas de pós-instalação...${NC}"
-# Habilitando serviços essenciais
-echo "Habilitando SDDM, NetworkManager e Bluetooth, mpd..."
-systemctl --user enable mpd.service
+echo "Habilitando serviços essenciais..."
+systemctl --user enable mpd.service || true # Tenta habilitar como usuário
 sudo systemctl enable sddm.service
 sudo systemctl enable --now NetworkManager.service
 sudo systemctl enable --now bluetooth.service
 sudo systemctl disable iwd.service || true
 
-# Definir Bash como shell padrão
 echo "Definindo Bash como shell padrão..."
 chsh -s /bin/bash
 
-# Configurar o Git
-echo "Configurando o Git. Por favor, insira seus dados:"
+echo "Configurando o Git..."
 read -p "Seu nome completo para o Git: " git_name
 read -p "Seu e-mail para o Git: " git_email
 git config --global user.name "$git_name"
 git config --global user.email "$git_email"
 
-# Aplicar tema Kanagawa aos aplicativos Flatpak
 echo "Aplicando tema aos aplicativos Flatpak..."
 sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --filesystem=/usr/share/themes
 sudo flatpak override --env=GTK_THEME=Kanagawa
 
-# Atualizar o cache de fontes do sistema
 echo "Atualizando o cache de fontes..."
 fc-cache -fv
 
