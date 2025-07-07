@@ -66,8 +66,6 @@ fi
 
 # --- Configuração dos Dotfiles (Método Bare) ---
 echo -e "${YELLOW}--> Configurando os dotfiles na pasta home...${NC}"
-git clone --bare https://codeberg.org/$GIT_USER/$GIT_REPO.git $HOME/.$GIT_REPO -f # A flag -f aqui pode ser um erro, removendo.
-# CORREÇÃO DA LINHA ACIMA:
 git clone --bare https://codeberg.org/$GIT_USER/$GIT_REPO.git $HOME/.$GIT_REPO
 
 DOTS_CMD="git --git-dir=$HOME/.$GIT_REPO/ --work-tree=$HOME"
