@@ -49,7 +49,7 @@ yay -S --needed --noconfirm noto-fonts-emoji ttf-font-awesome
 echo -e "${YELLOW}--> Instalando cursores...${NC}"
 if [ -d "my_cursors" ]; then
     echo "Copiando diretório de fontes 'my_cursors' para o sistema..."
-    sudo cp -r my_cursors/* /usr/share/icons/
+    sudo cp -r my_cursors /usr/share/icons/
     echo -e "${GREEN}Cursors locais copiadas com sucesso.${NC}"
 else
     echo -e "${YELLOW}AVISO: Diretório 'my_cursors' não encontrado. Pulando cópia de fontes locais.${NC}"
