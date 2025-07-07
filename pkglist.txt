@@ -6,10 +6,9 @@ bat
 bluetui
 bluetuith
 bluez-utils
-bridge-utils
 brightnessctl
 btrfs-progs
-dnsmasq
+cmake
 edk2-ovmf
 efibootmgr
 eza
@@ -35,7 +34,6 @@ mpc
 mpd
 mpv
 mpvpaper
-neovim
 nerdfetch
 networkmanager
 nftables
@@ -50,7 +48,6 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 polkit-kde-agent
-qemu-full
 qt5-wayland
 qt6-wayland
 ripgrep
@@ -60,7 +57,6 @@ slurp
 sof-firmware
 starship
 swaylock-effects
-swtpm
 thunar
 thunar-volman
 tmux
@@ -71,10 +67,7 @@ ttf-nerd-fonts-symbols-common
 udisks2
 unrar
 unzip
-vde2
 vim
-virt-manager
-virt-viewer
 waybar
 wireplumber
 wl-clipboard

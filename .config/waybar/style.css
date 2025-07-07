@@ -91,7 +91,7 @@ border: 1px solid #1F1F28;
     transition: all 0.3s ease-in-out;
 }
 #workspaces button.active {
-    color: @accent_color; /* Cor de destaque para o workspace ativo */
+    color: #515797; /* Cor de destaque para o workspace ativo */
     background: @bg_color;
     border-radius: 15px;
     min-width: 40px;
