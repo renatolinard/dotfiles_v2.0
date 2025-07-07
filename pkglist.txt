@@ -24,7 +24,6 @@ gvfs
 hyprland
 hyprpaper
 intel-ucode
-iptables-nft
 iwd
 jq
 libpulse
