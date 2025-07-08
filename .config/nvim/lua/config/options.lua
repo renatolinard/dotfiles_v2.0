@@ -1,5 +1,6 @@
 -- OPTIONS
 local set = vim.opt
+vim.g.autoformat = true
 
 -- Always show relative line numbers
 set.number = true
@@ -45,9 +46,6 @@ set.signcolumn = "yes"
 set.list = true
 set.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
--- 80th column
---set.colorcolumn = "80"
---
 -- block cursor
 set.guicursor = ""
 set.guicursor = "a:blinkon0"
