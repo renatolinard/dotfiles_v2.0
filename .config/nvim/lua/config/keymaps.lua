@@ -1,12 +1,35 @@
 -- KEYBINDS
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Move lines in visual mode
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selected up" })
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selected down" })
+
+-- Diagnostic
+vim.keymap.set("n", "gl", function()
+	vim.diagnostic.open_float()
+end, { desc = "Open Diagnostics in Float" })
+
+-- select all
+vim.keymap.set("n", "==", "gg<S-v>G")
 
 -- Remap joining lines
 vim.keymap.set("n", "J", "mzJ`z")
+
+-- Paste without overwriting register
+vim.keymap.set("v", "p", '"_dP')
+
+-- Get out Q
+vim.keymap.set("n", "Q", "<nop>")
+
+-- Replace word under cursor across entire buffer
+vim.keymap.set(
+	"n",
+	"<leader>r",
+	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+	{ desc = "Replace word under cursor" }
+)
 
 -- Keep cursor in place while moving up/down page
 vim.keymap.set("n", "<C-d>", "<C-d>zz")

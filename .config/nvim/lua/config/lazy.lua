@@ -15,6 +15,10 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- OPTIONS
+local set = vim.opt
+vim.g.autoformat = true
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
