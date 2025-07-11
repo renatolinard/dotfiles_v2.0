@@ -592,3 +592,41 @@
 2025-07-04T22:43:02 player: played "Album - Burning Heart/4 - Doomsday Party (feat. Elize Ryd).mp3"
 2025-07-04T22:46:55 player: played "Album - Burning Heart/5 - Power of the Triforce.mp3"
 2025-07-04T22:52:10 player: played "Album - Burning Heart/6 - Doomsday Party.mp3"
+2025-07-11T13:35:23 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T13:41:26 player: played "Album - Burning Heart/1 - Burning Heart.mp3"
+2025-07-11T13:44:00 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T13:44:04 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T13:44:50 player: played "Album - Burning Heart/2 - Wildest Dreams (DragonForce's Version).mp3"
+2025-07-11T13:51:40 player: played "Album - Burning Heart/3 - Astro Warrior Anthem.mp3"
+2025-07-11T13:56:56 player: played "Album - Burning Heart/4 - Doomsday Party (feat. Elize Ryd).mp3"
+2025-07-11T14:00:49 player: played "Album - Burning Heart/5 - Power of the Triforce.mp3"
+2025-07-11T14:01:58 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T14:02:00 update: added Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3
+2025-07-11T14:02:00 update: added Album - Warp Speed Warriors/02 - Power of the Triforce.mp3
+2025-07-11T14:02:00 update: added Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3
+2025-07-11T14:02:00 update: added Album - Warp Speed Warriors/04 - Burning Heart.mp3
+2025-07-11T14:02:00 update: added Album - Warp Speed Warriors/05 - Space Marine Corp.mp3
+2025-07-11T14:02:00 update: added Album - Warp Speed Warriors/06 - Prelude to Darkness.mp3
+2025-07-11T14:02:00 update: added Album - Warp Speed Warriors/07 - The Killer Queen.mp3
+2025-07-11T14:02:00 update: added Album - Warp Speed Warriors/08 - Doomsday Party.mp3
+2025-07-11T14:02:00 update: added Album - Warp Speed Warriors/09 - Pixel Prison.mp3
+2025-07-11T14:02:00 update: added Album - Warp Speed Warriors/10 - Wildest Dreams (DragonForce's Version).mp3
+2025-07-11T14:02:00 update: added Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3
+2025-07-11T14:02:00 update: added Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3
+2025-07-11T14:02:00 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T14:02:00 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T14:03:42 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T14:03:50 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T14:06:07 update: removing Album - Burning Heart/6 - Doomsday Party.mp3
+2025-07-11T14:06:07 update: removing Album - Burning Heart/5 - Power of the Triforce.mp3
+2025-07-11T14:06:07 update: removing Album - Burning Heart/4 - Doomsday Party (feat. Elize Ryd).mp3
+2025-07-11T14:06:07 update: removing Album - Burning Heart/3 - Astro Warrior Anthem.mp3
+2025-07-11T14:06:07 update: removing Album - Burning Heart/2 - Wildest Dreams (DragonForce's Version).mp3
+2025-07-11T14:06:07 update: removing Album - Burning Heart/1 - Burning Heart.mp3
+2025-07-11T14:06:07 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T14:06:07 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T14:09:08 player: played "Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3"
+2025-07-11T14:13:01 player: played "Album - Warp Speed Warriors/02 - Power of the Triforce.mp3"
+2025-07-11T14:16:50 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T14:16:52 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T14:21:29 player: played "Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3"

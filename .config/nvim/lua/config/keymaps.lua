@@ -7,15 +7,12 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selected up" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selected down" })
 
 -- Diagnostic
-vim.keymap.set("n", "gl", function()
+vim.keymap.set("n", "df", function()
 	vim.diagnostic.open_float()
 end, { desc = "Open Diagnostics in Float" })
 
 -- select all
 vim.keymap.set("n", "==", "gg<S-v>G")
-
--- Remap joining lines
-vim.keymap.set("n", "J", "mzJ`z")
 
 -- Paste without overwriting register
 vim.keymap.set("v", "p", '"_dP')
@@ -34,16 +31,15 @@ vim.keymap.set(
 -- Keep cursor in place while moving up/down page
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
-
--- Center screen when looping search results
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- sometimes in insert mode, control-c doesn't exactly work like escape
-vim.keymap.set("i", "<C-a>", "<Esc>")
+vim.keymap.set("i", "<C-a>", "<Esc><Esc>")
 
 -- Custom Mappings (using <Leader>)
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
+
 vim.keymap.set("n", "<leader>tc", function()
 	if vim.o.colorcolumn == "" then
 		vim.o.colorcolumn = "80"
@@ -64,5 +60,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
--- zenmode
-vim.keymap.set("n", "<leader>z", "<CMD>ZenMode<CR>", { desc = "zenmode" })
+-- Close oil buffer with <esc>
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "oil",
+  callback = function()
+    vim.api.nvim_buf_set_keymap(0, "n", "<Esc>", "<cmd>q<cr>", { noremap = true, silent = true })
+  end,
+})

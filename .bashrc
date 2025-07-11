@@ -233,6 +233,26 @@ dc() {
     # As aspas duplas são importantes para lidar com mensagens com espaços
     dots commit -m "$commit_message"
 }
+
+# Função 's' para gerenciamento de sessão interativo com sesh + fzf
+s() {
+    # Pega a seleção do fzf a partir da lista gerada pelo 'sesh list'
+    # A flag --query="$1" permite que você digite algo como 's dotfiles' para já começar filtrando
+    local selection
+    selection=$(sesh list | fzf --query="$1")
+
+    # Se nada for selecionado (pressionou ESC), não faz nada
+    if [ -z "$selection" ]; then
+        return
+    fi
+
+    # Extrai o nome da sessão (a primeira palavra da linha selecionada)
+    local session_name
+    session_name=$(echo "$selection" | awk '{print $1}')
+
+    # Conecta à sessão
+    tmux attach-session -t "$session_name"
+}
 #------------------------------------------------------------------------------
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
