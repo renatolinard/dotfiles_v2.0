@@ -7,7 +7,7 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selected up" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selected down" })
 
 -- Diagnostic
-vim.keymap.set("n", "df", function()
+vim.keymap.set("n", "dc", function()
 	vim.diagnostic.open_float()
 end, { desc = "Open Diagnostics in Float" })
 
@@ -62,8 +62,8 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 -- Close oil buffer with <esc>
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "oil",
-  callback = function()
-    vim.api.nvim_buf_set_keymap(0, "n", "<Esc>", "<cmd>q<cr>", { noremap = true, silent = true })
-  end,
+	pattern = "oil",
+	callback = function()
+		vim.api.nvim_buf_set_keymap(0, "n", "<Esc>", "<cmd>q<cr>", { noremap = true, silent = true })
+	end,
 })

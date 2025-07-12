@@ -630,3 +630,21 @@
 2025-07-11T14:16:50 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
 2025-07-11T14:16:52 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
 2025-07-11T14:21:29 player: played "Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3"
+2025-07-11T14:27:25 player: played "Album - Warp Speed Warriors/04 - Burning Heart.mp3"
+2025-07-11T14:27:57 player: played "Album - Warp Speed Warriors/05 - Space Marine Corp.mp3"
+2025-07-11T14:51:50 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-11T14:51:54 player: played "Album - Warp Speed Warriors/05 - Space Marine Corp.mp3"
+2025-07-11T14:58:57 player: played "Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3"
+2025-07-11T15:02:50 player: played "Album - Warp Speed Warriors/02 - Power of the Triforce.mp3"
+2025-07-11T15:07:36 player: played "Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3"
+2025-07-11T15:13:32 player: played "Album - Warp Speed Warriors/04 - Burning Heart.mp3"
+2025-07-11T15:19:49 player: played "Album - Warp Speed Warriors/05 - Space Marine Corp.mp3"
+2025-07-11T15:20:41 player: played "Album - Warp Speed Warriors/06 - Prelude to Darkness.mp3"
+2025-07-11T15:26:30 player: played "Album - Warp Speed Warriors/07 - The Killer Queen.mp3"
+2025-07-11T15:31:45 player: played "Album - Warp Speed Warriors/08 - Doomsday Party.mp3"
+2025-07-11T15:32:01 player: played "Album - Warp Speed Warriors/09 - Pixel Prison.mp3"
+2025-07-12T05:45:35 player: played "Album - Warp Speed Warriors/09 - Pixel Prison.mp3"
+2025-07-12T05:48:25 player: played "Album - Warp Speed Warriors/10 - Wildest Dreams (DragonForce's Version).mp3"
+2025-07-12T05:51:10 player: played "Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3"
+2025-07-12T05:54:08 player: played "Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3"
+2025-07-12T05:58:01 player: played "Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3"

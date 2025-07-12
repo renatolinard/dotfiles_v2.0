@@ -1,8 +1,6 @@
 sw_volume: 100
 audio_device_state:1:Saída de Áudio MPD
-state: play
-current: 0
-time: 120.154
+state: stop
 random: 0
 repeat: 0
 single: 0
@@ -12,13 +10,4 @@ mixrampdb: 0
 mixrampdelay: -1
 lastloadedplaylist: 
 playlist_begin
-0:Album - Warp Speed Warriors/04 - Burning Heart.mp3
-1:Album - Warp Speed Warriors/05 - Space Marine Corp.mp3
-2:Album - Warp Speed Warriors/06 - Prelude to Darkness.mp3
-3:Album - Warp Speed Warriors/07 - The Killer Queen.mp3
-4:Album - Warp Speed Warriors/08 - Doomsday Party.mp3
-5:Album - Warp Speed Warriors/09 - Pixel Prison.mp3
-6:Album - Warp Speed Warriors/10 - Wildest Dreams (DragonForce's Version).mp3
-7:Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3
-8:Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3
 playlist_end
