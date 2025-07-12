@@ -33,37 +33,8 @@ eval "$(starship init bash)"
 # Desabilita o "Bracketed Paste Mode" para evitar erros de colagem dentro do tmux/nvim
 bind 'set enable-bracketed-paste off'
 
-#----------------------------CUSTOM PROMPT ------------------------------------
-# function parse_git_dirty {
-#   STATUS="$(git status 2> /dev/null)"
-#   if [[ $? -ne 0 ]]; then printf ""; return; else printf " ["; fi
-#   if echo "${STATUS}" | grep -c "renamed:"         &> /dev/null; then printf " >"; else printf ""; fi
-#   if echo "${STATUS}" | grep -c "branch is ahead:" &> /dev/null; then printf " !"; else printf ""; fi
-#   if echo "${STATUS}" | grep -c "new file::"       &> /dev/null; then printf " +"; else printf ""; fi
-#   if echo "${STATUS}" | grep -c "Untracked files:" &> /dev/null; then printf " ?"; else printf ""; fi
-#   if echo "${STATUS}" | grep -c "modified:"        &> /dev/null; then printf " *"; else printf ""; fi
-#   if echo "${STATUS}" | grep -c "deleted:"         &> /dev/null; then printf " -"; else printf ""; fi
-#   printf " ]"
-# }
-# 
-# parse_git_branch() {
-#   git rev-parse --abbrev-ref HEAD 2> /dev/null
-# }
-# 
-# prompt_comment() {
-#     DIR="$HOME/.local/share/promptcomments/"
-#     MESSAGE="$(find "$DIR"/*.txt | shuf -n1)"
-#     cat "$MESSAGE"
-# }
-# 
-# #PS1="\[\e[1;31m\]\$(parse_git_branch)\[\033[34m\]\$(parse_git_dirty)\n\\[\e[38;5;166m\]  \033[1;33m\]\u:\[\e[1;37m\] \w \[\e[1;36m\]\[\e[0;37m\] "
-# PS1="\[\e[1;31m\]\$(parse_git_branch)\[\033[34m\]\$(parse_git_dirty)\n\\[\e[38;5;166m\]  \033[1;33m\] \w \[\e[1;36m\]\[\e[0;37m\] "
-# PS2="\[\e[1;31m\]\$(parse_git_branch)\[\033[34m\]\$(parse_git_dirty)\n\\[\e[38;5;166m\]  \033[1;33m\] \w \[\e[1;36m\]\[\e[0;37m\] "
-
-#------------------------------------------------------------------------------
-
 #--- Define Editor--
-export EDITOR=vim
+export EDITOR=nvim
 export VISUAL=nvim
 #-------------------
 
@@ -207,17 +178,6 @@ ff() {
     fi
 }
 
-#---Matar um processo usando fzf
-fk() {
-    local pid
-    pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
-
-    if [ "x$pid" != "x" ]
-    then
-        echo $pid | xargs kill -${1:-9}
-    fi
-}
-
 #----Commit dots
 dc() {
     # Pede ao usuário para digitar a mensagem e a salva na variável 'commit_message'
@@ -234,25 +194,6 @@ dc() {
     dots commit -m "$commit_message"
 }
 
-# Função 's' para gerenciamento de sessão interativo com sesh + fzf
-s() {
-    # Pega a seleção do fzf a partir da lista gerada pelo 'sesh list'
-    # A flag --query="$1" permite que você digite algo como 's dotfiles' para já começar filtrando
-    local selection
-    selection=$(sesh list | fzf --query="$1")
-
-    # Se nada for selecionado (pressionou ESC), não faz nada
-    if [ -z "$selection" ]; then
-        return
-    fi
-
-    # Extrai o nome da sessão (a primeira palavra da linha selecionada)
-    local session_name
-    session_name=$(echo "$selection" | awk '{print $1}')
-
-    # Conecta à sessão
-    tmux attach-session -t "$session_name"
-}
 #------------------------------------------------------------------------------
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
