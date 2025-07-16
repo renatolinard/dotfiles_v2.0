@@ -1,5 +1,6 @@
 # --- Fonte ---
 font-family = "OperatorMonoLig Nerd Font Mono"
+font-style = "Book Italic"
 font-size = 17
 
 # --- Conforto Visual ---
@@ -16,7 +17,6 @@ window-decoration = "none"
 
 # --- Funcionalidade ---
 scrollback-limit = 10000
-copy-on-select=clipboard
 
 # --- PALETA DE CORES KANAGAWA PAPER
 background = "#1F1F28"

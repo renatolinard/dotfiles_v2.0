@@ -8,7 +8,7 @@ iatest=$(expr index "$-" i)
 # if [ -f /usr/bin/fastfetch ]; then
 #     fastfetch
 # fi
-nerdfetch 
+fastfetch
 #----------------------------------
 
 #----configurações globais ---------
@@ -47,8 +47,10 @@ source /usr/share/fzf/key-bindings.bash
 source /usr/share/fzf/completion.bash
 #-------------------------------------------
 
-# Opções padrão do FZF para ativar o preview com bat
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --preview "bat --color=always --style=numbers --line-range :500 {}"'
+# Opções padrão do FZF para ativar o preview kanagawa
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --preview --color=bg:-1,bg+:#2A2A37,fg:-1,fg+:#DCD7BA,hl:#938AA9,hl+:#c4746e
+--color=header:#b6927b,info:#658594,pointer:#7AA89F
+--color=marker:#7AA89F,prompt:#c4746e,spinner:#8ea49e'
 
 #----------- Ignore case on auto-completion--------------------------
 if [[ $iatest -gt 0 ]]; then bind "set completion-ignore-case on"; fi

@@ -648,3 +648,26 @@
 2025-07-12T05:51:10 player: played "Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3"
 2025-07-12T05:54:08 player: played "Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3"
 2025-07-12T05:58:01 player: played "Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3"
+2025-07-15T05:09:03 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-15T05:15:57 player: played "Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3"
+2025-07-15T05:19:50 player: played "Album - Warp Speed Warriors/02 - Power of the Triforce.mp3"
+2025-07-15T05:25:25 player: played "Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3"
+2025-07-15T05:25:49 output: Failed to play on "Saída de Áudio MPD" (pipewire): no target node available
+2025-07-15T05:25:49 exception: Failed to open audio output
+2025-07-15T05:30:09 player: played "Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3"
+2025-07-15T05:40:22 player: played "Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3"
+2025-07-15T05:41:17 player: played "Album - Warp Speed Warriors/04 - Burning Heart.mp3"
+2025-07-15T05:46:48 player: played "Album - Warp Speed Warriors/04 - Burning Heart.mp3"
+2025-07-15T05:53:05 player: played "Album - Warp Speed Warriors/05 - Space Marine Corp.mp3"
+2025-07-15T05:53:45 player: played "Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3"
+2025-07-15T05:53:46 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-15T05:59:00 player: played "Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3"
+2025-07-15T06:04:56 player: played "Album - Warp Speed Warriors/04 - Burning Heart.mp3"
+2025-07-15T06:11:12 player: played "Album - Warp Speed Warriors/05 - Space Marine Corp.mp3"
+2025-07-15T06:12:05 player: played "Album - Warp Speed Warriors/06 - Prelude to Darkness.mp3"
+2025-07-15T06:17:54 player: played "Album - Warp Speed Warriors/07 - The Killer Queen.mp3"
+2025-07-15T06:23:09 player: played "Album - Warp Speed Warriors/08 - Doomsday Party.mp3"
+2025-07-15T06:29:51 player: played "Album - Warp Speed Warriors/09 - Pixel Prison.mp3"
+2025-07-15T06:32:41 player: played "Album - Warp Speed Warriors/10 - Wildest Dreams (DragonForce's Version).mp3"
+2025-07-15T06:37:57 player: played "Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3"
+2025-07-15T06:41:51 player: played "Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3"

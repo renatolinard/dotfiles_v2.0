@@ -43,12 +43,12 @@ style = "#515797" # Agora usa os nomes simples da paleta
 format = "[$symbol ]($style)"
 
 [os.symbols]
-Arch = "󰣇"
+Arch = " "
 
 # Diretório
 [directory]
 style = "#a67337" # Cor do texto principal
-format = "[renatolinard ](#737c73)[$path]($style) " # Ícone amarelo, texto na cor principal
+format = "[  ](#737c73)[$path]($style) " # Ícone amarelo, texto na cor principal
 truncation_length = 3
 truncation_symbol = "…/"
 read_only = " "
