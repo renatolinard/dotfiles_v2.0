@@ -1,4 +1,4 @@
-# Meus Dotfiles Hyprland (Tema Kanagawa)
+# Meus Dotfiles Hyprland (Tema Kanagawa).
 
 Este repositório contém todas as minhas configurações pessoais para um 
 ambiente de desktop Hyprland minimalista e funcional no Arch Linux.
