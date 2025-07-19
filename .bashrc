@@ -72,7 +72,7 @@ alias dots='git --git-dir=$HOME/.dotfiles_v2.0/ --work-tree=$HOME'
 alias .tmux="nvim ~/.tmux.conf"
 alias work="tmux new -s WORKSTATION"
 alias mkdir="mkdir -p"
-alias cls="clear" 
+alias cls="clear && fastfetch" 
 alias vim='nvim'
 alias v='nvim'
 alias play="mpv"
@@ -200,4 +200,3 @@ dc() {
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-

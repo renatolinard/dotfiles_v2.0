@@ -1,16 +1,16 @@
 # --- Fonte ---
 font-family = "OperatorMonoLig Nerd Font Mono"
 font-style = "Italic"
-font-size = 17
+font-size = 18
 
 # --- Conforto Visual ---
-adjust-cell-height = "40%"
+adjust-cell-height = "35%"
 cursor-style = block
 cursor-style-blink = false
 mouse-hide-while-typing = true
 
 # --- Estilo Visual ---
-background-opacity = 0.8
+background-opacity = 0.9
 window-padding-x = 12
 window-padding-y = 12
 window-decoration = "none"
@@ -41,3 +41,4 @@ palette = "12=#698a9b"
 palette = "13=#b4a7b5"
 palette = "14=#96ada7"
 palette = "15=#d5cd9d"
+

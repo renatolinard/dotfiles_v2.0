@@ -24,7 +24,7 @@ sudo pacman -Syu git
 Passo 2: Clonar o Repositório de Instalação
 
 ```bash
-git clone https://codeberg.org/renatolinard/dotfiles_v2.0.git
+git clone https://github.com/renatolinard/dotfiles_v2.git
 ```
 
 Passo 3: Executar o Script de Instalação
