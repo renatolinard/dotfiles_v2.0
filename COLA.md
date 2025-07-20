@@ -1,4 +1,4 @@
-# Guia de Referência Rápida (Cola) 
+# Guia de Referência Rápida (Cola) - Setup Hyprland Completo
 
 Este é um manual de referência com os comandos e dicas mais importantes para 
 gerenciar e personalizar o ambiente Hyprland construído no Arch Linux.
