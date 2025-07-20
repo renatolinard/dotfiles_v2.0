@@ -49,3 +49,7 @@ set.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 -- block cursor
 set.guicursor = ""
 set.guicursor = "a:blinkon0"
+
+-- wrap column 80
+set.textwidth = 80
+set.wrap = true

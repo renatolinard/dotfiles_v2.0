@@ -1,6 +1,7 @@
 # Guia de Referência Rápida (Cola) - Setup Hyprland Completo
 
-Este é um manual de referência com os comandos e dicas mais importantes para gerenciar e personalizar o ambiente Hyprland construído no Arch Linux.
+Este é um manual de referência com os comandos e dicas mais importantes para 
+gerenciar e personalizar o ambiente Hyprland construído no Arch Linux.
 
 ## 1\. Gerenciamento de Sistema (Arch Linux)
 
@@ -15,7 +16,9 @@ sudo pacman -Syu
 sudo pacman -Syu --overwrite 'usr/lib/firmware/nvidia/*'
 ```
 
-**Dica:** O erro de "conflicting files" geralmente se resolve movendo a pasta conflitante para um backup (`sudo mv /caminho/pasta /caminho/pasta.bak`) e rodando a atualização padrão novamente.
+**Dica:** O erro de "conflicting files" geralmente se resolve movendo a pasta 
+conflitante para um backup (`sudo mv /caminho/pasta /caminho/pasta.bak`) e 
+rodando a atualização padrão novamente.
 
 ### 1.2. Instalação de Pacotes
 
@@ -68,7 +71,8 @@ dots commit -m "Mensagem explicando a mudança"
 dots push
 ```
 
-**Dica Crucial:** Nunca use `dots add .` na sua pasta `home` (`~`). Sempre adicione arquivos e pastas pelo seu caminho explícito para evitar adicionar arquivos indesejados.
+**Dica Crucial:** Nunca use `dots add .` na sua pasta `home` (`~`). Sempre 
+adicione arquivos e pastas pelo seu caminho explícito para evitar adicionar arquivos indesejados.
 
 ### 2.3. Resolução de Problemas
 

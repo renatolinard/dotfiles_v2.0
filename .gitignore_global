@@ -49,3 +49,5 @@
 !/.config/mpd/mpd.conf
 !/.config/rmpc/
 !/.config/rmpc/**
+!/.config/kitty/
+!/.config/kitty/**
