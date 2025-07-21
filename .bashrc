@@ -91,6 +91,10 @@ alias ds="dots status"
 alias da="dots add"
 alias dp="dots push"
 
+###alias git###
+alias gs="git status"
+alias ga="git add"
+alias gp="git push"
 #--- PATH ---
 export PATH=$PATH:~/.config/hypr/scripts
 export PATH=$PATH:/home/renatolinard/.cargo/bin
@@ -195,6 +199,22 @@ dc() {
     # As aspas duplas são importantes para lidar com mensagens com espaços
     dots commit -m "$commit_message"
 }
+
+gc() {
+    # Pede ao usuário para digitar a mensagem e a salva na variável 'commit_message'
+    read -p "Digite a mensagem do commit: " commit_message
+
+    # Verifica se a mensagem não está vazia
+    if [ -z "$commit_message" ]; then
+        echo "Mensagem de commit vazia. Abortando."
+        return 1 # Retorna com um erro
+    fi
+
+    # Executa o commit usando a mensagem fornecida
+    # As aspas duplas são importantes para lidar com mensagens com espaços
+    git commit -m "$commit_message"
+}
+
 
 #------------------------------------------------------------------------------
 export NVM_DIR="$HOME/.nvm"
