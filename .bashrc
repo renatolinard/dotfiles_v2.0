@@ -90,6 +90,8 @@ alias ask='gemini'
 alias ds="dots status"
 alias da="dots add"
 alias dp="dots push"
+alias db="dots branch"
+alias dcc="dots checkout"
 
 ###alias git###
 alias gs="git status"
