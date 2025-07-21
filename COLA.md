@@ -11,14 +11,12 @@ gerenciar e personalizar o ambiente Hyprland construído no Arch Linux.
 # Comando padrão para atualizar todos os pacotes
 sudo pacman -Syu
 
-# Comando para usar em caso de conflitos de arquivos
-# Exemplo para conflitos na pasta da nvidia:
+# Comando para usar em caso de conflitos de arquivos (exemplo)
 sudo pacman -Syu --overwrite 'usr/lib/firmware/nvidia/*'
 ```
 
-**Dica:** O erro de "conflicting files" geralmente se resolve movendo a pasta 
-conflitante para um backup (`sudo mv /caminho/pasta /caminho/pasta.bak`) e 
-rodando a atualização padrão novamente.
+  * **Dica:** A forma mais segura de resolver conflitos é mover a pasta 
+  conflitante (`sudo mv /caminho/pasta /caminho/pasta.bak`) e rodar a atualização padrão.
 
 ### 1.2. Instalação de Pacotes
 
@@ -30,14 +28,23 @@ sudo pacman -S <nome_do_pacote>
 yay -S <nome_do_pacote>
 ```
 
-### 1.3. Gerenciamento de Serviços (`systemd`)
+### 1.3. Gerar Listas de Pacotes
+
+```bash
+# Pacotes oficiais instalados explicitamente
+pacman -Qeq > pkglist.txt
+
+# Pacotes do AUR instalados explicitamente
+pacman -Qem > aurlist.txt
+```
+
+### 1.4. Gerenciamento de Serviços (`systemd`)
 
 ```bash
 # Habilitar um serviço para iniciar no boot E iniciá-lo agora
 sudo systemctl enable --now <nome_do_serviço>.service
-# Exemplo: sudo systemctl enable --now NetworkManager.service
 
-# Desabilitar um serviço para não iniciar mais no boot
+# Desabilitar um serviço
 sudo systemctl disable <nome_do_serviço>.service
 
 # Iniciar ou parar um serviço manualmente
@@ -47,9 +54,9 @@ sudo systemctl stop <nome_do_serviço>.service
 
 ## 2\. Gerenciamento de Dotfiles (Git Bare)
 
-### 2.1. O Alias `dots` (Coração do Método)
+### 2.1. O Alias `dots`
 
-Este alias, definido no `~/.bashrc`, é o comando principal para interagir com seus dotfiles.
+Definido no `~/.bashrc`, é o comando principal para interagir com seus dotfiles.
 
 ```bash
 alias dots='git --git-dir=$HOME/.dotfiles_v2.0/ --work-tree=$HOME'
@@ -58,83 +65,109 @@ alias dots='git --git-dir=$HOME/.dotfiles_v2.0/ --work-tree=$HOME'
 ### 2.2. Fluxo de Trabalho do Dia a Dia
 
 ```bash
-# 1. Ver o status dos seus arquivos de configuração
+# 1. Ver o status
 dots status
 
-# 2. Adicionar um arquivo ou pasta específica para ser rastreado
+# 2. Adicionar um arquivo ou pasta específica
 dots add ~/.config/hypr/hyprland.conf
 
-# 3. Salvar as mudanças com uma mensagem descritiva
+# 3. Salvar as mudanças (commit)
 dots commit -m "Mensagem explicando a mudança"
 
-# 4. Enviar as mudanças para o seu repositório remoto (Codeberg)
+# 4. Enviar as mudanças para o repositório remoto
 dots push
 ```
 
-**Dica Crucial:** Nunca use `dots add .` na sua pasta `home` (`~`). Sempre 
-adicione arquivos e pastas pelo seu caminho explícito para evitar adicionar arquivos indesejados.
+  * **Dica Crucial:** Nunca use `dots add .` na sua pasta `home` (`~`).
 
-### 2.3. Resolução de Problemas
+### 2.3. Fluxo de Trabalho com Branches
+
+```bash
+# Criar uma nova branch e já mudar para ela
+dots checkout -b <nome-da-branch>
+
+# Mudar para uma branch existente
+dots checkout <nome-da-branch>
+
+# Listar todas as branches
+dots branch
+
+# Enviar uma nova branch para o repositório remoto pela primeira vez
+dots push -u origin <nome-da-branch>
+
+# Trazer as mudanças de uma branch para a 'main'
+dots checkout main
+dots merge <nome-da-branch>
+```
+
+### 2.4. Resolução de Problemas
 
 ```bash
 # Limpar a "staging area" de arquivos adicionados por engano
 dots reset
 
-# Remover um link simbólico ou arquivo do rastreamento do Git (sem apagar o arquivo local)
+# Remover um arquivo do rastreamento do Git (sem apagar o arquivo local)
 dots rm --cached <caminho/do/arquivo>
 ```
 
-## 3\. Configuração do Ambiente Hyprland
+## 3\. Configuração do Ambiente Gráfico
 
-### 3.1. Descobrindo Propriedades de Janelas
-
-Para criar `windowrule` ou `layerrule`, use o `hyprctl`.
+### 3.1. Hyprland
 
 ```bash
-# Lista todas as janelas abertas e suas propriedades
+# Iniciar a sessão (alias do .bashrc que chama o script wrapper)
+hypr
+
+# Inspecionar janelas abertas para descobrir a 'class'
 hyprctl clients
 ```
 
-**Dica:** Procure pela linha `class:` para encontrar o nome do aplicativo (ex: `class: app.zen_browser.zen`).
+### 3.2. Principais Arquivos de Configuração
 
-### 3.2. Script de Inicialização (Wrapper Script)
-
-Para garantir que variáveis de ambiente (como as de tema) sejam carregadas corretamente, iniciamos o Hyprland através de um script (`~/.config/hypr/scripts/start-hyprland.sh`) em vez de diretamente. O alias `hypr` no `.bashrc` aponta para este script.
+  * **Hyprland:** `~/.config/hypr/hyprland.conf`
+  * **Waybar:** `~/.config/waybar/config` e `style.css`
+  * **Wofi:** `~/.config/wofi/config` e `style.css`
+  * **Ghostty:** `~/.config/ghostty/config`
+  * **Starship:** `~/.config/starship.toml`
+  * **Tmux:** `~/.tmux.conf`
+  * **Swaylock:** `~/.config/swaylock/config`
+  * **SDDM:** `/etc/sddm.conf`
+  * **Tema do SDDM:** `/usr/share/sddm/themes/<tema>/theme.conf`
+  * **Script de Lançamento:** `~/.config/hypr/scripts/start-hyprland.sh`
+  * **Script de Screenshot:** `~/.config/hypr/scripts/screenshot.sh`
 
 ## 4\. Ferramentas da Linha de Comando (CLI)
 
-### 4.1. `fzf` + `bat` (Busca e Visualização)
+  * **`fzf` + `bat`**
 
-  * **`Ctrl + T`**: Abre o `fzf` para encontrar arquivos e pastas.
-  * **`Ctrl + R`**: Abre o `fzf` para buscar no seu histórico de comandos.
-  * **`Alt + C`**: Abre o `fzf` para navegar rapidamente entre diretórios.
-  * **Preview:** A variável `FZF_DEFAULT_OPTS` no seu `.bashrc` habilita a pré-visualização de arquivos com `bat` dentro do `fzf`.
+      * `Ctrl + T`: Encontrar arquivos.
+      * `Ctrl + R`: Buscar no histórico de comandos.
+      * `Alt + C`: Mudar de diretório.
+      * **Preview:** Habilitado pela variável `FZF_DEFAULT_OPTS` no `.bashrc`.
 
-### 4.2. `tmux` (Modo de Cópia `vi`)
+  * **`tmux` (Modo de Cópia `vi`)**
 
-  * **Prefixo:** `Ctrl + Espaço`
-  * `Prefixo` + `v`: Entrar no modo de cópia (visual).
-  * **Navegação:** `h, j, k, l` (como no Vim).
-  * `v`: Iniciar seleção de caractere.
-  * `Shift + v`: Iniciar seleção de linha.
-  * `y`: Copiar a seleção para a área de transferência do sistema (usando `wl-copy`).
-  * `Ctrl + Shift + V`: Colar o conteúdo da área de transferência.
-  * `Prefixo` + `r`: Recarregar a configuração do `tmux`.
+      * **Prefixo:** `Ctrl + Espaço`
+      * `Prefixo` + `v`: Entrar no modo de cópia.
+      * `v` / `Shift+V`: Iniciar seleção por caractere / por linha.
+      * `y`: Copiar para a área de transferência do sistema.
+      * `Ctrl + Shift + V`: Colar.
+      * `Prefixo` + `r`: Recarregar a configuração.
 
-### 4.3. Gemini CLI (Funções Customizadas)
+  * **Gemini CLI (Funções Customizadas)**
 
-  * `ask`: Inicia um chat interativo.
-  * `explain <comando>`: Executa um comando e pede à IA para explicar a saída ou o erro.
-  * `summarize <arquivo_ou_url>`: Pede à IA para resumir um arquivo ou o conteúdo de uma URL.
-  * `create_script "<descrição>" <nome_do_arquivo.sh>`: Pede à IA para gerar um script.
+      * `ask`: Inicia um chat interativo.
+      * `explain <comando>`: Pede à IA para explicar a saída/erro de um comando.
+      * `summarize <arquivo_ou_url>`: Pede à IA para resumir um arquivo ou URL.
+      * `create_script "<descrição>" <arquivo.sh>`: Pede à IA para gerar um script.
 
 ## 5\. Comandos de Diagnóstico e Reparo
 
 ```bash
 # Descobrir o caminho de um programa
-which nerdfetch
+which <comando>
 
-# Listar temas de ícones/cursores instalados para encontrar o nome exato
+# Listar temas de ícones/cursores instalados
 ls /usr/share/icons/
 
 # Ver o nome oficial de um tema de cursor
@@ -143,22 +176,12 @@ grep -i "Name=" /usr/share/icons/NOME_DA_PASTA/index.theme
 # Reiniciar a Waybar para aplicar mudanças
 killall waybar; waybar &
 
-# Testar a tela de bloqueio com uma configuração específica
-swaylock -C ~/.config/swaylock/config
-
 # Instalar o pacote correto para ter efeitos no swaylock
 yay -S swaylock-effects
 
 # Reconstruir o "armazém" de certificados de segurança do sistema
 sudo trust extract-compat
 
-# Redefinir o perfil de um aplicativo Flatpak corrompido (Exemplo com Zen)
+# Redefinir o perfil de um aplicativo Flatpak corrompido (Exemplo)
 mv ~/.var/app/app.zen_browser.zen ~/.var/app/app.zen_browser.zen.backup
-```
-
-# Gerar lista de packages essenciais
-
-```bash
-pacman -Qeq > pkglist.txt
-pacman -Qem > aurlist.txt
 ```
