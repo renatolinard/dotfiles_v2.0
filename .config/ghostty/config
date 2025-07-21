@@ -3,6 +3,10 @@ font-family = "OperatorMonoLig Nerd Font Mono"
 font-style = "Italic"
 font-size = 18
 
+# --- custom-shader
+custom-shader = shaders/bloom025.glsl
+custom-shader = shaders/cursor_smear.glsl
+
 # --- Conforto Visual ---
 adjust-cell-height = "35%"
 cursor-style = block
