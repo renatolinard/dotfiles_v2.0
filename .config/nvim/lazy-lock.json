@@ -28,5 +28,5 @@
   "snipe.nvim": { "branch": "main", "commit": "3da8e9770d6619ad51b724a7c1cebb6aae37c08f" },
   "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
   "trouble.nvim": { "branch": "main", "commit": "85bedb7eb7fa331a2ccbecb9202d8abba64d37b3" },
-  "yazi.nvim": { "branch": "main", "commit": "17d6822f0bc15fb91e29112d42e3c93e59d19104" }
+  "yazi.nvim": { "branch": "main", "commit": "6e4e9f0353f94ca4965c20dfc2690fb0d21730f0" }
 }
