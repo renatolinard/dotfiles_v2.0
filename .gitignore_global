@@ -1,6 +1,5 @@
 # 1. Ignore tudo por padrão
 *
-
 # 2. NÃO ignore (re-inclua) os arquivos e pastas na raiz da home (~/)
 !/.bashrc
 !/COLA.md
