@@ -7,11 +7,9 @@ blueprint-compiler
 bluetui
 bluetuith
 bluez-utils
-bridge-utils
 brightnessctl
 btrfs-progs
 cmake
-dnsmasq
 edk2-ovmf
 efibootmgr
 eza
@@ -42,6 +40,7 @@ mpc
 mpd
 mpv
 mpvpaper
+nerdfetch
 networkmanager
 nftables
 nodejs
@@ -58,7 +57,6 @@ pipewire-jack
 pipewire-pulse
 polkit-kde-agent
 preload
-qemu-full
 qt5-wayland
 qt6-wayland
 resvg
@@ -71,7 +69,6 @@ sof-firmware
 spice-vdagent
 starship
 swaylock-effects
-swtpm
 thunar
 thunar-volman
 tmux
@@ -82,10 +79,7 @@ ttf-nerd-fonts-symbols-common
 udisks2
 unrar
 unzip
-vde2
 vim
-virt-manager
-virt-viewer
 waybar
 wget
 wireplumber
