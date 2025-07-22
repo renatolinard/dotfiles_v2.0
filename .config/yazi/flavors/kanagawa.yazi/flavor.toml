@@ -1,0 +1,130 @@
+## Color palette (Kanagawa Paper Ink)
+# sumiInk0        "#16161d" dark bg
+# sumiInk3        "#1f1f28" bg
+# fujiWhite       "#dcd7ba" fg
+# oldWhite        "#c8c093" dark fg
+# fujiGray        "#727169"
+# autumnRed       "#c34043"
+# crystalBlue     "#7e9cd8"
+# autumnGreen     "#76946a"
+# oniViolet       "#957fb8"
+# waveAqua1       "#6a9589"
+# autumnYellow    "#DCA561"
+
+[manager]
+# Cores ajustadas para a paleta "Paper Ink"
+marker_copied = { fg = "#76946a", bg = "#76946a" } # autumnGreen
+marker_cut = { fg = "#c34043", bg = "#c34043" } # autumnRed
+marker_marked = { fg = "#957fb8", bg = "#957fb8" } # oniViolet
+marker_selected = { fg = "#DCA561", bg = "#DCA561" } # autumnYellow
+
+cwd = { fg = "#DCA561" } # autumnYellow
+hovered = { reversed = true }
+preview_hovered = { reversed = true }
+
+find_keyword = { fg = "#DCA561", bg = "#1f1f28" }
+find_position = {}
+
+tab_active = { reversed = true }
+tab_inactive = {}
+tab_width = 1
+
+count_copied = { fg = "#1f1f28", bg = "#76946a" }
+count_cut = { fg = "#1f1f28", bg = "#c34043" }
+count_selected = { fg = "#1f1f28", bg = "#DCA561" }
+
+border_symbol = "│"
+border_style = { fg = "#dcd7ba" }
+
+[mode]
+# Cores dos modos mantidas para bom contraste
+normal_main = { fg = "#1f1f28", bg = "#7e9cd8" }
+normal_alt = { fg = "#7e9cd8", bg = "#2a2a37" }
+select_main = { fg = "#1f1f28", bg = "#957fb8" }
+select_alt = { fg = "#957fb8", bg = "#2a2a37" }
+unset_main = { fg = "#1f1f28", bg = "#DCA561" }
+unset_alt = { fg = "#DCA561", bg = "#2a2a37" }
+
+[status]
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+overall = { fg = "#c8c093", bg = "#16161d" }
+
+progress_label = { fg = "#7e9cd8", bg = "#2a2a37", bold = true }
+progress_normal = { fg = "#2a2a37", bg = "#1f1f28" }
+progress_error = { fg = "#2a2a37", bg = "#1f1f28" }
+
+# Cores de permissões ajustadas
+perm_type = { fg = "#76946a" }
+perm_read = { fg = "#DCA561" }
+perm_write = { fg = "#c34043" }
+perm_exec = { fg = "#6a9589" }
+perm_sep = { fg = "#957fb8" }
+
+[pick]
+border = { fg = "#7e9cd8" } # Cor de borda padronizada
+active = { fg = "#957fb8", bold = true }
+inactive = {}
+
+[input]
+border = { fg = "#7e9cd8" } # Cor de borda padronizada
+title = {}
+value = {}
+selected = { reversed = true }
+
+[completion]
+border = { fg = "#7e9cd8" } # Cor de borda padronizada
+active = { reversed = true }
+inactive = {}
+
+[tasks]
+border = { fg = "#7e9cd8" } # Cor de borda padronizada
+title = {}
+hovered = { fg = "#957fb8" }
+
+[which]
+cols = 2
+separator = " - "
+separator_style = { fg = "#727169" }
+mask = { bg = "#16161d" }
+rest = { fg = "#727169" }
+cand = { fg = "#7e9cd8" }
+desc = { fg = "#54546d" }
+
+[help]
+on = { fg = "#6a9589" }
+run = { fg = "#957fb8" }
+desc = {}
+hovered = { reversed = true, bold = true }
+footer = { fg = "#1f1f28", bg = "#dcd7ba" }
+
+[notify]
+# Cores de notificação ajustadas
+title_info = { fg = "#76946a" }
+title_warn = { fg = "#DCA561" }
+title_error = { fg = "#c34043" }
+
+[filetype]
+rules = [
+    # media
+    { mime = "{audio,video}/*", fg = "#957fb8" },
+
+    # archives
+    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#c34043" },
+
+    # documents
+    { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#6a9589" },
+    
+    # imagens (mesma cor de autumnYellow)
+    { mime = "image/*", fg = "#DCA561" },
+
+    # broken links
+    { name = "*", is = "orphan", fg = "#c34043" },
+
+    # executables
+    { name = "*", is = "exec", fg = "#76946a" },
+
+    # fallback
+    { name = "*", fg = "#dcd7ba" },
+    { name = "*/", fg = "#7e9cd8" },
+]

@@ -51,3 +51,5 @@
 !/.config/rmpc/**
 !/.config/kitty/
 !/.config/kitty/**
+!/.config/yazi/
+!/.config/yazi/**

@@ -38,7 +38,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("i", "<C-a>", "<Esc><Esc>")
 
 -- Custom Mappings (using <Leader>)
-vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
 
 vim.keymap.set("n", "<leader>tc", function()
 	if vim.o.colorcolumn == "" then
