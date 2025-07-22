@@ -64,12 +64,6 @@ if [ -d "kanagawa_gtk3" ]; then
     sudo cp -r kanagawa_gtk3 /usr/share/themes/
 fi
 
-# Tema sddm
-if [-d "/usr/share/sddm/themes/sugar-dark"]; then
-    sudo rm -r /usr/share/sddm/themes/sugar-dark
-    sudo cp -r sugar-dark /usr/share/sddm/themes/
-    echo "Altera a linha 40: Current=<nome_do_tema> para Current=sugar-dark"
-fi
 
 # --- Configuração dos Dotfiles (Método Bare) ---
 echo -e "${YELLOW}--> Configurando os dotfiles na pasta home...${NC}"
@@ -104,6 +98,15 @@ sudo flatpak override --env=GTK_THEME=Kanagawa
 
 echo "Atualizando o cache de fontes..."
 fc-cache -fv
+
+# Tema sddm
+echo -e "${YELLOW}--> Configurando tema SDDM...${NC}"
+if [-d "/usr/share/sddm/themes/sugar-dark"]; then
+    sudo rm -r /usr/share/sddm/themes/sugar-dark
+    sudo cp -r sugar-dark /usr/share/sddm/themes/
+    echo "Altera a linha 40: Current=<nome_do_tema> para Current=sugar-dark"
+    sudo vim /etc/sddm.conf.d/sddm.conf
+fi
 
 # --- Finalização ---
 echo -e "${GREEN}------------------------------------------------${NC}"
