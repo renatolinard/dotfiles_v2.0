@@ -2,6 +2,7 @@
 *
 # 2. NÃO ignore (re-inclua) os arquivos e pastas na raiz da home (~/)
 !/.bashrc
+!/.gtkrc-2.0
 !/COLA.md
 !/guia.md
 !/my-fonts-main/
