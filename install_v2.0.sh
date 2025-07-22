@@ -49,19 +49,26 @@ echo -e "${YELLOW}--> Instalando ativos locais do repositório...${NC}"
 # Instalação de Fontes
 if [ -d "my-fonts-main" ]; then
     echo "Copiando fontes locais..."
-    sudo cp -r my-fonts-main /usr/share/fonts/
+    sudo cp -r my-fonts-main/** /usr/share/fonts/
 fi
 
 # Instalação de Cursores
 if [ -d "my_cursors" ]; then
     echo "Copiando cursores locais..."
-    sudo cp -r my_cursors /usr/share/icons/
+    sudo cp -r my_cursors/** /usr/share/icons/
 fi
 
 # Instalação do Tema GTK
 if [ -d "kanagawa_gtk3" ]; then
     echo "Copiando tema GTK local..."
     sudo cp -r kanagawa_gtk3 /usr/share/themes/
+fi
+
+# Tema sddm
+if [-d "/usr/share/sddm/themes/sugar-dark"]; then
+    sudo rm -r /usr/share/sddm/themes/sugar-dark
+    sudo cp -r sugar-dark /usr/share/sddm/themes/
+    echo "Altera a linha 40: Current=<nome_do_tema> para Current=sugar-dark"
 fi
 
 # --- Configuração dos Dotfiles (Método Bare) ---
