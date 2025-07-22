@@ -224,6 +224,22 @@ gc() {
     [ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
     rm -f -- "$tmp"
 }
+
+# Função para iniciar uma VM e abrir o visualizador
+launchvm() {
+    # Verifica se um nome de VM foi fornecido
+    if [ -z "$1" ]; then
+        echo "Uso: vm-start <nome_da_vm>"
+        echo "VMs disponíveis:"
+        virsh list --all
+        return 1
+    fi
+
+    echo "Iniciando a VM '$1'..."
+    virsh start "$1"
+    echo "Abrindo o visualizador..."
+    virt-viewer --connect qemu:///system "$1"
+}
 #------------------------------------------------------------------------------
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

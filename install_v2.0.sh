@@ -104,8 +104,8 @@ echo -e "${YELLOW}--> Configurando tema SDDM...${NC}"
 if [ -d "/usr/share/sddm/themes/sugar-dark" ]; then
     sudo rm -r /usr/share/sddm/themes/sugar-dark
     sudo cp -r /home/renatolinard/sugar-dark /usr/share/sddm/themes/
-    sudo mkdir -p /etc/sddm.conf.d/ 
-    sudo cp /home/renatolinard/sugar-dark/sddm.conf /etc/sddm.conf.d/
+    sudo mkdir -p /etc/sddm.conf.d
+    sudo cp /home/renatolinard/sugar-dark/sddm.conf /etc/sddm.conf.d
 fi
 
 # --- Finalização ---
