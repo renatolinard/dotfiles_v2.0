@@ -101,44 +101,10 @@ alias gp="git push"
 export PATH=$PATH:~/.config/hypr/scripts
 export PATH=$PATH:/home/renatolinard/.cargo/bin
 
-# ===================================================================
-# FUNÇÕES E ALIASES PARA A GEMINI CLI 
-# ===================================================================
+# =======
+# FUNÇÕES
+# =======
 
-# 1. O Tradutor de Erros (agora salva as respostas)
-# Use: what... <comando que deu erro>
-#-------------------------------------------------------------------
-what() {
-    # Define o diretório de notas e o nome do arquivo com data e hora
-    local notes_dir="$HOME/gemini_notes"
-    local output_file="$notes_dir/what_$(date +'%Y-%m-%d').md"
-
-    # Garante que o diretório de notas exista
-    mkdir -p "$notes_dir"
-
-    # Executa o comando e canaliza a saída para a Gemini, que por sua vez
-    # é exibida no terminal E salva no arquivo de nota pelo comando 'tee'.
-    "$@" 2>&1 | gemini -p "Explique de maneira simples a saída ou o erro do 
-    seguinte comando e sugira uma solução. Esse resposta será uma nota em 
-    markdown" | tee "$output_file"
-}
-
-explain() {
-    local notes_dir="$HOME/gemini_notes"
-    local output_file="$notes_dir/explain_$(date +'%Y-%m-%d').md"
-    mkdir -p "$notes_dir"
-
-    # Verifica se o argumento é uma URL ou um arquivo local
-    if [[ "$1" == http* ]]; then
-        curl -sL "$1" | gemini -p "Explique com uma linguagem simples o conteúdo 
-        desta página da web e crie um resumo com os pontos principais, organize
-        toda a reposta em markdown" | tee "$output_file"
-    else
-        cat "$1" | gemini -p "Explique com uma linguagem simples este arquivo 
-        de configuração/script e crie um resumo com os pontos principais, organize 
-        toda resposta em markdown" | tee "$output_file"
-    fi
-}
 #------"exa" after "cd"----------------------
 cd ()
 {
@@ -150,7 +116,7 @@ cd ()
 }
 #--------------------------------------------
 
-#------------------Extrair arquivos-----------------------------
+#------------------Extrair arquivos------------
 ex ()
 {
     if [ -f $1 ] ; then
@@ -225,21 +191,6 @@ gc() {
     rm -f -- "$tmp"
 }
 
-# Função para iniciar uma VM e abrir o visualizador
-launchvm() {
-    # Verifica se um nome de VM foi fornecido
-    if [ -z "$1" ]; then
-        echo "Uso: vm-start <nome_da_vm>"
-        echo "VMs disponíveis:"
-        virsh list --all
-        return 1
-    fi
-
-    echo "Iniciando a VM '$1'..."
-    virsh start "$1"
-    echo "Abrindo o visualizador..."
-    virt-viewer --connect qemu:///system "$1"
-}
 #------------------------------------------------------------------------------
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

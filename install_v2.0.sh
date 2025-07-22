@@ -99,39 +99,16 @@ sudo flatpak override --env=GTK_THEME=Kanagawa
 echo "Atualizando o cache de fontes..."
 fc-cache -fv
 
-# --- Configuração do Tema SDDM (versão aprimorada) ---
+# --- Configuração do Tema SDDM
 echo -e "${YELLOW}--> Configurando tema SDDM (Sugar Dark)...${NC}"
-
-# Define o nome da pasta do tema que deve estar no repositório
-THEME_SOURCE_DIR="sugar-dark"
-
-# Verifica se a pasta do tema que queremos copiar realmente existe no repositório
-if [ -d "$THEME_SOURCE_DIR" ]; then
-    echo "Diretório do tema '$THEME_SOURCE_DIR' encontrado. Instalando..."
-    
-    local theme_dest_dir="/usr/share/sddm/themes/sugar-dark"
-    local config_dest_dir="/etc/sddm.conf.d"
-
-    # Remove qualquer versão antiga do tema no sistema para uma instalação limpa
-    sudo rm -rf "$theme_dest_dir"
-    
-    # Copia a pasta do tema do repositório para o local correto no sistema
-    sudo cp -r "$THEME_SOURCE_DIR" "$theme_dest_dir"
-    
-    # Cria o diretório de configuração do SDDM, se não existir
-    sudo mkdir -p "$config_dest_dir"
-    
-    # Copia o arquivo de configuração do SDDM que está dentro da pasta do tema
-    # para o local correto, renomeando para 'theme.conf' para clareza.
-    if [ -f "$THEME_SOURCE_DIR/sddm.conf" ]; then
-        sudo cp "$THEME_SOURCE_DIR/sddm.conf" "$config_dest_dir/theme.conf"
-    else
-        echo -e "${YELLOW}AVISO: Arquivo 'sddm.conf' não encontrado em '$THEME_SOURCE_DIR'. A configuração pode precisar ser manual.${NC}"
-    fi
-    
-    echo -e "${GREEN}--> Tema SDDM configurado com sucesso.${NC}"
+if [ -d "sugar-dark" ]; then
+    sudo rm -rf /usr/share/sddm/themes/sugar-dark
+    sudo cp -r sugar-dark /usr/share/sddm/themes/
+    sudo mkdir -p /etc/sddm.conf.d
+    sudo cp sugar-dark/theme.conf /etc/sddm.conf.d
 else
-    echo -e "${YELLOW}AVISO: Diretório do tema '$THEME_SOURCE_DIR' não encontrado no repositório. Pulando configuração do SDDM.${NC}"
+    echo -e "${YELLOW}AVISO: Diretório do tema não encontrado no repositório.
+    Pulando configuração do SDDM.${NC}"
 fi
 
 # --- Finalização ---
