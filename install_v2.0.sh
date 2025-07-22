@@ -103,7 +103,7 @@ fc-cache -fv
 echo -e "${YELLOW}--> Configurando tema SDDM...${NC}"
 if [ -d "/usr/share/sddm/themes/sugar-dark" ]; then
     sudo rm -r /usr/share/sddm/themes/sugar-dark
-    sudo cp -r sugar-dark /usr/share/sddm/themes/
+    sudo cp -r /home/renatolinard/sugar-dark /usr/share/sddm/themes/
     echo "Altera a linha 40: Current=<nome_do_tema> para Current=sugar-dark"
     sudo vim /etc/sddm.conf.d/sddm.conf
 fi
