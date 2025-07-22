@@ -30,7 +30,6 @@ hyprland
 hyprpaper
 imagemagick
 intel-ucode
-iptables-nft
 iwd
 jq
 kitty
