@@ -30,6 +30,7 @@ hyprland
 hyprpaper
 imagemagick
 intel-ucode
+iptables-nft
 iwd
 jq
 kitty
@@ -69,6 +70,7 @@ scrcpy
 sddm-sugar-dark
 slurp
 sof-firmware
+spice-vdagent
 starship
 swaylock-effects
 swtpm

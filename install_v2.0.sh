@@ -61,7 +61,7 @@ fi
 # Instalação do Tema GTK
 if [ -d "kanagawa_gtk3" ]; then
     echo "Copiando tema GTK local..."
-    sudo cp -r kanagawa_gtk3 /usr/share/themes/
+    sudo cp -r kanagawa_gtk3/** /usr/share/themes/
 fi
 
 
@@ -101,7 +101,7 @@ fc-cache -fv
 
 # Tema sddm
 echo -e "${YELLOW}--> Configurando tema SDDM...${NC}"
-if [-d "/usr/share/sddm/themes/sugar-dark"]; then
+if [ -d "/usr/share/sddm/themes/sugar-dark" ]; then
     sudo rm -r /usr/share/sddm/themes/sugar-dark
     sudo cp -r sugar-dark /usr/share/sddm/themes/
     echo "Altera a linha 40: Current=<nome_do_tema> para Current=sugar-dark"
