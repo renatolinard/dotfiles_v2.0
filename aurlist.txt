@@ -1,6 +1,5 @@
 bluetuith 0.2.3-1
 mpvpaper 1.8-1
-nerdfetch 8.4.0-2
 paru 2.1.0-1
 paru-debug 2.1.0-1
 preload 0.6.4-9

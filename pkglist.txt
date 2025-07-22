@@ -42,7 +42,6 @@ mpc
 mpd
 mpv
 mpvpaper
-nerdfetch
 networkmanager
 nftables
 nodejs
