@@ -64,6 +64,18 @@ if [ -d "kanagawa_gtk3" ]; then
     sudo cp -r kanagawa_gtk3/** /usr/share/themes/
 fi
 
+# instalação ghostty from source
+echo -e "${YELLOW}--> Built ghostty from source...${NC}"
+#clone ultimas atualizações 
+git clone https://github.com/ghostty-org/ghostty
+#construção
+if [ -d "ghostty" ]; then
+    (cd ghostty && zig build -Doptimize=ReleaseFast)
+else 
+    echo -e "${YELLOW}AVISO: Erro de instalação, faca a construção 
+    manualmente.${NC}" 
+fi
+
 #instalação e configuração Zen Browser
 echo -e "${BLUE}Iniciando a instalação do Zen Browser...${NC}"
 flatpak install flathub app.zen_browser.zen
@@ -84,22 +96,6 @@ git clone https://github.com/neovim/neovim
 if [ -d "neovim" ]; then
     (cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install)
     rm -rf ~/neovim
-else 
-    echo -e "${YELLOW}AVISO: Erro de instalação, faca a construção 
-    manualmente.${NC}" 
-fi
-
-# instalação ghostty from source
-echo -e "${YELLOW}--> Built ghostty from source...${NC}"
-#instalação limpa
-rm -rf ~/.config/ghostty
-rm -rf ~/.local/state/ghostty
-rm -rf ~/.local/share/ghostty
-#clone ultimas atualizações 
-git clone https://github.com/ghostty-org/ghostty
-#construção
-if [ -d "ghostty" ]; then
-    (cd ghostty && zig build -Doptimize=ReleaseFast)
 else 
     echo -e "${YELLOW}AVISO: Erro de instalação, faca a construção 
     manualmente.${NC}" 
@@ -130,7 +126,6 @@ read -p "Seu nome completo para o Git: " git_name
 read -p "Seu e-mail para o Git: " git_email
 git config --global user.name "$git_name"
 git config --global user.email "$git_email"
-
 
 echo "Atualizando o cache de fontes..."
 fc-cache -fv
