@@ -64,6 +64,30 @@ if [ -d "kanagawa_gtk3" ]; then
     sudo cp -r kanagawa_gtk3/** /usr/share/themes/
 fi
 
+#instalação e configuração Zen Browser
+echo -e "${BLUE}Iniciando a instalação do Zen Browser...${NC}"
+flatpak install flathub app.zen_browser.zen
+echo "Aplicando tema aos aplicativos Flatpak..."
+sudo flatpak override --filesystem=$HOME/.themes
+sudo flatpak override --filesystem=/usr/share/themes
+sudo flatpak override --env=GTK_THEME=Kanagawa
+
+#instalação neovim from source 
+echo -e "${YELLOW}--> Built neovim from source...${NC}"
+#instalação limpa
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+#clone ultimas atualizações 
+git clone https://github.com/neovim/neovim
+#construção
+if [ -d "neovim" ]; then
+    (cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install)
+    rm -rf ~/neovim
+else 
+    echo -e "${YELLOW}AVISO: Erro de instalação, faca a construção 
+    manualmente.${NC}" 
+fi
 
 # --- Configuração dos Dotfiles (Método Bare) ---
 echo -e "${YELLOW}--> Configurando os dotfiles na pasta home...${NC}"
@@ -91,30 +115,6 @@ read -p "Seu e-mail para o Git: " git_email
 git config --global user.name "$git_name"
 git config --global user.email "$git_email"
 
-#instalação e configuração Zen Browser
-echo -e "${BLUE}Iniciando a instalação do Zen Browser...${NC}"
-flatpak install flathub app.zen_browser.zen
-echo "Aplicando tema aos aplicativos Flatpak..."
-sudo flatpak override --filesystem=$HOME/.themes
-sudo flatpak override --filesystem=/usr/share/themes
-sudo flatpak override --env=GTK_THEME=Kanagawa
-
-#instalação neovim from source 
-echo -e "${YELLOW}--> Built neovim from source...${NC}"
-#instalação limpa
-rm -rf ~/.config/nvim
-rm -rf ~/.local/state/nvim
-rm -rf ~/.local/share/nvim
-#clone ultimas atualizações 
-git clone https://github.com/neovim/neovim
-#construção
-if [ -d "neovim" ]; then
-    (cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install)
-    rm -rf ~/neovim
-else 
-    echo -e "${YELLOW}AVISO: Erro de instalação, faca a construção 
-    manualmente.${NC}" 
-fi
 
 echo "Atualizando o cache de fontes..."
 fc-cache -fv
