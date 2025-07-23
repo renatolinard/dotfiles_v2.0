@@ -91,6 +91,9 @@ read -p "Seu e-mail para o Git: " git_email
 git config --global user.name "$git_name"
 git config --global user.email "$git_email"
 
+#instalação e configuração Zen Browser
+echo -e "${BLUE}Iniciando a instalação do Zen Browser...${NC}"
+flatpak install flathub app.zen_browser.zen
 echo "Aplicando tema aos aplicativos Flatpak..."
 sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --filesystem=/usr/share/themes
