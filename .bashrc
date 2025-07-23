@@ -191,6 +191,20 @@ gc() {
     rm -f -- "$tmp"
 }
 
+# ~/.bashrc
+
+# Função para fazer uma limpeza completa do sistema
+clstemp() {
+    echo "--> Procurando por pacotes órfãos..."
+    # Lista os pacotes para revisão antes de perguntar
+    pacman -Qtdq | sudo pacman -Rns -
+
+    echo -e "\n--> Limpando o cache de pacotes (pacman e yay)..."
+    yay -Scc
+
+    echo -e "\nLimpeza concluída!"
+}
+
 #------------------------------------------------------------------------------
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
