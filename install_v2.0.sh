@@ -108,7 +108,7 @@ rm -rf ~/.local/share/nvim
 #clone ultimas atualizações 
 git clone https://github.com/neovim/neovim
 #construção
-if [ -d "neovim"]; then
+if [ -d "neovim" ]; then
     (cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install)
     rm -rf ~/neovim
 else 
