@@ -1,4 +1,6 @@
 7zip
+ninja
+curl
 base
 base-devel
 bash-completion
@@ -40,7 +42,6 @@ mpc
 mpd
 mpv
 mpvpaper
-nerdfetch
 networkmanager
 nftables
 nodejs

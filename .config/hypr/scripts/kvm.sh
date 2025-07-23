@@ -9,17 +9,7 @@
 # -----------------------------------------------------------------------------
 # Uso: kvm.sh
 # -----------------------------------------------------------------------------
-#  _  ____     ____  __
-# | |/ /\ \   / /  \/  |
-# | ' /  \ \ / /| |\/| |
-# | . \   \ V / | |  | |
-# |_|\_\   \_/  |_|  |_|
-#
-#
-# by Stephan Raabe (2023)
-# -----------------------------------------------------
 
-# ------------------------------------------------------
 # Install Script for Libvirt
 # ------------------------------------------------------
 
@@ -29,7 +19,7 @@ echo "START KVM/QEMU/VIRT MANAGER INSTALLATION..."
 # ------------------------------------------------------
 # Install Packages
 # ------------------------------------------------------
-sudo pacman -S virt-manager virt-viewer qemu-full vde2 ebtables iptables-nft nftables dnsmasq bridge-utils ovmf swtpm
+sudo pacman -S virt-manager virt-viewer qemu vde2 ebtables iptables-nft nftables dnsmasq bridge-utils ovmf swtpm
 
 # ------------------------------------------------------
 # Edit libvirtd.conf
@@ -75,5 +65,3 @@ sudo systemctl restart libvirtd
 sudo virsh net-autostart default
 
 echo "Please restart your system with reboot."
-
-

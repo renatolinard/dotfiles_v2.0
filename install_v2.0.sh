@@ -99,6 +99,23 @@ sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --filesystem=/usr/share/themes
 sudo flatpak override --env=GTK_THEME=Kanagawa
 
+#instalação neovim from source 
+echo -e "${YELLOW}--> Built neovim from source...${NC}"
+#instalação limpa
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+#clone ultimas atualizações 
+git clone https://github.com/neovim/neovim
+#construção
+if [ -d "neovim"]; then
+    (cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install)
+    rm -rf ~/neovim
+else 
+    echo -e "${YELLOW}AVISO: Erro de instalação, faca a construção 
+    manualmente.${NC}" 
+fi
+
 echo "Atualizando o cache de fontes..."
 fc-cache -fv
 
