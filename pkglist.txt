@@ -24,6 +24,8 @@ github-cli
 grim
 grub
 gst-plugin-pipewire
+gtk4
+gettext
 gtk4-layer-shell
 gvfs
 hyprland

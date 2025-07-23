@@ -89,6 +89,22 @@ else
     manualmente.${NC}" 
 fi
 
+# instalação ghostty from source
+echo -e "${YELLOW}--> Built ghostty from source...${NC}"
+#instalação limpa
+rm -rf ~/.config/ghostty
+rm -rf ~/.local/state/ghostty
+rm -rf ~/.local/share/ghostty
+#clone ultimas atualizações 
+git clone https://github.com/ghostty-org/ghostty
+#construção
+if [ -d "ghostty" ]; then
+    (cd ghostty && zig build -Doptimize=ReleaseFast)
+else 
+    echo -e "${YELLOW}AVISO: Erro de instalação, faca a construção 
+    manualmente.${NC}" 
+fi
+
 # --- Configuração dos Dotfiles (Método Bare) ---
 echo -e "${YELLOW}--> Configurando os dotfiles na pasta home...${NC}"
 git clone --bare https://github.com/$GIT_USER/$GIT_REPO.git $HOME/.$GIT_REPO
