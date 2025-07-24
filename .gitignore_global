@@ -17,8 +17,6 @@
 !/.tmux/
 !/.tmux/my-theme.conf
 !/install_v2.0.sh
-!/my_cursors/
-!/my_cursors/**
 !/ativos/
 !/ativos/**
 

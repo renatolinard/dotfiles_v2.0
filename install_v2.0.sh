@@ -47,15 +47,15 @@ yay -S --needed --noconfirm - < aurlist.txt
 echo -e "${YELLOW}--> Instalando ativos locais do repositório...${NC}"
 
 # Instalação de Fontes
-if [ -d "my-fonts-main" ]; then
+if [ -d "ativos/my-fonts-main" ]; then
     echo "Copiando fontes locais..."
-    sudo cp -r my-fonts-main/** /usr/share/fonts/
+    sudo cp -r ativos/my-fonts-main/** /usr/share/fonts/
 fi
 
 # Instalação de Cursores
-if [ -d "my_cursors" ]; then
+if [ -d "ativos/my_cursors" ]; then
     echo "Copiando cursores locais..."
-    sudo cp -r my_cursors/** /usr/share/icons/
+    sudo cp -r ativos/my_cursors/** /usr/share/icons/
 fi
 
 # Instalação do Tema GTK
