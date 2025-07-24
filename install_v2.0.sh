@@ -43,7 +43,7 @@ fi
 yay -S --needed --noconfirm - < pkglist.txt
 yay -S --needed --noconfirm - < aurlist.txt
 
-# --- Instalação de Ativos Locais (Fontes, Temas, Cursores) ---
+# --- ativos locais(Fontes, Temas, Cursores) ---
 echo -e "${YELLOW}--> Instalando ativos locais do repositório...${NC}"
 
 # Instalação de Fontes
