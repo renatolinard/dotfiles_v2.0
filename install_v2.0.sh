@@ -128,11 +128,11 @@ fc-cache -fv
 
 # --- Configuração do Tema SDDM
 echo -e "${YELLOW}--> Configurando tema SDDM (Sugar Dark)...${NC}"
-if [ -d "sugar-dark" ]; then
+if [ -d "ativos/sugar-dark" ]; then
     sudo rm -rf /usr/share/sddm/themes/sugar-dark
-    sudo cp -r sugar-dark /usr/share/sddm/themes/
+    sudo cp -r ativos/sugar-dark /usr/share/sddm/themes/
     sudo mkdir -p /etc/sddm.conf.d
-    sudo cp sugar-dark/sddm.conf /etc/sddm.conf.d
+    sudo cp ativos/sugar-dark/sddm.conf /etc/sddm.conf.d
 else
     echo -e "${YELLOW}AVISO: Diretório do tema não encontrado no repositório.
     Pulando configuração do SDDM.${NC}"
