@@ -70,7 +70,7 @@ echo -e "${YELLOW}--> Built ghostty from source...${NC}"
 git clone https://github.com/ghostty-org/ghostty
 #construção
 if [ -d "ghostty" ]; then
-    (cd ghostty && zig build -Doptimize=ReleaseFast)
+    (cd ghostty && sudo zig build -p /usr -Doptimize=ReleaseFast)
 else 
     echo -e "${YELLOW}AVISO: Erro de instalação, faca a construção 
     manualmente.${NC}" 
