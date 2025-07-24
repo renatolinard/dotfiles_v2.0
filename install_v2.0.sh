@@ -59,9 +59,9 @@ if [ -d "my_cursors" ]; then
 fi
 
 # Instalação do Tema GTK
-if [ -d "kanagawa_gtk3" ]; then
+if [ -d "ativos/kanagawa_gtk3" ]; then
     echo "Copiando tema GTK local..."
-    sudo cp -r kanagawa_gtk3/** /usr/share/themes/
+    sudo cp -r ativos/kanagawa_gtk3/** /usr/share/themes/
 fi
 
 # instalação ghostty from source
