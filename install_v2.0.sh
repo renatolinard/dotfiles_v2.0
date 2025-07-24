@@ -79,10 +79,6 @@ fi
 #instalação e configuração Zen Browser
 echo -e "${BLUE}Iniciando a instalação do Zen Browser...${NC}"
 flatpak install flathub app.zen_browser.zen
-echo "Aplicando tema aos aplicativos Flatpak..."
-sudo flatpak override --filesystem=$HOME/.themes
-sudo flatpak override --filesystem=/usr/share/themes
-sudo flatpak override --env=GTK_THEME=Kanagawa
 
 #instalação neovim from source 
 echo -e "${YELLOW}--> Built neovim from source...${NC}"
