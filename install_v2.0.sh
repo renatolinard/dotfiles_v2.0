@@ -142,6 +142,24 @@ else
     Pulando configuração do SDDM.${NC}"
 fi
 
+# --- confuguração grub theme
+echo -e "${YELLOW}--> Configurando tema dark matter para o grub...${NC}"
+if [ -d "ativos/darkmatter" ]; then
+    sudo cp -r ativos/darkmatter /boot/grub/themes/
+    # edit grub config file
+    echo "Manual step required:"
+    echo "Open sudo vim /etc/default/grub"
+    echo "Find the line GRUB_THEME="
+    echo "Change to: GRUB_THEME=/boot/grub/themes/darkmatter/theme.txt"
+    read -p "Press any key to open grub files: " c
+    sudo vim /etc/default/grub
+    # update the grub
+    sudo grub-mkconfig -o /boot/grub/grub.cfg
+else 
+    echo -e "${YELLOW}AVISO: Diretório do tema não encontrado no repositório.
+    Pulando configuração do SDDM.${NC}"
+fi
+
 # --- Finalização ---
 echo -e "${GREEN}------------------------------------------------${NC}"
 echo -e "${GREEN}Instalação concluída com sucesso!${NC}"
