@@ -142,13 +142,9 @@ fi
 echo -e "${YELLOW}--> Configurando tema dark matter para o grub...${NC}"
 if [ -d "ativos/darkmatter" ]; then
     sudo cp -r ativos/darkmatter /boot/grub/themes/
-    # edit grub config file
-    echo "Manual step required:"
-    echo "Open sudo vim /etc/default/grub"
-    echo "Find the line GRUB_THEME="
-    echo "Change to: GRUB_THEME=/boot/grub/themes/darkmatter/theme.txt"
-    read -p "Press any key to open grub files: " c
-    sudo vim /etc/default/grub
+    # copy grub config file
+    sudo rm /etc/default/grub 
+    sudo cp ativos/darkmatter/grub /etc/default/
     # update the grub
     sudo grub-mkconfig -o /boot/grub/grub.cfg
 else 
