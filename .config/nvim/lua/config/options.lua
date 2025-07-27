@@ -44,7 +44,7 @@ set.signcolumn = "yes"
 --  See `:help 'list'`
 --  and `:help 'listchars'`
 set.list = true
-set.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+set.listchars = { tab = "* ", trail = "·", nbsp = "␣" }
 
 -- block cursor
 set.guicursor = ""

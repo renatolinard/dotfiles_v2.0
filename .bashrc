@@ -65,6 +65,7 @@ if [[ $iatest -gt 0 ]]; then bind "set bell-style visible"; fi
 #-------------------------------------------------------------
 
 #------------------------------GENERAL ALIAS´S---------------------------------
+alias reload="source ~/.bashrc"
 alias lock="swaylock"
 alias cat="bat"
 alias blue="bluetuith"

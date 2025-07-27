@@ -76,7 +76,7 @@ thunar
 thunar-volman
 tmux
 tree
-ttf-font-awesome
+woff2-font-awesome
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols-common
 udisks2

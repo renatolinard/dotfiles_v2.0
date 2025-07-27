@@ -37,8 +37,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- sometimes in insert mode, control-c doesn't exactly work like escape
 vim.keymap.set("i", "<C-a>", "<Esc><Esc>")
 
--- Custom Mappings (using <Leader>)
-
 vim.keymap.set("n", "<leader>tc", function()
 	if vim.o.colorcolumn == "" then
 		vim.o.colorcolumn = "80"
@@ -50,19 +48,14 @@ end, { desc = "Toggle Colorcolumn at 80" })
 vim.keymap.set("n", "<Esc>", "<cmd>:nohlsearch<cr>", { desc = "Clear Search Highlight" })
 vim.keymap.set("n", "<C-l>", "80l", { desc = "Go to Column 80" })
 
+--- markdownpreview
+vim.keymap.set("n", "<leader>md", "<cmd>:MarkdownPreview<cr>", { desc = "Start markdownpreview" })
+
 -- Highlight when yanking (copying) text
 vim.api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight when yanking (copying) text",
 	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
 	callback = function()
 		vim.hl.on_yank()
-	end,
-})
-
--- Close oil buffer with <esc>
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "oil",
-	callback = function()
-		vim.api.nvim_buf_set_keymap(0, "n", "<Esc>", "<cmd>q<cr>", { noremap = true, silent = true })
 	end,
 })
