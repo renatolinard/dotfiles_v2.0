@@ -40,12 +40,6 @@ set.smartcase = true
 -- Keep signcolumn on by default
 set.signcolumn = "yes"
 
--- Sets how neovim will display certain whitespace characters in the editor.
---  See `:help 'list'`
---  and `:help 'listchars'`
-set.list = true
-set.listchars = { tab = "* ", trail = "·", nbsp = "␣" }
-
 -- block cursor
 set.guicursor = ""
 set.guicursor = "a:blinkon0"

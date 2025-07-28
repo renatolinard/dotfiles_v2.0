@@ -11,6 +11,9 @@ iatest=$(expr index "$-" i)
 fastfetch
 #----------------------------------
 
+# --- pywal ---
+cat ~/.cache/wal/sequences
+
 #----configurações globais ---------
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc

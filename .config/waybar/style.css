@@ -1,16 +1,6 @@
-/* ~/.config/waybar/style.css (Estrutura do usuário + Cores Kanagawa Restauradas) */
 
-/** ********** Colors (Paleta Kanagawa Paper Ink Restaurada) ********** **/
-@define-color bg_color              #1F1F28; /* Fundo principal */
-@define-color bg_secondary          rgba(22, 22, 29, 0.85); /* Fundo das pílulas */
-@define-color fg_color              #DCD7BA; /* Texto principal */
-@define-color caution_color         #545464; /* Cinza para bordas e texto inativo */
-@define-color accent_color          #7E9CD8; /* Azul para highlights */
-@define-color warning_color         #C34043; /* Vermelho para avisos */
-@define-color performance_color     #7E9CD8; /* Azul para CPU, etc. */
-@define-color audio_color           #957FB8; /* Magenta para áudio */
-@define-color misc_color            #76946A; /* Verde para bateria, etc. */
-@define-color date_color            #DCA561; /* Amarelo para data/hora */
+/* 1. IMPORTA as cores geradas pelo pywal. Esta é nossa ÚNICA fonte de cores. */
+@import '/home/renatolinard/.cache/wal/colors-waybar.css';
 
 /** ********** Fonts ********** **/
 * {
@@ -18,16 +8,17 @@
     font-size: 16px;
 }
 
-/* --- Barra Principal (Seu estilo, com cores consistentes) --- */
+/* --- Barra Principal (Seu estilo, com cores dinâmicas) --- */
 #waybar {
-    /* From https://css.glass */
-background: rgba(22, 22, 29, 0.69);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-border: 1px solid #1F1F28;
+    /* Usa a cor de fundo do pywal com 69% de opacidade */
+    background: rgba(0, 0, 0, 0.60);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* Usa uma cor de borda sutil da paleta pywal (um cinza escuro) */
+    border: 1px solid @color0;
 }
 
-/* --- Módulos (Seu estilo, com cores consistentes) --- */
+/* --- Módulos (Seu estilo, com cores dinâmicas) --- */
 #workspaces,
 #custom-wofi,
 #custom-lock,
@@ -39,78 +30,61 @@ border: 1px solid #1F1F28;
 #pulseaudio,
 #clock,
 #tray,
-#custom-power,
-#custom-lock,
-#custom-weather,
-#custom-battery,
-#keyboard-state,
-#language,
-#submap,
-#temperature,
-#disk {
-    background: @bg_secondary;
+#custom-power {
+    background: @color0; /* Usa a cor de fundo mais escura para as pílulas */
     margin: 6px 6px;
     padding: 0px 13px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.21);
+    border: 1px solid @color8; /* Usa um cinza da paleta para a borda */
     font-weight: bold;
     opacity: 0.85;
 }
 
-/* --- Cores dos Módulos (Usando as variáveis Kanagawa) --- */
+/* --- Cores dos Módulos (Usando as variáveis pywal) --- */
 #cpu, #temperature, #memory {
-    color: @performance_color;
+    color: @color4; /* Cor de Destaque 1 (geralmente azul/roxo) */
 }
 #pulseaudio {
-    color: @audio_color;
+    color: @color5; /* Cor de Destaque 2 (geralmente magenta) */
 }
 #custom-power {
-    color: @warning_color
+    color: @color1; /* Cor de Aviso (geralmente vermelho/laranja) */
 }
-#battery, #language, #backlight {
-    color: @misc_color;
+#battery, #language, #backlight, #custom-lock {
+    color: @color2; /* Cor de Destaque 3 (geralmente verde) */
 }
 #clock, #custom-wofi {
-    color: @date_color;
-}
-#custom-lock {
-    color: @misc_color;
+    color: @color3; /* Cor de Destaque 4 (geralmente amarelo) */
 }
 #window, #network {
-    color: @fg_color;
+    color: @foreground; /* Cor de texto principal */
 }
 
-/* --- Workspaces (Seu layout, com cores para legibilidade) --- */
+/* --- Workspaces (com cores dinâmicas) --- */
 #workspaces button {
     padding: 0px 5px;
     margin: 4px 3px;
     border-radius: 15px;
     border: 0px;
-    color: @caution_color; /* Cor sutil para workspaces inativos */
+    color: @color7; /* Cinza claro para workspaces inativos */
     background-color: transparent;
     transition: all 0.3s ease-in-out;
 }
 #workspaces button.active {
-    color: #515797; /* Cor de destaque para o workspace ativo */
-    background: @bg_color;
+    color: @foreground; /* Texto claro para o workspace ativo */
+    background: @color4; /* Fundo com a cor de destaque principal */
     border-radius: 15px;
     min-width: 40px;
 }
 #workspaces button:hover {
-    color: @fg_color;
-    background: @caution_color;
+    color: @foreground;
+    background: @color8; /* Fundo cinza para hover */
 }
 
 /* --- Tooltip --- */
-tooltip {
-    background: @bg_color;
-    border: 2px solid @caution_color;
+tooltip, #tray menu {
+    background: @background;
+    border: 2px solid @color4;
     border-radius: 8px;
     font-weight: 500;
-    font-family: "DankMono Nerd Font Mono";
-}
-#tray menu {
-    background: @bg_color;
-    border: 2px solid @caution_color;
-    border-radius: 8px;
 }

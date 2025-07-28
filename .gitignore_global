@@ -49,3 +49,5 @@
 !/.config/kitty/**
 !/.config/yazi/
 !/.config/yazi/**
+!/.config/waypaper/
+!/.config/waypaper/**

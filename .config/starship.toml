@@ -1,22 +1,8 @@
-# ~/.config/starship.toml (Versão com sintaxe de paleta corrigida)
+# ~/.config/starship.toml (Versão Dinâmica com Pywal)
 
-# 1. SELECIONA a paleta de cores que vamos definir abaixo.
-palette = "kanagawa"
-
-# 2. DEFINE a nossa paleta de cores customizada.
-[palettes.kanagawa]
-foreground = "#DCD7BA"
-background = "#1F1F28"
-blue       = "#7E9CD8"
-green      = "#76946A"
-red        = "#C34043"
-yellow     = "#DCA561"
-comment    = "#545464"
-magenta    = "#957FB8"
-
+# REMOVEMOS a seleção de paleta. O Starship agora usará as cores do terminal.
 
 # --- Configuração do Formato e Módulos ---
-
 # Desativa a quebra de linha para um prompt de linha única
 [line_break]
 disabled = true
@@ -39,7 +25,7 @@ $character"""
 # Símbolo do Sistema Operacional
 [os]
 disabled = false
-style = "#515797" # Agora usa os nomes simples da paleta
+style = "blue" # Cor genérica do terminal
 format = "[$symbol ]($style)"
 
 [os.symbols]
@@ -47,8 +33,8 @@ Arch = " "
 
 # Diretório
 [directory]
-style = "#a67337" # Cor do texto principal
-format = "[  ](#737c73)[$path]($style) " # Ícone amarelo, texto na cor principal
+style = "cyan" # Cor genérica do terminal
+format = "[ $path]($style) "
 truncation_length = 3
 truncation_symbol = "…/"
 read_only = " "
@@ -56,7 +42,7 @@ read_only = " "
 # Branch do Git
 [git_branch]
 symbol = ""
-style = "bold magenta"
+style = "bold purple" # "magenta" no ANSI é "purple"
 format = '[$symbol $branch]($style)'
 
 # Status do Git (arquivos modificados, etc.)
@@ -111,5 +97,5 @@ format = '[${symbol}(${version} )]($style)'
 
 # Caractere final do prompt
 [character]
-success_symbol = "[](#526994)"
-error_symbol = "[](#c75758)"
+success_symbol = "[](bold blue)"
+error_symbol = "[](bold red)"
