@@ -15,7 +15,7 @@
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     /* Usa uma cor de borda sutil da paleta pywal (um cinza escuro) */
-    border: 1px solid @color0;
+    border: 1px solid @color1;
 }
 
 /* --- Módulos (Seu estilo, com cores dinâmicas) --- */
