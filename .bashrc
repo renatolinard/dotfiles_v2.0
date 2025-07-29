@@ -83,9 +83,10 @@ alias play="mpv"
 alias nvrc="cd ~/.config/nvim/lua/ && vim ."
 alias ~='cd ~'
 alias ..='cd ..'
-alias ls="exa"
-alias lh="ls -lh"
-alias la="ls -la"
+alias ls="eza -a --icons=always"
+alias lh="eza -lh --icons=always"
+alias la="eza -la --icons=always"
+alias lt="eza -a --tree --level=3 --icons=always"
 alias bashrc="vim ~/.bashrc"
 alias upd="sudo pacman -Syyu && yay -Syu"
 alias ask='gemini'
