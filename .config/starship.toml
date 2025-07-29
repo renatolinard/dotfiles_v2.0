@@ -1,102 +1,103 @@
-# ~/.config/starship.toml (Versão Dinâmica com Pywal)
+# ~/.config/starship.toml (Versão Final: Ultra-Minimalista Dinâmico)
 
-# REMOVEMOS a seleção de paleta. O Starship agora usará as cores do terminal.
-
-# --- Configuração do Formato e Módulos ---
-# Desativa a quebra de linha para um prompt de linha única
-[line_break]
-disabled = true
-
-# Define o formato geral do prompt
+# Formato de linha única, apenas os módulos essenciais separados por um espaço.
 format = """
 $os\
 $directory\
 $git_branch\
 $git_status\
 $python\
-$golang\
-$rust\
 $c\
+$rust\
+$golang\
 $nodejs\
 $php\
 $java\
 $character"""
 
-# Símbolo do Sistema Operacional
+# --- Módulos com Paleta de Cores Restrita ---
+
+[line_break]
+disabled = true
+
+# Símbolo do Sistema Operacional (cor sutil)
 [os]
 disabled = false
-style = "blue" # Cor genérica do terminal
-format = "[$symbol ]($style)"
-
+style = "bright-black" # Cinza sutil da paleta pywal
+format = "[$symbol]($style) "
 [os.symbols]
-Arch = " "
+Arch = "󰣇"
 
-# Diretório
+# Username (desabilitado para um visual mais limpo)
+[username]
+show_always = false
+
+# Diretório (cor de texto principal, em negrito, para destaque)
 [directory]
-style = "cyan" # Cor genérica do terminal
-format = "[ $path]($style) "
-truncation_length = 3
+style = "bold white" # A cor de texto mais clara da paleta pywal
+format = "[ $path]($style) "
+truncation_length = 4
 truncation_symbol = "…/"
 read_only = " "
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
 
-# Branch do Git
+# Branch do Git (cor sutil, a mesma do OS)
 [git_branch]
 symbol = ""
-style = "bold purple" # "magenta" no ANSI é "purple"
+style = "bright-black"
 format = '[$symbol $branch]($style)'
 
-# Status do Git (arquivos modificados, etc.)
+# Status do Git (cor sutil)
 [git_status]
-style = "bold yellow"
+style = "bright-black"
 format = '([$all_status$ahead_behind]($style)) '
-stashed = ' *'
-ahead = ' !'
-behind = ' '
-diverged = ' '
-untracked = ' ?'
-staged = ' +'
-modified = ' *'
-renamed = ' >'
-deleted = ' -'
+# ... (símbolos de status) ...
+stashed = ''
+ahead = ''
+behind = ''
+diverged = ''
+untracked = ''
+staged = ''
+modified = ''
+renamed = ''
+deleted = ''
 
-# Módulos de Linguagens de Programação
+
+# Módulos de Linguagens (cor sutil para não poluir)
 [python]
-symbol = " "
-style = "bold green"
+symbol = ""
+style = "bright-black"
 format = '[${symbol}(${version} )]($style)'
-
 [c]
-symbol = " "
-style = "bold green"
+symbol = ""
+style = "bright-black"
 format = '[${symbol}(${version} )]($style)'
-
 [rust]
-symbol = " "
-style = "bold green"
+symbol = ""
+style = "bright-black"
 format = '[${symbol}(${version} )]($style)'
-
 [golang]
-symbol = " "
-style = "bold green"
+symbol = ""
+style = "bright-black"
 format = '[${symbol}(${version} )]($style)'
-
 [nodejs]
-symbol = " "
-style = "bold green"
+symbol = ""
+style = "bright-black"
 format = '[${symbol}(${version} )]($style)'
-
 [php]
-symbol = " "
-style = "bold green"
+symbol = ""
+style = "bright-black"
 format = '[${symbol}(${version} )]($style)'
-
 [java]
-symbol = " "
-style = "bold green"
+symbol = ""
+style = "bright-black"
 format = '[${symbol}(${version} )]($style)'
 
 # Caractere final do prompt
 [character]
-success_symbol = "[](bold blue)"
-error_symbol = "[](bold red)"
-
+success_symbol = "[❯](bright-black)" # Seta cinza para sucesso
+error_symbol = "[❯](bold red)" # Mantemos o vermelho para erros
