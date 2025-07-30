@@ -19,7 +19,7 @@
   "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
   "nvim-web-devicons": { "branch": "master", "commit": "4a8369f4c78ef6f6f895f0cec349e48f74330574" },
   "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },
-  "pywal16.nvim": { "branch": "main", "commit": "6d8063c6cff2760ecef5c11b2609905e0215e214" },
+  "pywal16": { "branch": "main", "commit": "6d8063c6cff2760ecef5c11b2609905e0215e214" },
   "snipe.nvim": { "branch": "main", "commit": "77847dc388332cd140e9a0b2fc34c8c1387d6779" },
   "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
   "trouble.nvim": { "branch": "main", "commit": "85bedb7eb7fa331a2ccbecb9202d8abba64d37b3" },

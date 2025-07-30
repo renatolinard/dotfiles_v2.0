@@ -1,11 +1,18 @@
-return {
-	"uZer/pywal16.nvim",
-	-- for local dev replace with:
-	-- dir = '~/your/path/pywal16.nvim',
-	config = function()
-		vim.cmd.colorscheme("pywal16")
-		local pywal16 = require("pywal16")
+local function enable_transparency()
+	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+	vim.api.nvim_set_hl(0, "LineNr", { bg = "none" })
+end
 
-		pywal16.setup()
-	end,
+return {
+	{
+		"uZer/pywal16.nvim",
+		name = "pywal16",
+		config = function()
+			vim.cmd.colorscheme("pywal16")
+			vim.cmd("hi Directory guibg=NONE")
+			vim.cmd("hi SignColumn guibg=NONE")
+			enable_transparency()
+		end,
+	},
 }
