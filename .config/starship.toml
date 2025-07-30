@@ -1,103 +1,116 @@
-# ~/.config/starship.toml (Versão Final: Ultra-Minimalista Dinâmico)
-
-# Formato de linha única, apenas os módulos essenciais separados por um espaço.
 format = """
 $os\
+$username\
 $directory\
+$fill\
 $git_branch\
 $git_status\
+$git_metrics\
 $python\
-$c\
-$rust\
-$golang\
+$lua\
 $nodejs\
-$php\
-$java\
+$cmd_duration\
+$linebreak
 $character"""
 
-# --- Módulos com Paleta de Cores Restrita ---
+[username]
+style_user = 'bold green'
+style_root = 'bold red'
+format = '[$user]($style) '
+disabled = false
+show_always = true
 
-[line_break]
-disabled = true
+[hostname]
+style = 'bold blue'
+ssh_only = false
+format = 'in [$hostname]($style) '
 
-# Símbolo do Sistema Operacional (cor sutil)
+[character]
+success_symbol = '[❯](bright-black)'
+error_symbol = '[❯](bold red)'
+
 [os]
 disabled = false
-style = "bright-black" # Cinza sutil da paleta pywal
-format = "[$symbol]($style) "
+style = 'fg:bold blue'
+
 [os.symbols]
-Arch = "󰣇"
-
-# Username (desabilitado para um visual mais limpo)
-[username]
-show_always = false
-
-# Diretório (cor de texto principal, em negrito, para destaque)
+Windows = "󰍲 "
+Ubuntu = "󰕈 "
+SUSE = " "
+Raspbian = "󰐿 "
+Mint = "󰣭 "
+Macos = "󰀵 "
+Manjaro = " "
+Linux = "󰌽 "
+Gentoo = "󰣨 "
+Fedora = "󰣛 "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = "󰣇 "
+Artix = "󰣇 "
+CentOS = " "
+Debian = "󰣚 "
+Redhat = "󱄛 "
+RedHatEnterprise = "󱄛 "
+Pop = " "
 [directory]
-style = "bold white" # A cor de texto mais clara da paleta pywal
-format = "[ $path]($style) "
-truncation_length = 4
-truncation_symbol = "…/"
-read_only = " "
+read_only = ""
+style = 'bold fg:yellow'
+format = '[$path ]($style)'
+truncation_length = 3
+truncation_symbol = '../'
+truncate_to_repo = false
+
 [directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
+'Documents' = '󰈙'
+'Downloads' = ' '
+'Music' = ' '
+'Pictures' = ' '
 
-# Branch do Git (cor sutil, a mesma do OS)
 [git_branch]
-symbol = ""
-style = "bright-black"
-format = '[$symbol $branch]($style)'
+style = 'italic fg:maroon'
+symbol = ' '
+format = '[on](flamingo) [$symbol$branch ]($style)'
 
-# Status do Git (cor sutil)
 [git_status]
-style = "bright-black"
-format = '([$all_status$ahead_behind]($style)) '
-# ... (símbolos de status) ...
-stashed = ''
-ahead = ''
-behind = ''
-diverged = ''
-untracked = ''
-staged = ''
-modified = ''
-renamed = ''
-deleted = ''
+style = 'fg:green'
+format = '([$all_status$ahead_behind]($style) )'
 
+[git_metrics]
+added_style = 'bold green'
+deleted_style = 'bold red'
+format = '[+$added]($added_style)/[-deleted]($deleted_style)'
 
-# Módulos de Linguagens (cor sutil para não poluir)
+[fill]
+symbol = ' '
+
 [python]
-symbol = ""
-style = "bright-black"
-format = '[${symbol}(${version} )]($style)'
-[c]
-symbol = ""
-style = "bright-black"
-format = '[${symbol}(${version} )]($style)'
-[rust]
-symbol = ""
-style = "bright-black"
-format = '[${symbol}(${version} )]($style)'
-[golang]
-symbol = ""
-style = "bright-black"
-format = '[${symbol}(${version} )]($style)'
-[nodejs]
-symbol = ""
-style = "bright-black"
-format = '[${symbol}(${version} )]($style)'
-[php]
-symbol = ""
-style = "bright-black"
-format = '[${symbol}(${version} )]($style)'
-[java]
-symbol = ""
-style = "bright-black"
-format = '[${symbol}(${version} )]($style)'
+style = 'blue'
+symbol = ' '
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+pyenv_version_name = true
+python_binary = 'python3'
+pyenv_prefix = ''
 
-# Caractere final do prompt
-[character]
-success_symbol = "[❯](bright-black)" # Seta cinza para sucesso
-error_symbol = "[❯](bold red)" # Mantemos o vermelho para erros
+[lua]
+style = 'peach'
+format = '[ $version]($style)'
+
+[nodejs]
+style = 'green'
+format = '[ $version]($style)'
+
+[shell]
+bash_indicator = ' '
+fish_indicator = '󰈺 '
+zsh_indicator = ''
+powershell_indicator = '_'
+unknown_indicator = 'mystery shell'
+style = 'cyan bold'
+disabled = false
+
+[cmd_duration]
+min_time = 500
+format = '  [$duration](bold italic dimmed rosewater)'
+

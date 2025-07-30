@@ -5,11 +5,32 @@ iatest=$(expr index "$-" i)
 #---------------------------------------------------
 
 #-----------Fastfetch--------------
-# if [ -f /usr/bin/fastfetch ]; then
-#     fastfetch
-# fi
-fastfetch
+if [ -f /usr/bin/fastfetch ]; then
+    fastfetch
+fi
 #----------------------------------
+
+# ================================= fzf ================================= #
+
+_fzf_comprun() {
+    local command=$1
+    shift
+
+    case "$command" in
+        cd)           fzf --preview 'eza --tree --color=always {} | head -200' "$@" ;;
+        export|unset) fzf --preview "eval 'echo \${}'"         "$@" ;;
+        ssh)          fzf --preview 'dig {}'                   "$@" ;;
+        *)            fzf --preview "$show_file_or_dir_preview" "$@" ;;
+    esac
+}
+
+# Configure FZF for directory preview
+if command -v fzf &> /dev/null; then
+    _fzf_preview() {
+        eza --color=always --icons=always "$1"
+    }
+fi
+
 
 # --- pywal ---
 cat ~/.cache/wal/sequences
@@ -26,15 +47,10 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
-#---------------------------------------------------------
 
 #------------------Prompt starship------------------------
 eval "$(starship init bash)"
 #--------------------------------------------------------
-
-#-----------------Permitir copiar no tmux/vim com C+S+v-----------------------
-# Desabilita o "Bracketed Paste Mode" para evitar erros de colagem dentro do tmux/nvim
-bind 'set enable-bracketed-paste off'
 
 #--- Define Editor--
 export EDITOR=nvim
@@ -58,10 +74,6 @@ if [[ $iatest -gt 0 ]]; then bind "set completion-ignore-case on"; fi
 if [[ $iatest -gt 0 ]]; then bind "set show-all-if-ambiguous On"; fi
 #-------------------------------------------------------------------
 
-#-----------Substituir sino por sinal visual------------------
-if [[ $iatest -gt 0 ]]; then bind "set bell-style visible"; fi
-#-------------------------------------------------------------
-
 #------------------------------GENERAL ALIAS´S---------------------------------
 alias reload="source ~/.bashrc"
 alias lock="swaylock"
@@ -78,10 +90,10 @@ alias play="mpv"
 alias nvrc="cd ~/.config/nvim/lua/ && vim ."
 alias ~='cd ~'
 alias ..='cd ..'
-alias ls="eza -a --icons=always"
+alias ls="eza -T --level=1 --color=always --icons=always"
 alias lh="eza -lh --icons=always"
 alias la="eza -la --icons=always"
-alias lt="eza -a --tree --level=3 --icons=always"
+alias lt="eza -T --level=3 --color=always --icons=always"
 alias bashrc="vim ~/.bashrc"
 alias upd="sudo pacman -Syyu && yay -Syu"
 alias ask='gemini'
@@ -183,7 +195,7 @@ gc() {
     git commit -m "$commit_message"
 }
 
- y() {
+y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
     yazi "$@" --cwd-file="$tmp"
     IFS= read -r -d '' cwd < "$tmp"
