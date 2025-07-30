@@ -1,13 +1,13 @@
-bluetuith 0.2.3-1
-mpvpaper 1.8-1
-nerdfetch 8.4.0-2
-paru 2.1.0-1
-paru-debug 2.1.0-1
-preload 0.6.4-9
-python-pywal16 1:3.8.9-2
-sddm-sugar-dark 1.2-1
-swaylock-effects 1.7.0.0-4
-waypaper 2.6-1
-wlogout 1.2.2-0
-yay 12.5.0-1
-yay-debug 12.5.0-1
+bluetuith 
+mpvpaper 
+nerdfetch 
+paru 
+paru-debug 
+preload 
+python-pywal16 
+sddm-sugar-dark 
+swaylock-effects 
+waypaper 
+wlogout 
+yay 
+yay-debug 
