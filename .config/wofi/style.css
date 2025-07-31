@@ -1,64 +1,91 @@
+
+/* 1. IMPORTA as cores geradas pelo pywal. Esta é nossa ÚNICA fonte de cores. */
 @import '/home/renatolinard/.cache/wal/colors-waybar.css';
+
 /** ********** Fonts ********** **/
 * {
     font-family: "OperatorMonoLig Nerd Font Mono";
     font-size: 18px;
 }
 
-#window {
+/* --- Barra Principal (Seu estilo, com cores dinâmicas) --- */
+#waybar {
+    /* Usa a cor de fundo do pywal com 69% de opacidade */
     background: rgba(0, 0, 0, 0.60);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     /* Usa uma cor de borda sutil da paleta pywal (um cinza escuro) */
-    border: 1px solid @color8;
-
+    border: 1px solid @color1;
 }
 
-#outer-box {
-    padding: 10px;
+/* --- Módulos (Seu estilo, com cores dinâmicas) --- */
+#workspaces,
+#custom-wofi,
+#custom-lock,
+#window,
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio,
+#clock,
+#tray,
+#custom-power {
+    background: @color0; /* Usa a cor de fundo mais escura para as pílulas */
+    margin: 6px 6px;
+    padding: 0px 13px;
+    border-radius: 10px;
+    border: 1px solid @color8; /* Usa um cinza da paleta para a borda */
+    font-weight: bold;
+    opacity: 0.85;
 }
 
-#input {
-    background-color: @color0;
-    border: 1px solid @color8;
-    padding: 4px 12px;
-    border-radius: 8px;
+/* --- Cores dos Módulos (Usando as variáveis pywal) --- */
+#cpu, #temperature, #memory {
+    color: @color4; /* Cor de Destaque 1 (geralmente azul/roxo) */
+}
+#pulseaudio {
+    color: @color5; /* Cor de Destaque 2 (geralmente magenta) */
+}
+#custom-power {
+    color: @color1; /* Cor de Aviso (geralmente vermelho/laranja) */
+}
+#battery, #language, #backlight, #custom-lock {
+    color: @color2; /* Cor de Destaque 3 (geralmente verde) */
+}
+#clock, #custom-wofi {
+    color: @color3; /* Cor de Destaque 4 (geralmente amarelo) */
+}
+#window, #network {
+    color: @foreground; /* Cor de texto principal */
 }
 
-#scroll {
-    margin-top: 10px;
+/* --- Workspaces (com cores dinâmicas) --- */
+#workspaces button {
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 0px;
+    color: @color7; /* Cinza claro para workspaces inativos */
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
-
-#inner-box {
+#workspaces button.active {
+    color: @foreground; /* Texto claro para o workspace ativo */
+    background: @color4; /* Fundo com a cor de destaque principal */
+    border-radius: 15px;
+    min-width: 40px;
 }
-
-#img {
-    padding-right: 8px;
-}
-
-#text {
+#workspaces button:hover {
     color: @foreground;
+    background: @color8; /* Fundo cinza para hover */
 }
 
-#text:selected {
-    color: @background;
+/* --- Tooltip --- */
+tooltip, #tray menu {
+    background: @background;
+    border: 2px solid @color4;
+    border-radius: 8px;
+    font-weight: 500;
 }
 
-#entry {
-    padding: 6px;
-}
-
-#entry:selected {
-    background-color: @selected;
-    color: @background;
-}
-
-#unselected {
-}
-
-#selected {
-}
-
-#input, #entry:selected {
-    border-radius: 0px;
-}

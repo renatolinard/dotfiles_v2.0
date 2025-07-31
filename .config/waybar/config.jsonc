@@ -1,102 +1,127 @@
 {
-// MAIN BAR //
-"layer": "top",
-"margin-top": 3,
-"margin-bottom": -6,
-"margin-left": 10,
-"margin-right": 10,    
-
-// --- ORGANIZAÇÃO DE MÓDULOS ATUALIZADA ---
-"modules-left": ["custom/wofi", "hyprland/workspaces", "custom/lock"],
-"modules-center": ["hyprland/window"],
-"modules-right": ["pulseaudio", "network", "battery", "clock", "tray", "custom/power"],
-
-// --- DEFINIÇÃO DOS MÓDULOS ---
-
-"custom/wofi": {
-    "format": "",
-    "on-click": "wofi"
-},
-"hyprland/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-        "default": "",
-        "1": "󰼏", "2": "󰼐", "3": "󰼑", "4": "󰼒", "5": "󰼓"
+    // MAIN BAR //
+    "layer": "top",
+    "margin-top": 3,
+    "margin-bottom": -6,
+    "margin-left": 10,
+    "margin-right": 10,
+    // --- ORGANIZAÇÃO DE MÓDULOS ATUALIZADA ---
+    "modules-left": [
+        "custom/wofi",
+        "hyprland/workspaces",
+        "custom/lock"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "battery",
+        "clock",
+        "tray",
+        "custom/power"
+    ],
+    // --- DEFINIÇÃO DOS MÓDULOS ---
+    "custom/wofi": {
+        "format": "",
+        "on-click": "wofi"
     },
-},
-
-"custom/lock": {
-    "format": "",
-    "on-click": "swaylock"
-},
-
-"hyprland/window": {
-    "format": "{}",
-    "rewrite": {
-        "(.*) - ghostty ": "$1",
-        "(.*) - flatpak run app.zen_browser.zen": "$1"
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": "",
+            "1": "󰼏",
+            "2": "󰼐",
+            "3": "󰼑",
+            "4": "󰼒",
+            "5": "󰼓"
+        },
     },
-    "max-length": 60
-},
-"cpu": {
-    "interval": 4,
-    "format": " {usage}%"
-},
-"memory#ram": {
-    "interval": 4,
-    "format": " {percentage}%"
-},
-"battery": {
-    "format": "{icon} {capacity}%",
-    "format-icons": ["", "", "", "", "", "", "", "", "", ""],
-    "format-charging": " {capacity}%"
-},
-"network": {
-    "format": "{ifname}",
-    "format-wifi": " {essid} ({signalStrength}%)",
-    "format-ethernet": "  {ifname}",
-    "format-disconnected": "Disconnected ⚠",
-    "tooltip-format": " {ifname} via {gwaddri}",
-    "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
-    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
-    "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50,
-    "on-click": "$(cat Kitty) --class dotfiles-floating -e nmtui",
-    "on-click-right": "~/.config/ml4w/scripts/nm-applet.sh toggle",
-},
-"pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
-    "format": "{icon}  {volume}%",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
-    "format-source-muted": "",
-    "format-icons": {
-        "headphone": " ",
-        "hands-free": " ",
-        "headset": " ",
-        "phone": " ",
-        "portable": " ",
-        "car": " ",
-        "default": ["", "", ""]
+    "custom/lock": {
+        "format": "",
+        "on-click": "swaylock"
     },
-    "on-click": "pavucontrol"
-},
-"clock": {
-    "format": "{:%H:%M %a}",
-    "on-click": "flatpak run com.ml4w.calendar",
-    "timezone": "America/Campo_Grande",
-    "tooltip": false
-},
-"tray": {
-    "icon-size": 18,
-    "spacing": 10
-},
-"custom/power": {
-    "format": "",
-    "on-click": "wlogout"
-},
-
+    "hyprland/window": {
+        "format": "{}",
+        "rewrite": {
+            "(.*) - ghostty ": "$1",
+            "(.*) - flatpak run app.zen_browser.zen": "$1"
+        },
+        "max-length": 60
+    },
+    "cpu": {
+        "interval": 4,
+        "format": " {usage}%"
+    },
+    "memory#ram": {
+        "interval": 4,
+        "format": " {percentage}%"
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "format-charging": " {capacity}%"
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-ethernet": "  {ifname}",
+        "format-disconnected": "Disconnected ⚠",
+        "tooltip-format": " {ifname} via {gwaddri}",
+        "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+        "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50,
+        "on-click": "~/.config/hypr/scripts/networkmanager.sh"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon}  {volume}%",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-click": "pavucontrol"
+    },
+    "clock": {
+        "format": "{:%H:%M %a}",
+        "on-click": "flatpak run com.ml4w.calendar",
+        "timezone": "America/Campo_Grande",
+        "tooltip": false
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout"
+    },
 }
 ]
