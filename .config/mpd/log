@@ -671,3 +671,7 @@
 2025-07-15T06:32:41 player: played "Album - Warp Speed Warriors/10 - Wildest Dreams (DragonForce's Version).mp3"
 2025-07-15T06:37:57 player: played "Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3"
 2025-07-15T06:41:51 player: played "Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3"
+2025-07-31T18:45:17 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-31T18:47:33 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-31T18:47:49 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-07-31T18:47:52 player: played "Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3"

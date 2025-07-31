@@ -11,7 +11,7 @@
 /* --- Barra Principal (Seu estilo, com cores dinâmicas) --- */
 #waybar {
     /* Usa a cor de fundo do pywal com 69% de opacidade */
-    background: rgba(0, 0, 0, 0.60);
+    background: rgba(0, 0, 0, 0.90);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     /* Usa uma cor de borda sutil da paleta pywal (um cinza escuro) */
