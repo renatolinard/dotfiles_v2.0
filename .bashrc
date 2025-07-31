@@ -11,42 +11,10 @@ fi
 #----------------------------------
 
 # ================================= fzf ================================= #
-
-_fzf_comprun() {
-    local command=$1
-    shift
-
-    case "$command" in
-        cd)           fzf --preview 'eza --tree --color=always {} | head -200' "$@" ;;
-        export|unset) fzf --preview "eval 'echo \${}'"         "$@" ;;
-        ssh)          fzf --preview 'dig {}'                   "$@" ;;
-        *)            fzf --preview "$show_file_or_dir_preview" "$@" ;;
-    esac
-}
-
-# Configure FZF for directory preview
-if command -v fzf &> /dev/null; then
-    _fzf_preview() {
-        eza --color=always --icons=always "$1"
-    }
-fi
-
-
-# --- pywal ---
-cat ~/.cache/wal/sequences
-
-#----configurações globais ---------
-if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
-fi
-#-----------------------------------
-
-#---funcionalidade de auto-completar comandos-------------
-if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-fi
+#
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --preview --color=bg:-1,bg+:#2A2A37,fg:-1,fg+:#DCD7BA,hl:#938AA9,hl+:#c4746e
+--color=header:#b6927b,info:#658594,pointer:#7AA89F
+--color=marker:#7AA89F,prompt:#c4746e,spinner:#8ea49e'
 
 #------------------Prompt starship------------------------
 eval "$(starship init bash)"
