@@ -1,12 +1,12 @@
+local kanagawa_paper = require("lualine.themes.kanagawa-paper-ink")
 return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
-		local lualine = require("lualine")
-
-		lualine.setup({
+		require("lualine").setup({
 			options = {
-				theme = "pywal16-nvim",
+				theme = kanagawa_paper,
+				-- ... your lualine config
 			},
 		})
 	end,
