@@ -131,8 +131,8 @@ grep -i "Name=" /usr/share/icons/NOME_DA_PASTA/index.theme
 killall waybar; waybar &
 
 # Gerar listas de pacotes para o script de instalação
-pacman -Qeq > pkglist.txt
-pacman -Qem > aurlist.txt
+pacman -Qeq | awk '{print $1}' > pkglist.txt
+pacman -Qem | awk '{print $1}' > aurlist.txt
 ```
 
 ### Alterar Temas GTK / Cursor
