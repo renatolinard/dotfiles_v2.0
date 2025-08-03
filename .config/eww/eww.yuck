@@ -1,4 +1,4 @@
-;; ~/.config/eww/eww.yuck (Versão Corrigida e Simplificada)
+;; ~/.config/eww/eww.yuck
 
 ;; --- Janela do Calendário ---
 (defwindow calendar
