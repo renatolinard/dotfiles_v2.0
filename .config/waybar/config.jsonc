@@ -111,7 +111,7 @@
     },
     "clock": {
         "format": "{:%H:%M %a}",
-        "on-click": "flatpak run com.ml4w.calendar",
+        "on-click": "~/.config/hypr/scripts/eww/eww.launcher.sh calendar",
         "timezone": "America/Campo_Grande",
         "tooltip": false
     },

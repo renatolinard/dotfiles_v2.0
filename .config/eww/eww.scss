@@ -1,0 +1,28 @@
+/* ~/.config/eww/eww.scss */
+
+.cal-box {
+    background-color: #1F1F28; // Kanagawa Background
+    border-radius: 12px;
+    border: 1px solid #545464; // Kanagawa Caution
+    padding: 10px;
+}
+
+.cal {
+    color: #DCD7BA; // Kanagawa Foreground
+    font-family: "DankMono Nerd Font Mono";
+}
+
+.cal .header {
+    color: #7E9CD8; // Kanagawa Blue
+    font-weight: bold;
+}
+
+.cal .weekday {
+    color: #957FB8; // Kanagawa Magenta
+}
+
+.cal .today {
+    color: #C34043; // Kanagawa Red
+    font-weight: bold;
+    text-decoration: underline;
+}

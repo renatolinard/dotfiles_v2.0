@@ -1,0 +1,23 @@
+;; ~/.config/eww/eww.yuck (Versão Corrigida e Simplificada)
+
+;; --- Janela do Calendário ---
+(defwindow calendar
+    :monitor 0
+    :geometry (geometry :x "1%"
+                          :y "1%"
+                          :width "280px"
+                          :height "60px"
+                          :anchor "top right")
+    :stacking "fg"
+    :focusable "false"
+    :namespace "eww-calendar" ;; Adiciona um namespace para regras de janela
+    (cal-widget))
+
+;; --- Widget do Calendário ---
+;; Esta versão é muito mais simples. Apenas colocamos o widget 'calendar'
+;; dentro da caixa, e ele se desenha sozinho.
+(defwidget cal-widget []
+    (box :class "cal-box"
+        (calendar :class "cal")))
+    
+
