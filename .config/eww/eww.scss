@@ -26,3 +26,29 @@
     font-weight: bold;
     text-decoration: underline;
 }
+
+
+/* Estilos para o Menu Wi-Fi */
+.wifi-box {
+    background-color: #1F1F28;
+    border-radius: 12px;
+    border: 1px solid #545464;
+    padding: 10px;
+    min-width: 300px;
+}
+
+.wifi-entry {
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #DCD7BA;
+    transition: all 0.2s ease;
+}
+
+.wifi-entry:hover {
+    background-color: #545464;
+}
+
+.wifi-entry label {
+    margin: 0 10px;
+}
+

@@ -21,3 +21,33 @@
         (calendar :class "cal")))
     
 
+;; --- wifi menu ---
+(defpoll wifi-networks :interval "5s" `~/.config/hypr/scripts/eww/wifi.sh`)
+(defwindow wifi
+ :monitor 0
+ :geometry (geometry :x "13%"
+                      :y "1%"
+                      :width "280px"
+                      :height "60px"
+                      :anchor "top right")
+ :stacking "fg"
+ :focusable "false"
+ :namespace "eww-wifi"
+ (wifi-widget))
+
+(defwidget wifi-widget []
+    (box :class "wifi-box" :orientation "vertical" :space-evenly false
+        ; Itera sobre a variável 'wifi-networks' e cria um botão para cada rede
+        (for network in wifi-networks
+            (button :class "wifi-entry" 
+                    ; Ao clicar, abre o 'nmtui' e fecha o widget eww
+                    :onclick "nmtui & eww close wifi-menu"
+                (box :orientation "horizontal" :space-evenly false
+                    (label :text {network.ssid})
+                    (label :text {network.security != "none" ? "" : ""})
+                    (label :text "${network.signal}%"))))))
+                
+            
+        
+    
+

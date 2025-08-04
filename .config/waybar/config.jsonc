@@ -84,7 +84,7 @@
         "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
-        "on-click": "~/.config/hypr/scripts/networkmanager.sh"
+        "on-click": "~/.config/hypr/scripts/eww/eww.launcher.sh wifi"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
