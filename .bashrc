@@ -77,6 +77,10 @@ alias dcc="dots checkout"
 alias gs="git status"
 alias ga="git add"
 alias gp="git push"
+
+# --- alias_diretorios
+alias back="cd /home/renatolinard/estudos/cursos_alura/backend_from_scratch/"
+
 #--- PATH ---
 export PATH=$PATH:~/.config/hypr/scripts
 export PATH=$PATH:/home/renatolinard/.cargo/bin
@@ -132,6 +136,18 @@ ff() {
     fi
 }
 
+z() {
+    # Usa 'find' para listar todos os diretórios a partir do local atual (.)
+    # e passa a lista para o fzf.
+    local directory
+    directory=$(find . -type d | fzf --preview 'bat --color=always --style=numbers {}' --query="$1" --height=80%)
+
+    # Se um diretório foi selecionado (a variável não está vazia), entra nele.
+    if [ -n "$directory" ]; then
+        cd "$directory"
+    fi
+}
+
 #----Commit dots
 dc() {
     # Pede ao usuário para digitar a mensagem e a salva na variável 'commit_message'
@@ -163,14 +179,6 @@ gc() {
     git commit -m "$commit_message"
 }
 
-y() {
-    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-    yazi "$@" --cwd-file="$tmp"
-    IFS= read -r -d '' cwd < "$tmp"
-    [ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
-    rm -f -- "$tmp"
-}
-
 # ~/.bashrc
 
 # Função para fazer uma limpeza completa do sistema
@@ -190,4 +198,3 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-eval "$(zoxide init bash)"
