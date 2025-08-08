@@ -16,9 +16,9 @@ set.cmdheight = 0
 set.clipboard:append("unnamedplus")
 
 set.expandtab = true -- Convert tabs to spaces
-set.shiftwidth = 4 -- Amount to indent with << and >>
-set.tabstop = 4 -- How many spaces are shown per Tab
-set.softtabstop = 4 -- How many spaces are applied when pressing Tab
+set.shiftwidth = 2 -- Amount to indent with << and >>
+set.tabstop = 2 -- How many spaces are shown per Tab
+set.softtabstop = 2 -- How many spaces are applied when pressing Tab
 
 set.smarttab = true
 set.smartindent = true

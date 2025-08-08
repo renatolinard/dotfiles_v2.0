@@ -675,3 +675,113 @@
 2025-07-31T18:47:33 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
 2025-07-31T18:47:49 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
 2025-07-31T18:47:52 player: played "Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3"
+2025-08-07T15:02:27 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-08-07T15:02:29 update: added Album - Faith/01 - One Reason.mp3
+2025-08-07T15:02:29 update: added Album - Faith/02 - I Will Wait.mp3
+2025-08-07T15:02:29 update: added Album - Faith/03 - Faith.mp3
+2025-08-07T15:02:29 update: added Album - Faith/04 - Just Like You.mp3
+2025-08-07T15:02:29 update: added Album - Faith/05 - Freedom Reigns.mp3
+2025-08-07T15:02:29 update: added Album - Faith/06 - Come Up Here.mp3
+2025-08-07T15:02:29 update: added Album - Faith/07 - Gideon (Valley⧸Victory).mp3
+2025-08-07T15:02:29 update: added Album - Faith/08 - Freedom.mp3
+2025-08-07T15:02:29 update: added Album - Faith/09 - Glory Come Down.mp3
+2025-08-07T15:02:29 update: added Album - Faith/10 - 40.mp3
+2025-08-07T15:02:29 update: added Album - Faith/11 - Not Ashamed.mp3
+2025-08-07T15:02:29 update: added Album - Faith/12 - Poverty.mp3
+2025-08-07T15:02:29 update: added Album - Faith/13 - No Sacrifice.mp3
+2025-08-07T15:02:29 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-08-07T15:02:29 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-08-07T15:02:30 update: updating Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3
+2025-08-07T15:02:30 update: updating Album - Warp Speed Warriors/02 - Power of the Triforce.mp3
+2025-08-07T15:02:30 update: updating Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3
+2025-08-07T15:02:30 update: updating Album - Warp Speed Warriors/04 - Burning Heart.mp3
+2025-08-07T15:02:30 update: updating Album - Warp Speed Warriors/05 - Space Marine Corp.mp3
+2025-08-07T15:02:30 update: updating Album - Warp Speed Warriors/06 - Prelude to Darkness.mp3
+2025-08-07T15:02:30 update: updating Album - Warp Speed Warriors/07 - The Killer Queen.mp3
+2025-08-07T15:02:30 update: updating Album - Warp Speed Warriors/08 - Doomsday Party.mp3
+2025-08-07T15:02:30 update: updating Album - Warp Speed Warriors/09 - Pixel Prison.mp3
+2025-08-07T15:02:30 update: updating Album - Warp Speed Warriors/10 - Wildest Dreams (DragonForce's Version).mp3
+2025-08-07T15:02:30 update: updating Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3
+2025-08-07T15:02:30 update: updating Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3
+2025-08-07T15:02:30 update: updating Album - Faith/01 - One Reason.mp3
+2025-08-07T15:02:30 update: updating Album - Faith/02 - I Will Wait.mp3
+2025-08-07T15:02:30 update: updating Album - Faith/03 - Faith.mp3
+2025-08-07T15:02:30 update: updating Album - Faith/04 - Just Like You.mp3
+2025-08-07T15:02:30 update: updating Album - Faith/05 - Freedom Reigns.mp3
+2025-08-07T15:02:30 update: updating Album - Faith/06 - Come Up Here.mp3
+2025-08-07T15:02:30 update: updating Album - Faith/07 - Gideon (Valley⧸Victory).mp3
+2025-08-07T15:02:30 update: updating Album - Faith/08 - Freedom.mp3
+2025-08-07T15:02:30 update: updating Album - Faith/09 - Glory Come Down.mp3
+2025-08-07T15:02:30 update: updating Album - Faith/10 - 40.mp3
+2025-08-07T15:02:30 update: updating Album - Faith/11 - Not Ashamed.mp3
+2025-08-07T15:02:30 update: updating Album - Faith/12 - Poverty.mp3
+2025-08-07T15:02:30 update: updating Album - Faith/13 - No Sacrifice.mp3
+2025-08-07T15:02:30 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-08-07T15:02:30 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-08-07T15:07:40 player: played "Album - Faith/01 - One Reason.mp3"
+2025-08-07T15:13:24 player: played "Album - Faith/02 - I Will Wait.mp3"
+2025-08-07T15:20:19 player: played "Album - Faith/03 - Faith.mp3"
+2025-08-07T15:26:08 player: played "Album - Faith/04 - Just Like You.mp3"
+2025-08-07T15:34:12 player: played "Album - Faith/05 - Freedom Reigns.mp3"
+2025-08-07T15:41:40 player: played "Album - Faith/06 - Come Up Here.mp3"
+2025-08-07T15:50:50 player: played "Album - Faith/07 - Gideon (Valley⧸Victory).mp3"
+2025-08-07T17:21:00 player: played "Album - Faith/07 - Gideon (Valley⧸Victory).mp3"
+2025-08-07T17:21:17 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-08-07T17:21:19 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-08-08T04:56:30 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-08-08T04:56:32 update: added Melhores/The Sapphire Dragon of Arcane Might is Back Again [hXhN_GVe1ys].mp3
+2025-08-08T04:56:32 update: added Melhores/The Last Crystal Bearer (Orchestral Version) [pWYebFEs6us].mp3
+2025-08-08T04:56:32 update: updating Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3
+2025-08-08T04:56:32 update: updating Album - Warp Speed Warriors/02 - Power of the Triforce.mp3
+2025-08-08T04:56:32 update: updating Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3
+2025-08-08T04:56:32 update: updating Album - Warp Speed Warriors/04 - Burning Heart.mp3
+2025-08-08T04:56:32 update: updating Album - Warp Speed Warriors/05 - Space Marine Corp.mp3
+2025-08-08T04:56:32 update: updating Album - Warp Speed Warriors/06 - Prelude to Darkness.mp3
+2025-08-08T04:56:32 update: updating Album - Warp Speed Warriors/07 - The Killer Queen.mp3
+2025-08-08T04:56:32 update: updating Album - Warp Speed Warriors/08 - Doomsday Party.mp3
+2025-08-08T04:56:32 update: updating Album - Warp Speed Warriors/09 - Pixel Prison.mp3
+2025-08-08T04:56:32 update: updating Album - Warp Speed Warriors/10 - Wildest Dreams (DragonForce's Version).mp3
+2025-08-08T04:56:32 update: updating Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3
+2025-08-08T04:56:32 update: updating Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3
+2025-08-08T04:56:32 update: updating Album - Faith/01 - One Reason.mp3
+2025-08-08T04:56:32 update: updating Album - Faith/02 - I Will Wait.mp3
+2025-08-08T04:56:32 update: updating Album - Faith/03 - Faith.mp3
+2025-08-08T04:56:32 update: updating Album - Faith/04 - Just Like You.mp3
+2025-08-08T04:56:32 update: updating Album - Faith/05 - Freedom Reigns.mp3
+2025-08-08T04:56:32 update: updating Album - Faith/06 - Come Up Here.mp3
+2025-08-08T04:56:32 update: updating Album - Faith/07 - Gideon (Valley⧸Victory).mp3
+2025-08-08T04:56:32 update: updating Album - Faith/08 - Freedom.mp3
+2025-08-08T04:56:32 update: updating Album - Faith/09 - Glory Come Down.mp3
+2025-08-08T04:56:32 update: updating Album - Faith/10 - 40.mp3
+2025-08-08T04:56:32 update: updating Album - Faith/11 - Not Ashamed.mp3
+2025-08-08T04:56:32 update: updating Album - Faith/12 - Poverty.mp3
+2025-08-08T04:56:32 update: updating Album - Faith/13 - No Sacrifice.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/02 - Powerwind.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/03 - Guardian of the Seas.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/04 - Flight of the Sapphire Dragon.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/06 - Riders of the Dawn.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/07 - Keepers of Fate.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/08 - Rise of a Hero.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/09 - To the Stars.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/10 - Heroes of Mighty Magic.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/11 - Epilogue.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/12 - Knights of Twilight's Might.mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/13 - Rise of a Hero (Orchestral Version).mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/14 - Flight of the Sapphire Dragon (Orchestral Version).mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/15 - Heroes of Mighty Magic (Orchestral Version).mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/17 - There and Back Again (Short Version).mp3
+2025-08-08T04:56:32 update: added Album - Heroes Of Mighty Magic/18 - Powerwind (Chip Version).mp3
+2025-08-08T04:56:32 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-08-08T04:56:32 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-08-08T04:56:41 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-08-08T04:56:44 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-08-08T05:02:04 player: played "Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3"
+2025-08-08T05:09:38 player: played "Album - Heroes Of Mighty Magic/02 - Powerwind.mp3"
+2025-08-08T05:15:18 player: played "Album - Heroes Of Mighty Magic/03 - Guardian of the Seas.mp3"
+2025-08-08T05:20:58 player: played "Album - Heroes Of Mighty Magic/04 - Flight of the Sapphire Dragon.mp3"
+2025-08-08T05:31:12 player: played "Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3"
+2025-08-08T05:34:56 player: played "Album - Heroes Of Mighty Magic/06 - Riders of the Dawn.mp3"
+2025-08-08T05:35:33 player: played "Album - Heroes Of Mighty Magic/07 - Keepers of Fate.mp3"
