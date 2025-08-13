@@ -70,3 +70,12 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.api.nvim_buf_set_keymap(0, "n", "<Esc>", "<cmd>q<cr>", { noremap = true, silent = true })
 	end,
 })
+
+--- Divisão de Janelas (Splits) ---
+-- vim.keymap.set("n", "<Leader>v", "<C-w>v")
+-- vim.keymap.set("n", "<Leader>s", "<C-w>s")
+-- --- Navegação entre as abas
+-- vim.keymap.set("n", "<C-h>", "<C-w>h")
+-- vim.keymap.set("n", "<C-j>", "<C-w>j")
+-- vim.keymap.set("n", "<C-k>", "<C-w>k")
+-- vim.keymap.set("n", "<C-l>", "<C-w>l")
