@@ -1,45 +1,58 @@
 -- OPTIONS
 local set = vim.opt
-vim.g.autoformat = true
 
--- Always show relative line numbers
-set.number = true
+--line nums
 set.relativenumber = true
+set.number = true
 
--- keep cursor at least 8 rows from top/bot
-set.scrolloff = 8
+-- indentation and tabs
+set.tabstop = 4
+set.shiftwidth = 4
+set.autoindent = true
+set.expandtab = true
 
--- Hide the command line area
-set.cmdheight = 0
+-- search settings
+set.ignorecase = true
+set.smartcase = true
+
+-- appearance
+set.termguicolors = true
+set.background = "dark"
+set.signcolumn = "yes"
+
+-- cursor line
+--set.cursorline = true
+
+-- 80th column
+set.colorcolumn = "80"
 
 -- clipboard
 set.clipboard:append("unnamedplus")
 
-set.expandtab = true -- Convert tabs to spaces
-set.shiftwidth = 2 -- Amount to indent with << and >>
-set.tabstop = 2 -- How many spaces are shown per Tab
-set.softtabstop = 2 -- How many spaces are applied when pressing Tab
+-- backspace
+set.backspace = "indent,eol,start"
 
-set.smarttab = true
-set.smartindent = true
-set.autoindent = true -- Keep identation from previous line
+-- split windows
+set.splitbelow = true
+set.splitright = true
 
--- Enable break indent
-set.breakindent = true
+-- dw/diw/ciw works on full-word
+set.iskeyword:append("-")
 
--- Store undos between sessions
+-- keep cursor at least 8 rows from top/bot
+set.scrolloff = 8
+
+-- undo dir settings
+set.swapfile = false
+set.backup = false
+set.undodir = os.getenv("HOME") .. "/.vim/undodir"
 set.undofile = true
 
--- Don't show the mode, since it's already in the status line
-set.showmode = false
+-- incremental search
+set.incsearch = true
 
--- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
-set.ignorecase = true
-set.smartcase = true
-
--- Keep signcolumn on by default
-set.signcolumn = "yes"
-
+-- faster cursor hold
+set.updatetime = 50
 -- block cursor
 set.guicursor = ""
 set.guicursor = "a:blinkon0"
