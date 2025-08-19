@@ -30,6 +30,7 @@
 #pulseaudio,
 #clock,
 #tray,
+#backlight,
 #custom-power {
     background: @color0; /* Usa a cor de fundo mais escura para as pílulas */
     margin: 6px 6px;
@@ -53,7 +54,7 @@
 #battery, #language, #backlight, #custom-lock {
     color: @color2; /* Cor de Destaque 3 (geralmente verde) */
 }
-#clock, #custom-wofi {
+#clock, #custom-wofi, #backlight {
     color: @color3; /* Cor de Destaque 4 (geralmente amarelo) */
 }
 #window, #network {
@@ -71,7 +72,7 @@
     transition: all 0.3s ease-in-out;
 }
 #workspaces button.active {
-    color: @foreground; /* Texto claro para o workspace ativo */
+    color: #FFBF00; /* Texto claro para o workspace ativo */
     background: @color4; /* Fundo com a cor de destaque principal */
     border-radius: 15px;
     min-width: 40px;
