@@ -73,7 +73,6 @@
 }
 #workspaces button.active {
     color: #FFBF00; /* Texto claro para o workspace ativo */
-    background: @color4; /* Fundo com a cor de destaque principal */
     border-radius: 15px;
     min-width: 40px;
 }
