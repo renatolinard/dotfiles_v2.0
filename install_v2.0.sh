@@ -80,23 +80,6 @@ fi
 echo -e "${BLUE}Iniciando a instalação do Zen Browser...${NC}"
 flatpak install flathub app.zen_browser.zen
 
-#instalação neovim from source 
-echo -e "${YELLOW}--> Built neovim from source...${NC}"
-#instalação limpa
-rm -rf ~/.config/nvim
-rm -rf ~/.local/state/nvim
-rm -rf ~/.local/share/nvim
-#clone ultimas atualizações 
-git clone https://github.com/neovim/neovim
-#construção
-if [ -d "neovim" ]; then
-    (cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install)
-    rm -rf ~/neovim
-else 
-    echo -e "${YELLOW}AVISO: Erro de instalação, faca a construção 
-    manualmente.${NC}" 
-fi
-
 # --- Configuração dos Dotfiles (Método Bare) ---
 echo -e "${YELLOW}--> Configurando os dotfiles na pasta home...${NC}"
 git clone --bare https://github.com/$GIT_USER/$GIT_REPO.git $HOME/.$GIT_REPO

@@ -1,4 +1,5 @@
 7zip
+neovim
 interception-caps2esc
 ninja
 curl
