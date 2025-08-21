@@ -152,6 +152,23 @@ else
     Pulando configuração do SDDM.${NC}"
 fi
 
+# --- Configuração do Caps Lock (Ctrl/Esc) ---
+echo -e "${YELLOW}--> Configurando Caps Lock para funcionar como Ctrl/Esc...${NC}"
+
+# Cria o arquivo de configuração para o udevmon.
+# Usamos 'cat' com um "here document" e 'sudo tee' para escrever o arquivo como root.
+# O 'EOF' entre aspas simples previne que o shell expanda a variável $DEVNODE.
+sudo tee /etc/interception/udevmon.d/caps2esc.yml > /dev/null <<'EOF'
+- JOB: intercept -g $DEVNODE | caps2esc | uinput -d $DEVNODE
+  DEVICE:
+    EVENTS:
+      EV_KEY: [KEY_CAPSLOCK]
+EOF
+
+# Habilita o serviço que monitora os dispositivos para iniciar no próximo boot.
+echo "Habilitando o serviço udevmon..."
+sudo systemctl enable udevmon.service
+
 # --- Finalização ---
 echo -e "${GREEN}------------------------------------------------${NC}"
 echo -e "${GREEN}Instalação concluída com sucesso!${NC}"
