@@ -67,7 +67,7 @@
     margin: 4px 3px;
     border-radius: 15px;
     border: 0px;
-    color: @color7; /* Cinza claro para workspaces inativos */
+    color: #FF0000; /* Cinza claro para workspaces inativos */
     background-color: transparent;
     transition: all 0.3s ease-in-out;
 }

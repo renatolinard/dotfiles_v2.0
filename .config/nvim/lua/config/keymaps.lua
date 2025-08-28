@@ -34,6 +34,9 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- sometimes in insert mode, control-c doesn't exactly work like escape
+vim.keymap.set("i", "<Esc>", "<Esc><Esc>")
+
 vim.keymap.set("n", "<leader>tc", function()
     if vim.o.colorcolumn == "" then
         vim.o.colorcolumn = "80"
