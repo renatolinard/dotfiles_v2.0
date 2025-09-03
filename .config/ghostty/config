@@ -1,10 +1,10 @@
 # --- Fonte ---
-font-family = "OperatorMonoLig Nerd Font Mono"
+font-family = "DankMono Nerd Font Mono"
 font-style = "Italic"
-font-size = 17
+font-size = 18
 
 # --- custom-shader
-#custom-shader = shaders/bloom025.glsl
+custom-shader = shaders/bloom025.glsl
 custom-shader = shaders/cursor_smear.glsl
 
 # --- Conforto Visual ---
