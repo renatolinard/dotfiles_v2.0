@@ -48,8 +48,8 @@ end, { desc = "Toggle Colorcolumn at 80" })
 vim.keymap.set("n", "<Esc>", "<cmd>:nohlsearch<cr>", { desc = "Clear Search Highlight" })
 vim.keymap.set("n", "<C-l>", "80l", { desc = "Go to Column 80" })
 
---- markdownpreview
-vim.keymap.set("n", "<leader>md", "<cmd>:MarkdownPreview<cr>", { desc = "Start markdownpreview" })
+--- browser browser preview
+vim.keymap.set("n", "<leader>bp", "<cmd>:BrowserPreview<cr>", { desc = "Start markdownpreview" })
 
 -- Highlight when yanking (copying) text
 vim.api.nvim_create_autocmd("TextYankPost", {

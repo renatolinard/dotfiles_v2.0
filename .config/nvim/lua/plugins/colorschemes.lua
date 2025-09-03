@@ -7,10 +7,13 @@ return {
     "thesimonho/kanagawa-paper.nvim",
     lazy = false,
     priority = 1000,
-    init = function()
+    config = function()
         vim.cmd.colorscheme("kanagawa-paper-ink")
         vim.cmd("hi Directory guibg=NONE")
         vim.cmd("hi SignColumn guibg=NONE")
         enable_transparency()
-    end,
+
+    end
 }
+
+
