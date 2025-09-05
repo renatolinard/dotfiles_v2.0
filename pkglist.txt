@@ -95,8 +95,6 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 yay
 yay-debug
-yazi
 yt-dlp
 zig
-zoxide
 zram-generator
