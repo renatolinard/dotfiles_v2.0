@@ -79,7 +79,8 @@ alias ga="git add"
 alias gp="git push"
 
 # --- alias_diretorios
-alias back="cd /home/renatolinard/estudos/cursos_alura/backend_from_scratch/"
+alias back="cd /home/renatolinard/estudos/cursos_alura/backend_node.js/"
+alias front="cd /home/renatolinard/estudos/cursos_alura/frontend_html_css_js"
 
 #--- PATH ---
 export PATH=$PATH:~/.config/hypr/scripts
