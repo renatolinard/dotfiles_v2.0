@@ -185,11 +185,26 @@ gc() {
 # Função para fazer uma limpeza completa do sistema
 clstemp() {
     echo "--> Procurando por pacotes órfãos..."
-    # Lista os pacotes para revisão antes de perguntar
-    pacman -Qtdq | sudo pacman -Rns -
+
+    # Pega a lista de pacotes órfãos e armazena em uma variável
+    orphans=$(pacman -Qtdq)
+
+    # Verifica se a variável 'orphans' não está vazia
+    if [ -n "$orphans" ]; then
+        echo "Os seguintes pacotes órfãos serão removidos:"
+        # Mostra os pacotes que serão removidos
+        echo "$orphans"
+        # Passa a lista de pacotes para o pacman remover
+        echo "$orphans" | sudo pacman -Rns -
+    else
+        # Se não houver órfãos, apenas informa o usuário
+        echo "Nenhum pacote órfão encontrado. Ótimo!"
+    fi
 
     echo -e "\n--> Limpando o cache de pacotes (pacman e yay)..."
-    yay -Scc
+    # O '--noconfirm' responde 'sim' a todas as perguntas, para uma limpeza rápida.
+    # Se preferir ser perguntado a cada vez, pode remover o '--noconfirm'.
+    yay -Scc --noconfirm
 
     echo -e "\nLimpeza concluída!"
 }
