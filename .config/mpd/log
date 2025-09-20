@@ -1492,3 +1492,436 @@
 2025-09-09T08:52:02 player: played "Album - Heroes Of Mighty Magic/02 - Powerwind.mp3"
 2025-09-09T08:57:41 player: played "Album - Heroes Of Mighty Magic/03 - Guardian of the Seas.mp3"
 2025-09-09T09:05:40 player: played "Album - Heroes Of Mighty Magic/04 - Flight of the Sapphire Dragon.mp3"
+2025-09-09T09:37:10 player: played "Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3"
+2025-09-10T08:39:49 player: played "Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3"
+2025-09-10T10:16:40 player: played "Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3"
+2025-09-11T04:59:48 player: played "Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3"
+2025-09-11T09:11:47 player: played "Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3"
+2025-09-11T14:29:28 player: played "Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3"
+2025-09-11T14:42:15 player: played "Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3"
+2025-09-11T14:42:16 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-11T14:42:18 update: updating Melhores/The Sapphire Dragon of Arcane Might is Back Again [hXhN_GVe1ys].mp3
+2025-09-11T14:42:18 update: updating Melhores/The Last Crystal Bearer (Orchestral Version) [pWYebFEs6us].mp3
+2025-09-11T14:42:18 update: updating Melhores/Hunting Soul (English Version) [CCWaIsOX4d0].mp3
+2025-09-11T14:42:18 update: updating Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3
+2025-09-11T14:42:18 update: updating Album - Warp Speed Warriors/02 - Power of the Triforce.mp3
+2025-09-11T14:42:18 update: updating Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3
+2025-09-11T14:42:18 update: updating Album - Warp Speed Warriors/04 - Burning Heart.mp3
+2025-09-11T14:42:18 update: updating Album - Warp Speed Warriors/05 - Space Marine Corp.mp3
+2025-09-11T14:42:18 update: updating Album - Warp Speed Warriors/06 - Prelude to Darkness.mp3
+2025-09-11T14:42:18 update: updating Album - Warp Speed Warriors/07 - The Killer Queen.mp3
+2025-09-11T14:42:18 update: updating Album - Warp Speed Warriors/08 - Doomsday Party.mp3
+2025-09-11T14:42:18 update: updating Album - Warp Speed Warriors/09 - Pixel Prison.mp3
+2025-09-11T14:42:18 update: updating Album - Warp Speed Warriors/10 - Wildest Dreams (DragonForce's Version).mp3
+2025-09-11T14:42:18 update: updating Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3
+2025-09-11T14:42:18 update: updating Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3
+2025-09-11T14:42:18 update: updating Album - Faith/01 - One Reason.mp3
+2025-09-11T14:42:18 update: updating Album - Faith/02 - I Will Wait.mp3
+2025-09-11T14:42:18 update: updating Album - Faith/03 - Faith.mp3
+2025-09-11T14:42:18 update: updating Album - Faith/04 - Just Like You.mp3
+2025-09-11T14:42:18 update: updating Album - Faith/05 - Freedom Reigns.mp3
+2025-09-11T14:42:18 update: updating Album - Faith/06 - Come Up Here.mp3
+2025-09-11T14:42:18 update: updating Album - Faith/07 - Gideon (Valley⧸Victory).mp3
+2025-09-11T14:42:18 update: updating Album - Faith/08 - Freedom.mp3
+2025-09-11T14:42:18 update: updating Album - Faith/09 - Glory Come Down.mp3
+2025-09-11T14:42:18 update: updating Album - Faith/10 - 40.mp3
+2025-09-11T14:42:18 update: updating Album - Faith/11 - Not Ashamed.mp3
+2025-09-11T14:42:18 update: updating Album - Faith/12 - Poverty.mp3
+2025-09-11T14:42:18 update: updating Album - Faith/13 - No Sacrifice.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/02 - Powerwind.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/03 - Guardian of the Seas.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/04 - Flight of the Sapphire Dragon.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/06 - Riders of the Dawn.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/07 - Keepers of Fate.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/08 - Rise of a Hero.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/09 - To the Stars.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/10 - Heroes of Mighty Magic.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/11 - Epilogue.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/12 - Knights of Twilight's Might.mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/13 - Rise of a Hero (Orchestral Version).mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/14 - Flight of the Sapphire Dragon (Orchestral Version).mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/15 - Heroes of Mighty Magic (Orchestral Version).mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/17 - There and Back Again (Short Version).mp3
+2025-09-11T14:42:18 update: updating Album - Heroes Of Mighty Magic/18 - Powerwind (Chip Version).mp3
+2025-09-11T14:42:18 update: updating Album - Battle of Ice/01 - The Black Sorcery.mp3
+2025-09-11T14:42:18 update: updating Album - Battle of Ice/02 - The Cursed Crown.mp3
+2025-09-11T14:42:18 update: updating Album - Battle of Ice/03 - The Legend of the Demon's Cry.mp3
+2025-09-11T14:42:18 update: updating Album - Battle of Ice/04 - Assault on the Castle.mp3
+2025-09-11T14:42:18 update: updating Album - Battle of Ice/05 - Ride into the Sun.mp3
+2025-09-11T14:42:18 update: updating Album - Battle of Ice/06 - White Dragon.mp3
+2025-09-11T14:42:18 update: updating Album - Battle of Ice/07 - The Shadow Man.mp3
+2025-09-11T14:42:18 update: updating Album - Battle of Ice/08 - The Book of Evil.mp3
+2025-09-11T14:42:18 update: updating Album - Battle of Ice/09 - Under Siege.mp3
+2025-09-11T14:42:18 update: updating Album - Battle of Ice/10 - Battle of Ice.mp3
+2025-09-11T14:42:18 update: updating Album - Extreme Power Metal/01 - Highway to Oblivion.mp3
+2025-09-11T14:42:18 update: updating Album - Extreme Power Metal/02 - Cosmic Power of the Infinite Shred Machine.mp3
+2025-09-11T14:42:18 update: updating Album - Extreme Power Metal/03 - The Last Dragonborn.mp3
+2025-09-11T14:42:18 update: updating Album - Extreme Power Metal/04 - Heart Demolition.mp3
+2025-09-11T14:42:18 update: updating Album - Extreme Power Metal/05 - Troopers of the Stars.mp3
+2025-09-11T14:42:18 update: updating Album - Extreme Power Metal/06 - Razorblade Meltdown.mp3
+2025-09-11T14:42:18 update: updating Album - Extreme Power Metal/07 - Strangers.mp3
+2025-09-11T14:42:18 update: updating Album - Extreme Power Metal/08 - In a Skyforged Dream.mp3
+2025-09-11T14:42:18 update: updating Album - Extreme Power Metal/09 - Remembrance Day.mp3
+2025-09-11T14:42:18 update: updating Album - Extreme Power Metal/10 - My Heart Will Go On.mp3
+2025-09-11T14:42:18 update: updating Album - Tales of Ancient Prophecies/01 - Enchanted Dragon of Wisdom.mp3
+2025-09-11T14:42:18 update: updating Album - Tales of Ancient Prophecies/02 - The Power of the Ancient Force.mp3
+2025-09-11T14:42:18 update: updating Album - Tales of Ancient Prophecies/03 - Twilight Horizon.mp3
+2025-09-11T14:42:18 update: updating Album - Tales of Ancient Prophecies/04 - The Summoning.mp3
+2025-09-11T14:42:18 update: updating Album - Tales of Ancient Prophecies/05 - Whispering Winds.mp3
+2025-09-11T14:42:18 update: updating Album - Tales of Ancient Prophecies/06 - Fall of the Eternal Winter.mp3
+2025-09-11T14:42:18 update: updating Album - Tales of Ancient Prophecies/07 - Forest of Destiny.mp3
+2025-09-11T14:42:18 update: updating Album - Tales of Ancient Prophecies/08 - In the Mighty Hall of the Fire King.mp3
+2025-09-11T14:42:18 update: updating Album - Tales of Ancient Prophecies/09 - Made of Steel.mp3
+2025-09-11T14:42:18 update: updating Album - Tales of Ancient Prophecies/10 - Sword of Magic Steel.mp3
+2025-09-11T14:42:18 update: updating Album - Tales of Ancient Prophecies/11 - Gates of Glory.mp3
+2025-09-11T14:42:18 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-11T14:42:18 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-11T14:47:26 player: played "Album - Tales of Ancient Prophecies/01 - Enchanted Dragon of Wisdom.mp3"
+2025-09-11T14:48:18 player: played "Album - Tales of Ancient Prophecies/05 - Whispering Winds.mp3"
+2025-09-11T14:48:50 player: played "Album - Tales of Ancient Prophecies/10 - Sword of Magic Steel.mp3"
+2025-09-11T14:48:50 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-11T14:54:02 player: played "Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3"
+2025-09-11T14:54:39 player: played "Album - Heroes Of Mighty Magic/03 - Guardian of the Seas.mp3"
+2025-09-11T14:54:41 update: updating Melhores/The Sapphire Dragon of Arcane Might is Back Again [hXhN_GVe1ys].mp3
+2025-09-11T14:54:41 update: updating Melhores/The Last Crystal Bearer (Orchestral Version) [pWYebFEs6us].mp3
+2025-09-11T14:54:41 update: updating Melhores/Hunting Soul (English Version) [CCWaIsOX4d0].mp3
+2025-09-11T14:54:41 update: updating Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3
+2025-09-11T14:54:41 update: updating Album - Warp Speed Warriors/02 - Power of the Triforce.mp3
+2025-09-11T14:54:41 update: updating Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3
+2025-09-11T14:54:41 update: updating Album - Warp Speed Warriors/04 - Burning Heart.mp3
+2025-09-11T14:54:41 update: updating Album - Warp Speed Warriors/05 - Space Marine Corp.mp3
+2025-09-11T14:54:41 update: updating Album - Warp Speed Warriors/06 - Prelude to Darkness.mp3
+2025-09-11T14:54:41 update: updating Album - Warp Speed Warriors/07 - The Killer Queen.mp3
+2025-09-11T14:54:41 update: updating Album - Warp Speed Warriors/08 - Doomsday Party.mp3
+2025-09-11T14:54:41 update: updating Album - Warp Speed Warriors/09 - Pixel Prison.mp3
+2025-09-11T14:54:41 update: updating Album - Warp Speed Warriors/10 - Wildest Dreams (DragonForce's Version).mp3
+2025-09-11T14:54:41 update: updating Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3
+2025-09-11T14:54:41 update: updating Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3
+2025-09-11T14:54:41 update: updating Album - Faith/01 - One Reason.mp3
+2025-09-11T14:54:41 update: updating Album - Faith/02 - I Will Wait.mp3
+2025-09-11T14:54:41 update: updating Album - Faith/03 - Faith.mp3
+2025-09-11T14:54:41 update: updating Album - Faith/04 - Just Like You.mp3
+2025-09-11T14:54:41 update: updating Album - Faith/05 - Freedom Reigns.mp3
+2025-09-11T14:54:41 update: updating Album - Faith/06 - Come Up Here.mp3
+2025-09-11T14:54:41 update: updating Album - Faith/07 - Gideon (Valley⧸Victory).mp3
+2025-09-11T14:54:41 update: updating Album - Faith/08 - Freedom.mp3
+2025-09-11T14:54:41 update: updating Album - Faith/09 - Glory Come Down.mp3
+2025-09-11T14:54:41 update: updating Album - Faith/10 - 40.mp3
+2025-09-11T14:54:41 update: updating Album - Faith/11 - Not Ashamed.mp3
+2025-09-11T14:54:41 update: updating Album - Faith/12 - Poverty.mp3
+2025-09-11T14:54:41 update: updating Album - Faith/13 - No Sacrifice.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/02 - Powerwind.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/03 - Guardian of the Seas.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/04 - Flight of the Sapphire Dragon.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/06 - Riders of the Dawn.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/07 - Keepers of Fate.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/08 - Rise of a Hero.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/09 - To the Stars.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/10 - Heroes of Mighty Magic.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/11 - Epilogue.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/12 - Knights of Twilight's Might.mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/13 - Rise of a Hero (Orchestral Version).mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/14 - Flight of the Sapphire Dragon (Orchestral Version).mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/15 - Heroes of Mighty Magic (Orchestral Version).mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/17 - There and Back Again (Short Version).mp3
+2025-09-11T14:54:41 update: updating Album - Heroes Of Mighty Magic/18 - Powerwind (Chip Version).mp3
+2025-09-11T14:54:41 update: updating Album - Battle of Ice/01 - The Black Sorcery.mp3
+2025-09-11T14:54:41 update: updating Album - Battle of Ice/02 - The Cursed Crown.mp3
+2025-09-11T14:54:41 update: updating Album - Battle of Ice/03 - The Legend of the Demon's Cry.mp3
+2025-09-11T14:54:41 update: updating Album - Battle of Ice/04 - Assault on the Castle.mp3
+2025-09-11T14:54:41 update: updating Album - Battle of Ice/05 - Ride into the Sun.mp3
+2025-09-11T14:54:41 update: updating Album - Battle of Ice/06 - White Dragon.mp3
+2025-09-11T14:54:41 update: updating Album - Battle of Ice/07 - The Shadow Man.mp3
+2025-09-11T14:54:41 update: updating Album - Battle of Ice/08 - The Book of Evil.mp3
+2025-09-11T14:54:41 update: updating Album - Battle of Ice/09 - Under Siege.mp3
+2025-09-11T14:54:41 update: updating Album - Battle of Ice/10 - Battle of Ice.mp3
+2025-09-11T14:54:41 update: updating Album - Extreme Power Metal/01 - Highway to Oblivion.mp3
+2025-09-11T14:54:41 update: updating Album - Extreme Power Metal/02 - Cosmic Power of the Infinite Shred Machine.mp3
+2025-09-11T14:54:41 update: updating Album - Extreme Power Metal/03 - The Last Dragonborn.mp3
+2025-09-11T14:54:41 update: updating Album - Extreme Power Metal/04 - Heart Demolition.mp3
+2025-09-11T14:54:41 update: updating Album - Extreme Power Metal/05 - Troopers of the Stars.mp3
+2025-09-11T14:54:41 update: updating Album - Extreme Power Metal/06 - Razorblade Meltdown.mp3
+2025-09-11T14:54:41 update: updating Album - Extreme Power Metal/07 - Strangers.mp3
+2025-09-11T14:54:41 update: updating Album - Extreme Power Metal/08 - In a Skyforged Dream.mp3
+2025-09-11T14:54:41 update: updating Album - Extreme Power Metal/09 - Remembrance Day.mp3
+2025-09-11T14:54:41 update: updating Album - Extreme Power Metal/10 - My Heart Will Go On.mp3
+2025-09-11T14:54:41 update: updating Album - Tales of Ancient Prophecies/01 - Enchanted Dragon of Wisdom.mp3
+2025-09-11T14:54:41 update: updating Album - Tales of Ancient Prophecies/02 - The Power of the Ancient Force.mp3
+2025-09-11T14:54:41 update: updating Album - Tales of Ancient Prophecies/03 - Twilight Horizon.mp3
+2025-09-11T14:54:41 update: updating Album - Tales of Ancient Prophecies/04 - The Summoning.mp3
+2025-09-11T14:54:41 update: updating Album - Tales of Ancient Prophecies/05 - Whispering Winds.mp3
+2025-09-11T14:54:41 update: updating Album - Tales of Ancient Prophecies/06 - Fall of the Eternal Winter.mp3
+2025-09-11T14:54:41 update: updating Album - Tales of Ancient Prophecies/07 - Forest of Destiny.mp3
+2025-09-11T14:54:41 update: updating Album - Tales of Ancient Prophecies/08 - In the Mighty Hall of the Fire King.mp3
+2025-09-11T14:54:41 update: updating Album - Tales of Ancient Prophecies/09 - Made of Steel.mp3
+2025-09-11T14:54:41 update: updating Album - Tales of Ancient Prophecies/10 - Sword of Magic Steel.mp3
+2025-09-11T14:54:41 update: updating Album - Tales of Ancient Prophecies/11 - Gates of Glory.mp3
+2025-09-11T14:54:41 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-11T14:54:41 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-11T14:54:44 update: updating Melhores/The Sapphire Dragon of Arcane Might is Back Again [hXhN_GVe1ys].mp3
+2025-09-11T14:54:44 update: updating Melhores/The Last Crystal Bearer (Orchestral Version) [pWYebFEs6us].mp3
+2025-09-11T14:54:44 update: updating Melhores/Hunting Soul (English Version) [CCWaIsOX4d0].mp3
+2025-09-11T14:54:44 update: updating Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3
+2025-09-11T14:54:44 update: updating Album - Warp Speed Warriors/02 - Power of the Triforce.mp3
+2025-09-11T14:54:44 update: updating Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3
+2025-09-11T14:54:44 update: updating Album - Warp Speed Warriors/04 - Burning Heart.mp3
+2025-09-11T14:54:44 update: updating Album - Warp Speed Warriors/05 - Space Marine Corp.mp3
+2025-09-11T14:54:44 update: updating Album - Warp Speed Warriors/06 - Prelude to Darkness.mp3
+2025-09-11T14:54:44 update: updating Album - Warp Speed Warriors/07 - The Killer Queen.mp3
+2025-09-11T14:54:44 update: updating Album - Warp Speed Warriors/08 - Doomsday Party.mp3
+2025-09-11T14:54:44 update: updating Album - Warp Speed Warriors/09 - Pixel Prison.mp3
+2025-09-11T14:54:44 update: updating Album - Warp Speed Warriors/10 - Wildest Dreams (DragonForce's Version).mp3
+2025-09-11T14:54:44 update: updating Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3
+2025-09-11T14:54:44 update: updating Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3
+2025-09-11T14:54:44 update: updating Album - Faith/01 - One Reason.mp3
+2025-09-11T14:54:44 update: updating Album - Faith/02 - I Will Wait.mp3
+2025-09-11T14:54:44 update: updating Album - Faith/03 - Faith.mp3
+2025-09-11T14:54:44 update: updating Album - Faith/04 - Just Like You.mp3
+2025-09-11T14:54:44 update: updating Album - Faith/05 - Freedom Reigns.mp3
+2025-09-11T14:54:44 update: updating Album - Faith/06 - Come Up Here.mp3
+2025-09-11T14:54:44 update: updating Album - Faith/07 - Gideon (Valley⧸Victory).mp3
+2025-09-11T14:54:44 update: updating Album - Faith/08 - Freedom.mp3
+2025-09-11T14:54:44 update: updating Album - Faith/09 - Glory Come Down.mp3
+2025-09-11T14:54:44 update: updating Album - Faith/10 - 40.mp3
+2025-09-11T14:54:44 update: updating Album - Faith/11 - Not Ashamed.mp3
+2025-09-11T14:54:44 update: updating Album - Faith/12 - Poverty.mp3
+2025-09-11T14:54:44 update: updating Album - Faith/13 - No Sacrifice.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/02 - Powerwind.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/03 - Guardian of the Seas.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/04 - Flight of the Sapphire Dragon.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/06 - Riders of the Dawn.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/07 - Keepers of Fate.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/08 - Rise of a Hero.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/09 - To the Stars.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/10 - Heroes of Mighty Magic.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/11 - Epilogue.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/12 - Knights of Twilight's Might.mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/13 - Rise of a Hero (Orchestral Version).mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/14 - Flight of the Sapphire Dragon (Orchestral Version).mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/15 - Heroes of Mighty Magic (Orchestral Version).mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/17 - There and Back Again (Short Version).mp3
+2025-09-11T14:54:44 update: updating Album - Heroes Of Mighty Magic/18 - Powerwind (Chip Version).mp3
+2025-09-11T14:54:44 update: updating Album - Battle of Ice/01 - The Black Sorcery.mp3
+2025-09-11T14:54:44 update: updating Album - Battle of Ice/02 - The Cursed Crown.mp3
+2025-09-11T14:54:44 update: updating Album - Battle of Ice/03 - The Legend of the Demon's Cry.mp3
+2025-09-11T14:54:44 update: updating Album - Battle of Ice/04 - Assault on the Castle.mp3
+2025-09-11T14:54:44 update: updating Album - Battle of Ice/05 - Ride into the Sun.mp3
+2025-09-11T14:54:44 update: updating Album - Battle of Ice/06 - White Dragon.mp3
+2025-09-11T14:54:44 update: updating Album - Battle of Ice/07 - The Shadow Man.mp3
+2025-09-11T14:54:44 update: updating Album - Battle of Ice/08 - The Book of Evil.mp3
+2025-09-11T14:54:44 update: updating Album - Battle of Ice/09 - Under Siege.mp3
+2025-09-11T14:54:44 update: updating Album - Battle of Ice/10 - Battle of Ice.mp3
+2025-09-11T14:54:44 update: updating Album - Extreme Power Metal/01 - Highway to Oblivion.mp3
+2025-09-11T14:54:44 update: updating Album - Extreme Power Metal/02 - Cosmic Power of the Infinite Shred Machine.mp3
+2025-09-11T14:54:44 update: updating Album - Extreme Power Metal/03 - The Last Dragonborn.mp3
+2025-09-11T14:54:44 update: updating Album - Extreme Power Metal/04 - Heart Demolition.mp3
+2025-09-11T14:54:44 update: updating Album - Extreme Power Metal/05 - Troopers of the Stars.mp3
+2025-09-11T14:54:44 update: updating Album - Extreme Power Metal/06 - Razorblade Meltdown.mp3
+2025-09-11T14:54:44 update: updating Album - Extreme Power Metal/07 - Strangers.mp3
+2025-09-11T14:54:44 update: updating Album - Extreme Power Metal/08 - In a Skyforged Dream.mp3
+2025-09-11T14:54:44 update: updating Album - Extreme Power Metal/09 - Remembrance Day.mp3
+2025-09-11T14:54:44 update: updating Album - Extreme Power Metal/10 - My Heart Will Go On.mp3
+2025-09-11T14:54:44 update: updating Album - Tales of Ancient Prophecies/01 - Enchanted Dragon of Wisdom.mp3
+2025-09-11T14:54:44 update: updating Album - Tales of Ancient Prophecies/02 - The Power of the Ancient Force.mp3
+2025-09-11T14:54:44 update: updating Album - Tales of Ancient Prophecies/03 - Twilight Horizon.mp3
+2025-09-11T14:54:44 update: updating Album - Tales of Ancient Prophecies/04 - The Summoning.mp3
+2025-09-11T14:54:44 update: updating Album - Tales of Ancient Prophecies/05 - Whispering Winds.mp3
+2025-09-11T14:54:44 update: updating Album - Tales of Ancient Prophecies/06 - Fall of the Eternal Winter.mp3
+2025-09-11T14:54:44 update: updating Album - Tales of Ancient Prophecies/07 - Forest of Destiny.mp3
+2025-09-11T14:54:44 update: updating Album - Tales of Ancient Prophecies/08 - In the Mighty Hall of the Fire King.mp3
+2025-09-11T14:54:44 update: updating Album - Tales of Ancient Prophecies/09 - Made of Steel.mp3
+2025-09-11T14:54:44 update: updating Album - Tales of Ancient Prophecies/10 - Sword of Magic Steel.mp3
+2025-09-11T14:54:44 update: updating Album - Tales of Ancient Prophecies/11 - Gates of Glory.mp3
+2025-09-11T14:54:45 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-11T14:54:45 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-11T15:02:26 player: played "Album - Heroes Of Mighty Magic/02 - Powerwind.mp3"
+2025-09-11T15:09:00 player: played "Album - Heroes Of Mighty Magic/04 - Flight of the Sapphire Dragon.mp3"
+2025-09-11T15:14:59 player: played "Album - Heroes Of Mighty Magic/17 - There and Back Again (Short Version).mp3"
+2025-09-11T15:18:27 player: played "Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3"
+2025-09-12T05:53:38 player: played "Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3"
+2025-09-12T09:00:39 player: played "Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3"
+2025-09-12T19:49:00 player: played "Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3"
+2025-09-12T22:43:59 player: played "Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3"
+2025-09-13T19:10:53 player: played "Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3"
+2025-09-13T22:35:50 player: played "Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3"
+2025-09-13T23:09:20 player: played "Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3"
+2025-09-14T18:36:25 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-14T18:36:33 player: played "Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3"
+2025-09-14T18:36:36 update: updating Melhores/The Sapphire Dragon of Arcane Might is Back Again [hXhN_GVe1ys].mp3
+2025-09-14T18:36:36 update: updating Melhores/The Last Crystal Bearer (Orchestral Version) [pWYebFEs6us].mp3
+2025-09-14T18:36:36 update: updating Melhores/Hunting Soul (English Version) [CCWaIsOX4d0].mp3
+2025-09-14T18:36:36 update: updating Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3
+2025-09-14T18:36:36 update: updating Album - Warp Speed Warriors/02 - Power of the Triforce.mp3
+2025-09-14T18:36:36 update: updating Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3
+2025-09-14T18:36:36 update: updating Album - Warp Speed Warriors/04 - Burning Heart.mp3
+2025-09-14T18:36:36 update: updating Album - Warp Speed Warriors/05 - Space Marine Corp.mp3
+2025-09-14T18:36:36 update: updating Album - Warp Speed Warriors/06 - Prelude to Darkness.mp3
+2025-09-14T18:36:36 update: updating Album - Warp Speed Warriors/07 - The Killer Queen.mp3
+2025-09-14T18:36:36 update: updating Album - Warp Speed Warriors/08 - Doomsday Party.mp3
+2025-09-14T18:36:36 update: updating Album - Warp Speed Warriors/09 - Pixel Prison.mp3
+2025-09-14T18:36:36 update: updating Album - Warp Speed Warriors/10 - Wildest Dreams (DragonForce's Version).mp3
+2025-09-14T18:36:36 update: updating Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3
+2025-09-14T18:36:36 update: updating Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3
+2025-09-14T18:36:36 update: updating Album - Faith/01 - One Reason.mp3
+2025-09-14T18:36:36 update: updating Album - Faith/02 - I Will Wait.mp3
+2025-09-14T18:36:36 update: updating Album - Faith/03 - Faith.mp3
+2025-09-14T18:36:36 update: updating Album - Faith/04 - Just Like You.mp3
+2025-09-14T18:36:36 update: updating Album - Faith/05 - Freedom Reigns.mp3
+2025-09-14T18:36:36 update: updating Album - Faith/06 - Come Up Here.mp3
+2025-09-14T18:36:36 update: updating Album - Faith/07 - Gideon (Valley⧸Victory).mp3
+2025-09-14T18:36:36 update: updating Album - Faith/08 - Freedom.mp3
+2025-09-14T18:36:36 update: updating Album - Faith/09 - Glory Come Down.mp3
+2025-09-14T18:36:36 update: updating Album - Faith/10 - 40.mp3
+2025-09-14T18:36:36 update: updating Album - Faith/11 - Not Ashamed.mp3
+2025-09-14T18:36:36 update: updating Album - Faith/12 - Poverty.mp3
+2025-09-14T18:36:36 update: updating Album - Faith/13 - No Sacrifice.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/02 - Powerwind.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/03 - Guardian of the Seas.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/04 - Flight of the Sapphire Dragon.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/06 - Riders of the Dawn.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/07 - Keepers of Fate.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/08 - Rise of a Hero.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/09 - To the Stars.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/10 - Heroes of Mighty Magic.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/11 - Epilogue.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/12 - Knights of Twilight's Might.mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/13 - Rise of a Hero (Orchestral Version).mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/14 - Flight of the Sapphire Dragon (Orchestral Version).mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/15 - Heroes of Mighty Magic (Orchestral Version).mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/17 - There and Back Again (Short Version).mp3
+2025-09-14T18:36:36 update: updating Album - Heroes Of Mighty Magic/18 - Powerwind (Chip Version).mp3
+2025-09-14T18:36:36 update: updating Album - Battle of Ice/01 - The Black Sorcery.mp3
+2025-09-14T18:36:36 update: updating Album - Battle of Ice/02 - The Cursed Crown.mp3
+2025-09-14T18:36:36 update: updating Album - Battle of Ice/03 - The Legend of the Demon's Cry.mp3
+2025-09-14T18:36:36 update: updating Album - Battle of Ice/04 - Assault on the Castle.mp3
+2025-09-14T18:36:36 update: updating Album - Battle of Ice/05 - Ride into the Sun.mp3
+2025-09-14T18:36:36 update: updating Album - Battle of Ice/06 - White Dragon.mp3
+2025-09-14T18:36:36 update: updating Album - Battle of Ice/07 - The Shadow Man.mp3
+2025-09-14T18:36:36 update: updating Album - Battle of Ice/08 - The Book of Evil.mp3
+2025-09-14T18:36:36 update: updating Album - Battle of Ice/09 - Under Siege.mp3
+2025-09-14T18:36:36 update: updating Album - Battle of Ice/10 - Battle of Ice.mp3
+2025-09-14T18:36:36 update: updating Album - Extreme Power Metal/01 - Highway to Oblivion.mp3
+2025-09-14T18:36:36 update: updating Album - Extreme Power Metal/02 - Cosmic Power of the Infinite Shred Machine.mp3
+2025-09-14T18:36:36 update: updating Album - Extreme Power Metal/03 - The Last Dragonborn.mp3
+2025-09-14T18:36:36 update: updating Album - Extreme Power Metal/04 - Heart Demolition.mp3
+2025-09-14T18:36:36 update: updating Album - Extreme Power Metal/05 - Troopers of the Stars.mp3
+2025-09-14T18:36:36 update: updating Album - Extreme Power Metal/06 - Razorblade Meltdown.mp3
+2025-09-14T18:36:36 update: updating Album - Extreme Power Metal/07 - Strangers.mp3
+2025-09-14T18:36:36 update: updating Album - Extreme Power Metal/08 - In a Skyforged Dream.mp3
+2025-09-14T18:36:36 update: updating Album - Extreme Power Metal/09 - Remembrance Day.mp3
+2025-09-14T18:36:36 update: updating Album - Extreme Power Metal/10 - My Heart Will Go On.mp3
+2025-09-14T18:36:36 update: updating Album - Tales of Ancient Prophecies/01 - Enchanted Dragon of Wisdom.mp3
+2025-09-14T18:36:36 update: updating Album - Tales of Ancient Prophecies/02 - The Power of the Ancient Force.mp3
+2025-09-14T18:36:36 update: updating Album - Tales of Ancient Prophecies/03 - Twilight Horizon.mp3
+2025-09-14T18:36:36 update: updating Album - Tales of Ancient Prophecies/04 - The Summoning.mp3
+2025-09-14T18:36:36 update: updating Album - Tales of Ancient Prophecies/05 - Whispering Winds.mp3
+2025-09-14T18:36:36 update: updating Album - Tales of Ancient Prophecies/06 - Fall of the Eternal Winter.mp3
+2025-09-14T18:36:36 update: updating Album - Tales of Ancient Prophecies/07 - Forest of Destiny.mp3
+2025-09-14T18:36:36 update: updating Album - Tales of Ancient Prophecies/08 - In the Mighty Hall of the Fire King.mp3
+2025-09-14T18:36:36 update: updating Album - Tales of Ancient Prophecies/09 - Made of Steel.mp3
+2025-09-14T18:36:36 update: updating Album - Tales of Ancient Prophecies/10 - Sword of Magic Steel.mp3
+2025-09-14T18:36:36 update: updating Album - Tales of Ancient Prophecies/11 - Gates of Glory.mp3
+2025-09-14T18:36:36 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-14T18:36:36 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-14T18:36:48 update: updating Melhores/The Sapphire Dragon of Arcane Might is Back Again [hXhN_GVe1ys].mp3
+2025-09-14T18:36:48 update: updating Melhores/The Last Crystal Bearer (Orchestral Version) [pWYebFEs6us].mp3
+2025-09-14T18:36:48 update: updating Melhores/Hunting Soul (English Version) [CCWaIsOX4d0].mp3
+2025-09-14T18:36:48 update: updating Album - Warp Speed Warriors/01 - Astro Warrior Anthem.mp3
+2025-09-14T18:36:48 update: updating Album - Warp Speed Warriors/02 - Power of the Triforce.mp3
+2025-09-14T18:36:48 update: updating Album - Warp Speed Warriors/03 - Kingdom of Steel.mp3
+2025-09-14T18:36:48 update: updating Album - Warp Speed Warriors/04 - Burning Heart.mp3
+2025-09-14T18:36:48 update: updating Album - Warp Speed Warriors/05 - Space Marine Corp.mp3
+2025-09-14T18:36:48 update: updating Album - Warp Speed Warriors/06 - Prelude to Darkness.mp3
+2025-09-14T18:36:48 update: updating Album - Warp Speed Warriors/07 - The Killer Queen.mp3
+2025-09-14T18:36:48 update: updating Album - Warp Speed Warriors/08 - Doomsday Party.mp3
+2025-09-14T18:36:48 update: updating Album - Warp Speed Warriors/09 - Pixel Prison.mp3
+2025-09-14T18:36:48 update: updating Album - Warp Speed Warriors/10 - Wildest Dreams (DragonForce's Version).mp3
+2025-09-14T18:36:48 update: updating Album - Warp Speed Warriors/11 - Doomsday Party (feat. Elize Ryd).mp3
+2025-09-14T18:36:48 update: updating Album - Warp Speed Warriors/12 - Power of the Triforce (Instrumental).mp3
+2025-09-14T18:36:48 update: updating Album - Faith/01 - One Reason.mp3
+2025-09-14T18:36:48 update: updating Album - Faith/02 - I Will Wait.mp3
+2025-09-14T18:36:48 update: updating Album - Faith/03 - Faith.mp3
+2025-09-14T18:36:48 update: updating Album - Faith/04 - Just Like You.mp3
+2025-09-14T18:36:48 update: updating Album - Faith/05 - Freedom Reigns.mp3
+2025-09-14T18:36:48 update: updating Album - Faith/06 - Come Up Here.mp3
+2025-09-14T18:36:48 update: updating Album - Faith/07 - Gideon (Valley⧸Victory).mp3
+2025-09-14T18:36:48 update: updating Album - Faith/08 - Freedom.mp3
+2025-09-14T18:36:48 update: updating Album - Faith/09 - Glory Come Down.mp3
+2025-09-14T18:36:48 update: updating Album - Faith/10 - 40.mp3
+2025-09-14T18:36:48 update: updating Album - Faith/11 - Not Ashamed.mp3
+2025-09-14T18:36:48 update: updating Album - Faith/12 - Poverty.mp3
+2025-09-14T18:36:48 update: updating Album - Faith/13 - No Sacrifice.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/02 - Powerwind.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/03 - Guardian of the Seas.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/04 - Flight of the Sapphire Dragon.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/05 - There and Back Again.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/06 - Riders of the Dawn.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/07 - Keepers of Fate.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/08 - Rise of a Hero.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/09 - To the Stars.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/10 - Heroes of Mighty Magic.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/11 - Epilogue.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/12 - Knights of Twilight's Might.mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/13 - Rise of a Hero (Orchestral Version).mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/14 - Flight of the Sapphire Dragon (Orchestral Version).mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/15 - Heroes of Mighty Magic (Orchestral Version).mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/16 - Battle of Arcane Might (Instrumental).mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/17 - There and Back Again (Short Version).mp3
+2025-09-14T18:36:48 update: updating Album - Heroes Of Mighty Magic/18 - Powerwind (Chip Version).mp3
+2025-09-14T18:36:48 update: updating Album - Battle of Ice/01 - The Black Sorcery.mp3
+2025-09-14T18:36:48 update: updating Album - Battle of Ice/02 - The Cursed Crown.mp3
+2025-09-14T18:36:48 update: updating Album - Battle of Ice/03 - The Legend of the Demon's Cry.mp3
+2025-09-14T18:36:48 update: updating Album - Battle of Ice/04 - Assault on the Castle.mp3
+2025-09-14T18:36:48 update: updating Album - Battle of Ice/05 - Ride into the Sun.mp3
+2025-09-14T18:36:48 update: updating Album - Battle of Ice/06 - White Dragon.mp3
+2025-09-14T18:36:48 update: updating Album - Battle of Ice/07 - The Shadow Man.mp3
+2025-09-14T18:36:48 update: updating Album - Battle of Ice/08 - The Book of Evil.mp3
+2025-09-14T18:36:48 update: updating Album - Battle of Ice/09 - Under Siege.mp3
+2025-09-14T18:36:48 update: updating Album - Battle of Ice/10 - Battle of Ice.mp3
+2025-09-14T18:36:48 update: updating Album - Extreme Power Metal/01 - Highway to Oblivion.mp3
+2025-09-14T18:36:48 update: updating Album - Extreme Power Metal/02 - Cosmic Power of the Infinite Shred Machine.mp3
+2025-09-14T18:36:48 update: updating Album - Extreme Power Metal/03 - The Last Dragonborn.mp3
+2025-09-14T18:36:48 update: updating Album - Extreme Power Metal/04 - Heart Demolition.mp3
+2025-09-14T18:36:48 update: updating Album - Extreme Power Metal/05 - Troopers of the Stars.mp3
+2025-09-14T18:36:48 update: updating Album - Extreme Power Metal/06 - Razorblade Meltdown.mp3
+2025-09-14T18:36:48 update: updating Album - Extreme Power Metal/07 - Strangers.mp3
+2025-09-14T18:36:48 update: updating Album - Extreme Power Metal/08 - In a Skyforged Dream.mp3
+2025-09-14T18:36:48 update: updating Album - Extreme Power Metal/09 - Remembrance Day.mp3
+2025-09-14T18:36:48 update: updating Album - Extreme Power Metal/10 - My Heart Will Go On.mp3
+2025-09-14T18:36:48 update: updating Album - Tales of Ancient Prophecies/01 - Enchanted Dragon of Wisdom.mp3
+2025-09-14T18:36:48 update: updating Album - Tales of Ancient Prophecies/02 - The Power of the Ancient Force.mp3
+2025-09-14T18:36:48 update: updating Album - Tales of Ancient Prophecies/03 - Twilight Horizon.mp3
+2025-09-14T18:36:48 update: updating Album - Tales of Ancient Prophecies/04 - The Summoning.mp3
+2025-09-14T18:36:48 update: updating Album - Tales of Ancient Prophecies/05 - Whispering Winds.mp3
+2025-09-14T18:36:48 update: updating Album - Tales of Ancient Prophecies/06 - Fall of the Eternal Winter.mp3
+2025-09-14T18:36:48 update: updating Album - Tales of Ancient Prophecies/07 - Forest of Destiny.mp3
+2025-09-14T18:36:48 update: updating Album - Tales of Ancient Prophecies/08 - In the Mighty Hall of the Fire King.mp3
+2025-09-14T18:36:48 update: updating Album - Tales of Ancient Prophecies/09 - Made of Steel.mp3
+2025-09-14T18:36:48 update: updating Album - Tales of Ancient Prophecies/10 - Sword of Magic Steel.mp3
+2025-09-14T18:36:48 update: updating Album - Tales of Ancient Prophecies/11 - Gates of Glory.mp3
+2025-09-14T18:36:48 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-14T18:36:48 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-14T18:37:01 exception: Failed to open /home/renatolinard/.config/mpd/playlists/: No such file or directory
+2025-09-14T19:32:39 player: played "Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3"
+2025-09-14T21:25:15 player: played "Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3"
+2025-09-14T23:22:43 player: played "Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3"
+2025-09-16T02:32:25 player: played "Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3"
+2025-09-16T04:50:41 player: played "Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3"
+2025-09-16T07:11:35 player: played "Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3"
+2025-09-18T04:30:32 player: played "Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3"
+2025-09-18T05:39:06 player: played "Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3"
+2025-09-19T04:53:09 player: played "Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3"
+2025-09-19T05:35:57 player: played "Album - Heroes Of Mighty Magic/01 - Battle of Arcane Might.mp3"

@@ -84,6 +84,7 @@ alias front="cd /home/renatolinard/estudos/cursos_alura/frontend_html_css_js"
 
 #--- PATH ---
 export PATH=$PATH:~/.config/hypr/scripts
+export PATH=$PATH:~/.local/bin/
 export PATH=$PATH:/home/renatolinard/.cargo/bin
 
 # =======
