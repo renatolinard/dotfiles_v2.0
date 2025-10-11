@@ -51,7 +51,7 @@ alias dots='git --git-dir=$HOME/.dotfiles_v2.0/ --work-tree=$HOME'
 alias .tmux="nvim ~/.tmux.conf"
 alias work="tmux new -s WORKSTATION"
 alias mkdir="mkdir -p"
-alias cls="clear && fastfetch" 
+alias cls="clear"
 alias vim='nvim'
 alias v='nvim'
 alias play="mpv"

@@ -9,7 +9,7 @@ cursor_trail_decay 0.01 0.09
 mouse_hide_while_typing yes
 
 # --- Estilo Visual ---
-background_opacity 0.95
+background_opacity 1
 window_padding_width 12
 hide_window_decorations yes
 
@@ -66,9 +66,9 @@ tab_bar_background #2A2A37
 
 
 # BEGIN_KITTY_FONTS
-font_family      family='DankMono Nerd Font Mono' style=Italic
-bold_font        family='DankMono Nerd Font Mono' style=Italic
-italic_font      family='DankMono Nerd Font Mono' style=Italic
-bold_italic_font family='DankMono Nerd Font Mono' style=Italic
+font_family      family='Victor Mono' style='Thin Oblique'
+bold_font        family='Victor Mono' style='Bold Oblique'
+italic_font      family='Victor Mono' style='Thin Oblique'
+bold_italic_font family='Victor Mono' style='Bold Oblique'
 font_size 17
 # END_KITTY_FONTS
