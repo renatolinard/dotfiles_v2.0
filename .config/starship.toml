@@ -25,7 +25,6 @@ $directory\
 [](fg:#3b4252 bg:#434c5e)\
 $git_branch\
 $git_status\
-[](fg:#434c5e bg:#4c566a)\
 $c\
 $python\
 $elixir\
@@ -38,7 +37,7 @@ $nodejs\
 $nim\
 $rust\
 $scala\
-[](fg:#4c566a)\
+[](fg:#434c5a)\
 $docker_context\
 \n
 $cmd_duration\
