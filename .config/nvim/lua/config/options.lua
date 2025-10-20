@@ -20,9 +20,6 @@ set.termguicolors = true
 set.background = "dark"
 set.signcolumn = "yes"
 
--- cursor line
---set.cursorline = true
-
 -- 80th column
 set.colorcolumn = "80"
 
