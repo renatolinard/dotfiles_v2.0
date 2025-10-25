@@ -20,6 +20,10 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --preview --colo
 eval "$(starship init bash)"
 #--------------------------------------------------------
 
+#-------------------pywal--------------------------------
+#(cat ~/.cache/wal/sequences &)
+#--------------------------------------------------------
+
 #--- Define Editor--
 export EDITOR=nvim
 export VISUAL=nvim
