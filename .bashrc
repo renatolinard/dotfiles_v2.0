@@ -59,7 +59,7 @@ alias cls="clear"
 alias vim='nvim'
 alias v='nvim'
 alias play="mpv"
-alias nvrc="cd ~/.config/nvim/lua/ && vim ."
+alias nvrc="cd ~/.config/nvim/lua/ && vim"
 alias ~='cd ~'
 alias ..='cd ..'
 alias ls="eza -T --level=1 --color=always --icons=always"

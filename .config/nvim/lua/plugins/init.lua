@@ -22,7 +22,7 @@ return {
           "j-hui/fidget.nvim",
           opts = {
             notification = {
-              override_vim_notify = true,
+              override_vim_notify = false,
             },
           },
         },
@@ -118,25 +118,6 @@ return {
         vim.diagnostic.config({
           float = { border = floating_border_style },
         })
-
-        -- Show window/showMessage requests using vim.notify instead of logging to messages
-        vim.lsp.handlers["window/showMessage"] = function(_, params, ctx)
-          local message_type = params.type
-          local message = params.message
-          local client_id = ctx.client_id
-          local client = vim.lsp.get_client_by_id(client_id)
-          local client_name = client and client.name or string.format("id=%d", client_id)
-          if not client then
-            vim.notify("LSP[" .. client_name .. "] client has shut down after sending " .. message, vim.log.levels.ERROR)
-          end
-          if message_type == vim.lsp.protocol.MessageType.Error then
-            vim.notify("LSP[" .. client_name .. "] " .. message, vim.log.levels.ERROR)
-          else
-            message = ("LSP[%s][%s] %s\n"):format(client_name, vim.lsp.protocol.MessageType[message_type], message)
-            vim.notify(message, vim.log.levels[message_type])
-          end
-          return params
-        end
 
         -- Change diagnostic symbols in the sign column (gutter)
         local signs = { ERROR = "", WARN = "", INFO = "", HINT = "" }
@@ -371,7 +352,14 @@ return {
       -- OPTIONAL:
       --   `nvim-notify` is only needed, if you want to use the notification view.
       --   If not available, we use `mini` as the fallback
-      "rcarriga/nvim-notify",
+      {
+        "rcarriga/nvim-notify",
+        config = function()
+          require("notify").setup({
+            background_colour = "#000000",
+          })
+        end,
+      },
     }
   },
 
