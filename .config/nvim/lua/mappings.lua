@@ -5,7 +5,7 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 
 -- comand : ;
-map("n", ";", ":", { desc = "CMD enter command mode" })
+--map("n", ";", ":", { desc = "CMD enter command mode" })
 -- exit more faster
 map("i", "<ESC>", "<ESC><ESC>")
 -- move with highlight

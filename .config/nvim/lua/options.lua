@@ -14,3 +14,9 @@ set.smartcase = true
 
 -- keep cursor at least 8 rows from top/bot
 set.scrolloff = 8
+
+-- indentation and tabs
+set.tabstop = 4
+set.shiftwidth = 4
+set.autoindent = true
+set.expandtab = true
