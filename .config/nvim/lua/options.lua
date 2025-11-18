@@ -20,3 +20,8 @@ set.tabstop = 4
 set.shiftwidth = 4
 set.autoindent = true
 set.expandtab = true
+
+-- wrap column 80
+set.textwidth = 80
+set.wrap = true
+
