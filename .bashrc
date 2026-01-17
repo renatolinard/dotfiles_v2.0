@@ -58,7 +58,7 @@ alias mkdir="mkdir -p"
 alias cls="clear"
 alias vim='nvim'
 alias v='nvim'
-alias gvim="nvim --listen /tmp/godot.pipe"
+alias gvim="nvim --listen /tmp/godot.pipe project.godot"
 alias play="mpv"
 alias nvrc="cd ~/.config/nvim/lua/ && vim"
 alias ~='cd ~'
@@ -143,17 +143,17 @@ ff() {
     fi
 }
 
-z() {
-    # Usa 'find' para listar todos os diretórios a partir do local atual (.)
-    # e passa a lista para o fzf.
-    local directory
-    directory=$(find . -type d | fzf --preview 'bat --color=always --style=numbers {}' --query="$1" --height=80%)
-
-    # Se um diretório foi selecionado (a variável não está vazia), entra nele.
-    if [ -n "$directory" ]; then
-        cd "$directory"
-    fi
-}
+#z() {
+#    # Usa 'find' para listar todos os diretórios a partir do local atual (.)
+#    # e passa a lista para o fzf.
+#    local directory
+#    directory=$(find . -type d | fzf --preview 'bat --color=always --style=numbers {}' --query="$1" --height=80%)
+#
+#    # Se um diretório foi selecionado (a variável não está vazia), entra nele.
+#    if [ -n "$directory" ]; then
+#        cd "$directory"
+#    fi
+#}
 
 #----Commit dots
 dc() {
@@ -220,3 +220,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+eval "$(zoxide init bash)"

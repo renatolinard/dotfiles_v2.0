@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#------------------------------------------------------------------------------
+# Script   : 
+# Descrição: 
+# Versão   : 0.1
+# Autor    : Renato Linard <renatolinardjr@gmail.com>
+# Data     : 15/01/2026
+# Licença  : GNU/GPL v3.0
+# -----------------------------------------------------------------------------
+# Uso: 
+# -----------------------------------------------------------------------------
+
+# Define o caminho do pipe que configuramos no Godot
+PIPE_PATH="/tmp/godot.pipe"
+
+# Verifica se o arquivo de pipe já existe (pode ser "lixo" de uma sessão anterior)
+if [ -e "$PIPE_PATH" ]; then
+    # Opcional: Verifica se o processo realmente morreu antes de deletar (segurança extra)
+    # Mas geralmente, apenas remover resolve o problema de "Address already in use"
+    rm "$PIPE_PATH"
+fi
+
+echo "Iniciando Neovim conectado ao Godot..."
+echo "Pipe: $PIPE_PATH"
+
+# Inicia o Neovim
+# "$@" permite que você passe argumentos extras, como '.' para abrir a pasta atual
+nvim --listen "$PIPE_PATH" "$@"

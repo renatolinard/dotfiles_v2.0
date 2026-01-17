@@ -267,10 +267,14 @@ return {
   },
 
   -- treesitter
-  {
+    {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     config = function()
+      -- [CORREÇÃO] Se estiver rodando dentro do VS Code, cancela o carregamento.
+      -- O VS Code já faz o highlight e isso evita os erros de compilação (gzip/tar).
+      if vim.g.vscode then return end
+
       local configs = require("nvim-treesitter.configs")
 
       configs.setup({
@@ -300,7 +304,7 @@ return {
         incremental_selection = {
           enable = true,
           keymaps = {
-            init_selection = "<Enter>", -- set to `false` to disable one of the mappings
+            init_selection = "<Enter>",
             node_incremental = "<Enter>",
             scope_incremental = false,
             node_decremental = "<Backspace>",
@@ -308,5 +312,5 @@ return {
         },
       })
     end,
-  }
+  },
 }
