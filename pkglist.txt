@@ -1,3 +1,4 @@
+python-pywal16 
 ghostty
 7zip
 neovim
