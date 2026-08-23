@@ -48,7 +48,6 @@ if [[ $iatest -gt 0 ]]; then bind "set show-all-if-ambiguous On"; fi
 
 #------------------------------GENERAL ALIAS´S---------------------------------
 alias reload="source ~/.bashrc"
-alias lock="swaylock"
 alias cat="bat"
 alias blue="bluetuith"
 alias dots='git --git-dir=$HOME/.dotfiles_v2.0/ --work-tree=$HOME'
@@ -57,8 +56,6 @@ alias work="tmux new -s WORKSTATION"
 alias mkdir="mkdir -p"
 alias cls="clear"
 alias vim='nvim'
-alias v='nvim'
-alias gvim="nvim --listen /tmp/godot.pipe project.godot"
 alias play="mpv"
 alias nvrc="cd ~/.config/nvim/lua/ && vim"
 alias ~='cd ~'
