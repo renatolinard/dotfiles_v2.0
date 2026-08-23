@@ -1,3 +1,4 @@
+ghostty
 7zip
 neovim
 interception-caps2esc
