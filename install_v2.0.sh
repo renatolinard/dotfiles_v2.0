@@ -42,7 +42,6 @@ if [ ! -f "pkglist.txt" ] || [ ! -f "aurlist.txt" ]; then
     exit 1
 fi
 yay -S --needed --noconfirm - < pkglist.txt
-yay -S --needed --noconfirm - < aurlist.txt
 
 # --- ativos locais(Fontes, Temas, Cursores) ---
 echo -e "${YELLOW}--> Instalando ativos locais do repositório...${NC}"
@@ -59,26 +58,6 @@ if [ -d "ativos/my_cursors" ]; then
     sudo cp -r ativos/my_cursors/** /usr/share/icons/
 fi
 
-# Instalação do Tema GTK
-if [ -d "ativos/kanagawa_gtk3" ]; then
-    echo "Copiando tema GTK local..."
-    sudo cp -r ativos/kanagawa_gtk3/** /usr/share/themes/
-fi
-
-# instalação ghostty from source
-echo -e "${YELLOW}--> Built ghostty from source...${NC}"
-#clone ultimas atualizações 
-if [ ! -d "ghostty" ]; then
-    git clone https://github.com/ghostty-org/ghostty
-fi
-
-#construção
-if [ -d "ghostty" ]; then
-    # Puxa atualizações se a pasta já existir
-    (cd ghostty && git pull && sudo zig build -p /usr -Doptimize=ReleaseFast)
-else 
-    echo -e "${YELLOW}AVISO: Erro de instalação, faca a construção manualmente.${NC}" 
-fi
 
 #instalação e configuração Zen Browser
 echo -e "${BLUE}Iniciando a instalação do Zen Browser...${NC}"
