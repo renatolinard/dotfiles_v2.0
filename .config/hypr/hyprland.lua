@@ -15,6 +15,7 @@ hl.env("XCURSOR_THEME", "material_dark_cursors")
 --LOOK AND FELL--------
 require("modules.animation")
 require("modules.decoration")
+require("modules.window_rules")
 ------------------------
 
 -----------KEYBINDS----

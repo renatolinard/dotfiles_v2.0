@@ -3,6 +3,7 @@ hl.bind("SUPER + B", hl.dsp.exec_cmd("firefox"))
 hl.bind("SHIFT + SUPER + w", hl.dsp.exec_cmd("waypaper --folder ~/wallpaper/"))
 hl.bind("SUPER + Q", hl.dsp.window.close())
 hl.bind("SUPER + X", hl.dsp.exec_cmd("wlogout"))
+hl.bind("SUPER+ ALT + Y",   hl.dsp.exec_cmd("env GTK_IM_MODULE=simple ghostty -e yazi"))
 --focus
 hl.bind("SUPER + Left", hl.dsp.focus({direction = "left"}))
 hl.bind("SUPER + Right", hl.dsp.focus({direction = "right"}))
