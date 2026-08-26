@@ -140,17 +140,13 @@ ff() {
     fi
 }
 
-#z() {
-#    # Usa 'find' para listar todos os diretórios a partir do local atual (.)
-#    # e passa a lista para o fzf.
-#    local directory
-#    directory=$(find . -type d | fzf --preview 'bat --color=always --style=numbers {}' --query="$1" --height=80%)
-#
-#    # Se um diretório foi selecionado (a variável não está vazia), entra nele.
-#    if [ -n "$directory" ]; then
-#        cd "$directory"
-#    fi
-#}
+function y() {
+	local tmp cwd; tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd" || builtin true
+	command rm -f -- "$tmp"
+}
 
 #----Commit dots
 dc() {
