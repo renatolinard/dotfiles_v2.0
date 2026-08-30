@@ -58,6 +58,7 @@ alias cls="clear"
 alias vim='nvim'
 alias play="mpv"
 alias nvrc="cd ~/.config/nvim/lua/ && vim"
+alias hyprc="cd ~/.config/hypr/ && vim"
 alias ~='cd ~'
 alias ..='cd ..'
 alias ls="eza -T --level=1 --color=always --icons=always"
@@ -66,7 +67,7 @@ alias la="eza -la --icons=always"
 alias lt="eza -T --level=3 --color=always --icons=always"
 alias bashrc="vim ~/.bashrc"
 alias upd="sudo pacman -Syyu && yay -Syu"
-alias ask='gemini'
+alias ask='codex'
 
 ###alias dots###
 alias ds="dots status"
@@ -214,3 +215,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(zoxide init bash)"
+
+# >>> Codex installer >>>
+export PATH="/home/renatolinard/.local/bin:$PATH"
+# <<< Codex installer <<<

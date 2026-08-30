@@ -1,3 +1,4 @@
+hl.bind("SUPER + R", hl.dsp.exec_cmd("hyprctl reload"), { description = "Reload Hyprland configuration" })
 hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("env GTK_IM_MODULE=simple ghostty"))
 hl.bind("SUPER + B", hl.dsp.exec_cmd("firefox"))
 hl.bind("SHIFT + SUPER + w", hl.dsp.exec_cmd("waypaper --folder ~/wallpaper/"))
